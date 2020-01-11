@@ -1,0 +1,89 @@
+\BOOKMARK [0][-]{chapter.1}{Think outside the box}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Petrus}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Roux}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{ZZ}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{CFOP \(Fridrich\) and FreeFOP}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Keyhole F2L}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Heise}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{What and how to learn}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.7.1}{Petrus}{section.1.7}% 9
+\BOOKMARK [2][-]{subsection.1.7.2}{Roux}{section.1.7}% 10
+\BOOKMARK [2][-]{subsection.1.7.3}{ZZ}{section.1.7}% 11
+\BOOKMARK [2][-]{subsection.1.7.4}{CFOP/FreeFOP}{section.1.7}% 12
+\BOOKMARK [0][-]{chapter.2}{How to proceed during a solve}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Blockbuilding}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.1.1}{Align then join}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.2}{Move it out of the way}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.3}{Destroy and restore}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.4}{Keyhole}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.5}{One move, two goals}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.6}{Influence later steps}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.7}{Pay attention to EO}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.8}{Which block should I build?}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.9}{Ready-made blocks: how to deal with them?}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.10}{Tricks to get fast and advanced techniques}{section.2.1}% 24
+\BOOKMARK [1][-]{section.2.2}{Find a good skeleton}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.3}{Commutators}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.3.1}{Corner commutators}{section.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.3.2}{Edge commutators}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.3}{Other edge 3-cycles}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.4}{Block commutators}{section.2.3}% 30
+\BOOKMARK [1][-]{section.2.4}{Insertions}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.4.1}{Simple insertions}{section.2.4}% 32
+\BOOKMARK [2][-]{subsection.2.4.2}{Multiple insertions: separated cycles \(3 edges and 3 corners\)}{section.2.4}% 33
+\BOOKMARK [2][-]{subsection.2.4.3}{Multiple insertions: 2 or 3 twisted corners}{section.2.4}% 34
+\BOOKMARK [2][-]{subsection.2.4.4}{Multiple insertions: 4 corners}{section.2.4}% 35
+\BOOKMARK [2][-]{subsection.2.4.5}{Multiple insertions: 5 corners}{section.2.4}% 36
+\BOOKMARK [2][-]{subsection.2.4.6}{Multiple insertions: 5 edges}{section.2.4}% 37
+\BOOKMARK [2][-]{subsection.2.4.7}{Other insertions: 2 corners and 2 edges}{section.2.4}% 38
+\BOOKMARK [2][-]{subsection.2.4.8}{Other insertions: 3 edges and some corners}{section.2.4}% 39
+\BOOKMARK [2][-]{subsection.2.4.9}{Other insertions: conjugate and solve}{section.2.4}% 40
+\BOOKMARK [2][-]{subsection.2.4.10}{Move count \(an estimate\)}{section.2.4}% 41
+\BOOKMARK [2][-]{subsection.2.4.11}{Insertion Finder}{section.2.4}% 42
+\BOOKMARK [1][-]{section.2.5}{Starting with EO}{chapter.2}% 43
+\BOOKMARK [2][-]{subsection.2.5.1}{EO + blockbuilding}{section.2.5}% 44
+\BOOKMARK [2][-]{subsection.2.5.2}{Domino Reduction}{section.2.5}% 45
+\BOOKMARK [2][-]{subsection.2.5.3}{Partial Domino Reduction}{section.2.5}% 46
+\BOOKMARK [1][-]{section.2.6}{Other simple strategies}{chapter.2}% 47
+\BOOKMARK [2][-]{subsection.2.6.1}{Go back and change your solve}{section.2.6}% 48
+\BOOKMARK [2][-]{subsection.2.6.2}{Get lucky!}{section.2.6}% 49
+\BOOKMARK [0][-]{chapter.3}{Advanced tools}{}% 50
+\BOOKMARK [1][-]{section.3.1}{Inverse scramble}{chapter.3}% 51
+\BOOKMARK [1][-]{section.3.2}{Pseudo blocks, premoves and NISS}{chapter.3}% 52
+\BOOKMARK [2][-]{subsection.3.2.1}{Pseudo blocks}{section.3.2}% 53
+\BOOKMARK [2][-]{subsection.3.2.2}{Premoves}{section.3.2}% 54
+\BOOKMARK [2][-]{subsection.3.2.3}{NISS}{section.3.2}% 55
+\BOOKMARK [1][-]{section.3.3}{Reverse NISS}{chapter.3}% 56
+\BOOKMARK [1][-]{section.3.4}{Using NISS during EO}{chapter.3}% 57
+\BOOKMARK [1][-]{section.3.5}{Useful algorithms}{chapter.3}% 58
+\BOOKMARK [1][-]{section.3.6}{Pair analysis}{chapter.3}% 59
+\BOOKMARK [1][-]{section.3.7}{Solving with skew centers}{chapter.3}% 60
+\BOOKMARK [2][-]{subsection.3.7.1}{Skew centers and NISS}{section.3.7}% 61
+\BOOKMARK [1][-]{section.3.8}{Advanced edge insertions: free slices}{chapter.3}% 62
+\BOOKMARK [1][-]{section.3.9}{Corners First}{chapter.3}% 63
+\BOOKMARK [1][-]{section.3.10}{Replace and shorten}{chapter.3}% 64
+\BOOKMARK [0][-]{chapter.4}{How to practice}{}% 65
+\BOOKMARK [1][-]{section.4.1}{No time limit and competition simulation}{chapter.4}% 66
+\BOOKMARK [1][-]{section.4.2}{Use pen and paper}{chapter.4}% 67
+\BOOKMARK [1][-]{section.4.3}{Compare yourself to the masters \(and study their solves\)}{chapter.4}% 68
+\BOOKMARK [1][-]{section.4.4}{Hard scrambles}{chapter.4}% 69
+\BOOKMARK [1][-]{section.4.5}{Deliberate practice}{chapter.4}% 70
+\BOOKMARK [1][-]{section.4.6}{Fast scrambling}{chapter.4}% 71
+\BOOKMARK [1][-]{section.4.7}{Study!}{chapter.4}% 72
+\BOOKMARK [0][-]{chapter.5}{In competition}{}% 73
+\BOOKMARK [1][-]{section.5.1}{How to write a solution}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.2}{Backup solution}{chapter.5}% 75
+\BOOKMARK [1][-]{section.5.3}{Time managment}{chapter.5}% 76
+\BOOKMARK [2][-]{subsection.5.3.1}{Don't get stuck}{section.5.3}% 77
+\BOOKMARK [2][-]{subsection.5.3.2}{\(Don't\) explore every possibility}{section.5.3}% 78
+\BOOKMARK [0][-]{appendix.A}{Other resources}{}% 79
+\BOOKMARK [0][-]{appendix.B}{Notation}{}% 80
+\BOOKMARK [0][-]{appendix.C}{Some exercises by Reto Bubendorf}{}% 81
+\BOOKMARK [1][-]{section.C.1}{Direct solve}{appendix.C}% 82
+\BOOKMARK [1][-]{section.C.2}{Find the skeleton}{appendix.C}% 83
+\BOOKMARK [0][-]{appendix.D}{A \(way too short\) introduction to Domino Reduction}{}% 84
+\BOOKMARK [1][-]{section.D.1}{Step 1: reduce to domino}{appendix.D}% 85
+\BOOKMARK [1][-]{section.D.2}{Step 2: all the rest!}{appendix.D}% 86
+\BOOKMARK [2][-]{subsection.D.2.1}{Blockbuilding}{section.D.2}% 87
+\BOOKMARK [2][-]{subsection.D.2.2}{Solving corners first}{section.D.2}% 88
+\BOOKMARK [1][-]{section.D.3}{World record solve}{appendix.D}% 89

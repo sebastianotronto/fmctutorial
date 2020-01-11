@@ -1,0 +1,34 @@
+NISS + skew centers
+Advanced edge insertions (slice moves shenaningans)
+--------------------------------------------------
+more for other insertions :
+
+sexy F2 lexy F2
+
+----------------------------------------
+by Daniel Rose-Levine:
+Scramble: R' U' F D' F2 D U2 R2 D' L2 R' B2 F2 U2 B U L B' U F' L' U R' U' F
+
+U L F2 U F' + R' F' // 222
+R2 B2 U // 223
+B R2 U R' U' R2 B' // 4C
+
++ F2 B2 L2 U L2 F2 B2 R2 D R2
+
+Solution // U L F2 U F B2 L2 U L2 F2 B2 R2 D R F' R2 B2 U B R2 U R' U' R2 B' - 25
+
+----------------------------------------------------------------------
+ADD MANY EXAMPLES!
+- 2.2 find a good skeleton
+- 2.1.9, 2.1.10
+
+
+add later: commutator tutorial
+edge 3-cycle analysis
+niss: why niss?
+      add 2c2e example as exercise
+-----------------------------------------------------------------------
+
+References: tutorial by Andrew Nathenson, FMC group facebook (reddit?)
+            other tutorials on youtube?
+

@@ -1,0 +1,96 @@
+6 to 9 HTM:
+
+ZBLLs:
+R U R' U R U2 R'
+R U2 R2 U' R2 U' R2 U2 R
+R2 D L' B2 L D' R' U2 R' = [R: [R D Rw', U2]] "Fat superman"
+R B2 L2 D L D' L B2 R' = [R B2 L2: [D, L]]
+
+Other OLLs:
+F R U R' U' F'
+L F R' F R F2 L' = Rw U R' U R U Rw' "Fat Sune"
+R U R2 F R F2 U F + U2 = pure flip
+R' U' R' F R F' U R
+R U2 R2 F R F' R U2 R'
+R U R' U' R' F R F'
+R U2 R' U2 R' F R F'
+R' F R U R' U' F' U R
+R' F R2 B' R2 F' R2 B R'
+R' B U2 B' U2 B' R2 B R'
+R U R' F' L' U' L F
+R B' R B2 L' B L B2 R2 = [R: [B', R Fw2 R']] setup + pair 3-cycle
+
+Corners 3-cycles (useless if you know commutators):
+R U' L' U R' U' L
+L' B' L F' L' B L F
+R2 D R' U2 R D' R' U2 R'
+R B' R F2 R' B R F2 R2
+R B2 R F2 R' B2 R F2 R2
+
+Edges Only:
+R D2 L2 F U2 L2 D2 B R
+R2 U F B' R2 F' B U R2 = [R2 U: [S', U2]] "U perm"
+F2 R2 L2 B2 D B2 R2 L2 F2 = [F2 M2 F2, U] "H perm"
+
+----------
+
+10 HTM:
+
+F (U R U2 R') U (R U R' F') + U' ZBLL, double 3-cycle
+F (U R U2 R') U (F' L' U L) 3 LL pairs
+F (U R U2 R') U' (R U R' F') + U2
+F (U R U2 R') U' (F' L' U L) + U
+
+F (U R U2 R') F' (U' L' U2 L) H perm + adj flip
+
+F R B' R B R' U R' U' F'
+F R U' B U B' U R' U' F'
+F R U R' U' R U R' U' F'
+
+(F U R U') (F' L F) (R' F' L')
+F (U R U') (B R' F') (R B' R')
+F U R' U2 R2 U R2 U R F'
+ 
+F U R2 D R' U' R D' R2 F' = [F: [U, R2 D R']]
+F U R' U' R F' U' R' U2 R
+(F U) (R' F R F') (R U' R') F' 
+R U R' U' B' R' F R F' B
+R U2 R' U2 B' R' F R F' B
+R U R2 F' U' F U R2 U2 R' (3 cycle + 2 flip)
+
+R U R' F D B' R' B D' F' Double 3 cycle
+R U R' F2 D' B L' B' D F2 
+R U R' F2 B D' L' D F2 B' 
+R U R' B' R B U' B' R' B Double 3 cycle
+R U L B L' U' L B' R' L' Setup + pair 3-cycle
+R U2 F' U2 F R2 B' R2 B R' Setup + pair 3-cycle
+R U2 R F2 L F L' F2 R2 F'
+R U2 R2 F R F L F L' F 
+R U2 R' F2 L' B L' B' L2 F2
+R U2 R' B' U R U R' U' B
+R U' F2 D2 L B2 D L' D F2
+R U' F' L' U L F R U' R2
+R U' R' U2 R L U' R' U L' + U2
+R U' L U L2 D' B2 D R' L  ZBLL sune + Z
+R U' L' U R' U2 B' U B L  Niklas + fruruf
+R U' L' B2 U' B2 U B2 R' L
+R F' U' L' U F R' F' L F Duble 3-cycle
+R B U B2 U' R' U R B R' Double 3 cycle
+R B U B' R' U' R' F R F' 
+L F L' R U R' U' L F' L'
+R B R' F R B2 R B R2 F'
+
+R B2 R2 U L U' L' R2 B2 R'
+R B' R B R2 U2 F R' F' R
+R L2 D' B' D B L B' R' L
+R2 F2 R' U B U' B' R F2 R2
+R2 F2 L D' F' D F L' F2 R2
+
+R U' B L U L' B2 R B R2  J perm
+B2 L U L' B2 R D' R D R2 J perm
+L' B L' D2 R F' R' D2 L2 B' 2c2e
+R2 U R2 D' F2 L2 U' L2 D F2 + U' = R2 U R2 Uw' R2 y L2 U' L2 Uw L2 {U'} T perm
+
+R U R' U' R' L F R F' L' = cycle shift of [F R' F',M']
+
+R B' U2 B R' B' R U2 R' B 3c

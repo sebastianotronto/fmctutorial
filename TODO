@@ -1,0 +1,29 @@
+
+
+- link to git page and fmcsolves pdf repository at the beginning/end
+- link txt file for LL algs (fmcolves or github)
+
+
+MOVE EO SECTION: check that everything still works (and that I don't say things
+like "in section 4 below...")
+
+avvisa tizio giapponese della versione 3
+
+
+================
+DONE:
+
+- uploaded theproject on github
+- fixed a gazillion typos, updated references
+- reorganized some section: now EO is in chapter 2, right after insertions
+- Add stuff on edge insertion (5e, section on free slices and advanced edge)
+- replaced .png images with .svg (much better!)
+- added "old style" PDR 
+- how to practice: use pen and paper
+- removed appendix C, I just link the file
+- skew centers & niss
+- add small section "replace and shorten"?
+- NISS + EO
+- added appendix D and references to DR tutorial
+- appendix C: Reto's exercises
+- The structure of the document is still the same, even though this might seem outdated in some parts (for example, it feels a bit odd nowadays that EO starts are in the "Some other ways" capter; or the fact that I say that 5e skeletons are "usually bad", when I got a world record with such a skeleton)
