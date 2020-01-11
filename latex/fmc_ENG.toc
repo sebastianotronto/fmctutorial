@@ -45,13 +45,13 @@
 \contentsline {subsection}{\numberline {2.5.1}EO + blockbuilding}{34}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Domino Reduction}{35}{subsection.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}Partial Domino Reduction}{36}{subsection.2.5.3}
-\contentsline {subsubsection}{Classic PDR}{36}{section*.14}
-\contentsline {subsubsection}{EO+CO PDR}{37}{section*.15}
+\contentsline {subsubsection}{Classic PDR}{36}{section*.15}
+\contentsline {subsubsection}{EO+CO PDR}{37}{section*.16}
 \contentsline {section}{\numberline {2.6}Other simple strategies}{37}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Go back and change your solve}{37}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Get lucky!}{37}{subsection.2.6.2}
-\contentsline {subsubsection}{First example: insert last pair(s)}{37}{section*.16}
-\contentsline {subsubsection}{Second example: how to use algorithms}{38}{section*.17}
+\contentsline {subsubsection}{First example: insert last pair(s)}{37}{section*.17}
+\contentsline {subsubsection}{Second example: how to use algorithms}{38}{section*.18}
 \contentsline {chapter}{\numberline {3}Advanced tools}{39}{chapter.3}
 \contentsline {section}{\numberline {3.1}Inverse scramble}{39}{section.3.1}
 \contentsline {section}{\numberline {3.2}Pseudo blocks, premoves and NISS}{40}{section.3.2}

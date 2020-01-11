@@ -18,7 +18,7 @@
 \newcommand{\p}{\textquotesingle}
 \newcommand{\m}{\texttt}
 \newcommand{\ps}{\p\,\,}
-\newcommand{\version}{3.0 beta}
+\newcommand{\version}{3.0}
 \newcommand{\comment}[1]{{\color{gray}\quad//#1}}
 
 \author{Sebastiano Tronto}
@@ -32,22 +32,32 @@
 
 \section*{Preface to the third edition}
 
-{\color{red}TODO: considerations about 2019}
+The year that has just passed has been incredible for FMC. After being stuck at 24.00 for almost two years, the world record average has finally dropped by 2 moves, thanks to Reto Bubendorf (23.00), Mark Boyanowski (22.33) and myself (22.00). In total, eleven different people croke the 24-moves barrier for average in 2019. The world record single has also dropped by 2 moves, from 18 to 16.
+
+But 2019 is not only the year of the records: it is also the year when domino reduction became popular. Until a year ago, this method was only occasionally used by top solvers and generally considered difficult to use consistently. However, as often happens, it just takes a few people that realize that something not as difficult as it seems to make it easy for everyone. And so a new era of FMC has begun.
+
+Where does this leave this tutorial then? Is version 3.0 the tutorial for this ``new era''? Not really. You might think of this as the last update of the ``old era'' tutorial. There were a few things that I wanted to add, and only some of them are inspired by the recent developments.
+
+I believe that this tutorial is still a great starting point for someone who want to learn FMC. However, as new methods get developped, the choice of topics included here or the way they are explained may become obsolete. Hopefully I will be able to keep this document up to date, so that it remains a useful guide for many years to come. But not everything can be fixed with small, incremental updates: if eventually this tutorial becomes a relic and better ones appear, let it be.
 
 \subsection*{List of changes}
 
-Since the last version of this tutorial I have fixed like a million typos and probably introduced a lot of new ones. I have also decided to replace png images with svg ones, which look much better. I have removed the appendix with last layer algorithms and just linked a raw text file instead. As mentioned above ({\color{red}mention it!}), I have moved the general section on EO to Chapter 2 and merged the remainder of Chapter 4 with Chapter 3.
+Since the last version of this tutorial I have fixed like a million typos and probably introduced a lot of new ones. I have also decided to replace png images with svg ones, which look much better.
+
+I have removed the appendix with last layer algorithms and just linked a raw text file instead. I have moved the general section on EO to Chapter 2 and merged the remainder of Chapter 4 with Chapter 3.
 
 Other than that, I have added a few sections:
 \begin{itemize}
 \item Sections \ref{sec:5e} and \ref{slices} on edge insertions.
 \item Section \ref{sec:replace}, ``Replace and shorten''.
 \item Section \ref{sec:PDR} about partial domino reduction.
-{\color{red}\item Section \ref{sec:skewNISS} ``Skew centers and NISS''
-\item Section \ref{sec:NISSEO} about using NISS to find nice EOs}
+\item Section \ref{sec:skewNISS} ``Skew centers and NISS''.
+\item Section \ref{sec:NISSEO} about using NISS to find nice EOs.
 \item Appendix \ref{appendix:EX}, ``Some exercises by Reto Bubendort''.
 \item Appendix \ref{appendixdomino}, a short introduction to DR.
 \end{itemize}
+
+All the rest are just minor changes.
 
 \newpage
 
@@ -124,7 +134,7 @@ Sol: \m{B\ps F D2 L\ps R2 B R B\ps R2 F R\ps B R F\ps R2 F2 D F\ps D2 F R\ps D\p
 \end{tabular}
 \bigskip
 
-You may notice that in writing the solution I almost never use ``rotation'' moves such as \m x or \m{[f2]}. This doesn't mean that you shouldn't turn the cube around in your hands when trying the solution. If you are not familiar with rotationless solution writing, I advise skipping to Section \ref{write_down} before reading the rest of the book.
+You may notice that in writing the solution I almost never use ``rotation'' moves such as \m x or \m{y2}. This doesn't mean that you shouldn't turn the cube around in your hands when trying the solution. If you are not familiar with rotationless solution writing, I advise skipping to Section \ref{write_down} before reading the rest of the book.
 
 \section*{Acknowledgements}
 
@@ -139,6 +149,12 @@ For this second edition I made use of \href{http://cube.crider.co.uk/visualcube.
 
 As you may know, English is not my first language. If you think that a certain part is poorly written or if you find any mistake, please contact me at:
 sebastiano.tronto [at] gmail [dot] com.
+
+\section*{Where to find this}
+
+This tutorial can be found at \url{https://fmcsolves.cubing.net/fmc_tutorial_ENG.pdf}. If a new version is released, the link is updated automatically.
+
+You can find the LaTeX source files, the pictures and more on my Github repository: \url{https://github.com/sebastianotronto/fmctutorial}.
 
 \section*{License}
 
