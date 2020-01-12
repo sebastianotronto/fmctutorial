@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
+\usepackage{footnote}
 \usepackage{amssymb}
 \usepackage{enumitem}
 \usepackage[normalem]{ulem}
@@ -18,7 +19,7 @@
 \newcommand{\p}{\textquotesingle}
 \newcommand{\m}{\texttt}
 \newcommand{\ps}{\p\,\,}
-\newcommand{\version}{3.0}
+\newcommand{\version}{3.0beta}
 \newcommand{\comment}[1]{{\color{gray}\quad//#1}}
 
 \author{Sebastiano Tronto}
@@ -26,38 +27,40 @@
 \large Solving a Rubik's Cube with as few moves as possible\\
 \small v\version}
 
+\makesavenoteenv{tabular}
+
 \begin{document}
 
 \maketitle
 
 \section*{Preface to the third edition}
 
-The year that has just passed has been incredible for FMC. After being stuck at 24.00 for almost two years, the world record average has finally dropped by 2 moves, thanks to Reto Bubendorf (23.00), Mark Boyanowski (22.33) and myself (22.00). In total, eleven different people croke the 24-moves barrier for average in 2019. The world record single has also dropped by 2 moves, from 18 to 16.
+Last year has been incredible for FMC. After being stuck at 24.00 for almost two years, the world record average has finally dropped by 2 moves, thanks to Reto Bubendorf (23.00), Mark Boyanowski (22.33) and myself (22.00). In total, eleven different people broke the 24-moves barrier for average in 2019. The world record single also dropped from 18 to 16.
 
-But 2019 is not only the year of the records: it is also the year when domino reduction became popular. Until a year ago, this method was only occasionally used by top solvers and generally considered difficult to use consistently. However, as often happens, it just takes a few people that realize that something not as difficult as it seems to make it easy for everyone. And so a new era of FMC has begun.
+But 2019 was not only the year of the records: it was also the year when domino reduction became popular. Until a year ago, this method was only occasionally used by top solvers and was considered difficult to use consistently. However, as often happens, it just takes a few people that realize that something is not as difficult as it seems to make it easy for everyone. In a matter of months, this method has grown in popularity to the point that many top solvers use in for most of their solves. A new era of FMC has begun.
 
 Where does this leave this tutorial then? Is version 3.0 the tutorial for this ``new era''? Not really. You might think of this as the last update of the ``old era'' tutorial. There were a few things that I wanted to add, and only some of them are inspired by the recent developments.
 
-I believe that this tutorial is still a great starting point for someone who want to learn FMC. However, as new methods get developped, the choice of topics included here or the way they are explained may become obsolete. Hopefully I will be able to keep this document up to date, so that it remains a useful guide for many years to come. But not everything can be fixed with small, incremental updates: if eventually this tutorial becomes a relic and better ones appear, let it be.
+I believe that this tutorial is still a great starting point for someone who wants to learn FMC. However, as new methods get developped, the choice of topics included here or the way they are explained may become obsolete. Hopefully I will be able to keep this document up to date, so that it remains a useful guide for many years to come.
 
 \subsection*{List of changes}
 
-Since the last version of this tutorial I have fixed like a million typos and probably introduced a lot of new ones. I have also decided to replace png images with svg ones, which look much better.
+Since the last version of this tutorial I have fixed like a million typos and probably introduced a lot of new ones. I have also decided to replace .png images with .svg ones, which look much better.
 
 I have removed the appendix with last layer algorithms and just linked a raw text file instead. I have moved the general section on EO to Chapter 2 and merged the remainder of Chapter 4 with Chapter 3.
 
 Other than that, I have added a few sections:
 \begin{itemize}
 \item Sections \ref{sec:5e} and \ref{slices} on edge insertions.
-\item Section \ref{sec:replace}, ``Replace and shorten''.
 \item Section \ref{sec:PDR} about partial domino reduction.
-\item Section \ref{sec:skewNISS} ``Skew centers and NISS''.
 \item Section \ref{sec:NISSEO} about using NISS to find nice EOs.
+\item Section \ref{sec:skewNISS} ``Skew centers and NISS''.
+\item Section \ref{sec:replace}, ``Replace and shorten''.
 \item Appendix \ref{appendix:EX}, ``Some exercises by Reto Bubendort''.
-\item Appendix \ref{appendixdomino}, a short introduction to DR.
+\item Appendix \ref{appendixdomino}, a short introduction to domino reduction.
 \end{itemize}
 
-All the rest are just minor changes.
+All the rest is just minor changes.
 
 \newpage
 
@@ -69,7 +72,7 @@ For a couple of years I have been thinking about making a new version of this tu
 
 I also thought of rewriting it in LaTeX, because LaTeX documents look way better than anything else. The only downside of this choice is that it may be more difficult to translate: I was very happy to see that my tutorial was so much appreciated that people wanted to translate it in many different languages to make it more accessible worldwide! I would like to thank them all one by one, but I forgot most of their names.
 
-But I have always postponed this second version. The main reason was that I didn't have much time, but I also lacked motivation. At World Championship 2017 in Paris I have met many people who thanked me for this tutorial, and this gave me the motivation I needed. I remembered how good it feels to be part of such a nice community where everybody helps each other without asking anything back, and I wanted to do my part - again.
+But I have always postponed this second version. The main reason was that I didn't have much time, but I also lacked motivation. At World Championship 2017, in Paris, I have met many people who thanked me for this tutorial, and this gave me the motivation I needed. I remembered how good it feels to be part of such a nice community where everybody helps each other without asking anything back, and I wanted to do my part - again.
 
 \bigskip
 The changes since the first version are mostly aesthetical. You may have noticed that this book is way longer than the first one: the difference is mostly pictures and blank pages. I have rearranged a few sentences, corrected a few mistakes (my English got better in the last 3 years!) and probably also added a few.
@@ -83,7 +86,7 @@ I have also added a couple of things:
 \item Appendices for Notation \sout{and Last Layer algorithms}. \emph{(removed from third edition)}
 \end{itemize}
 
-Another thing I did was to add nice boxes for example solves - see below. This is mainly because I wanted the book to be more self-contained, since many of the solves were just linked to in the first version. I have kept hyperlinks, but I have also almost always written the complete link as a footnote. This makes this book suitable both to be read on an electronic device and on paper.
+Another thing I did was adding nice boxes for example solves - see below. This is mainly because I wanted the book to be more self-contained, since many of the solves were just linked to in the first version. I have kept hyperlinks, but I have also almost always written the complete link as a footnote. This makes this book suitable both to be read on an electronic device and on paper.
 
 When I occasionally talk about the colours of the pieces we are considering, I assume you are using the \href{http://www.speedsolving.com/wiki/index.php/Western\_Color\_Scheme}{standard color scheme}\footnote{\url{http://www.speedsolving.com/wiki/index.php/Western\_Color\_Scheme}} and that you scramble in the standard orientation: white on top and green on front.
 
@@ -99,7 +102,7 @@ The ``Fewest Moves Challenge'' is about solving a given configuration of the Rub
 
 In view of this, no general solving algorithm is described. The reason why it is not convenient is repeatedly remarked during the rest of the book and can be summed up as follows: restricting to a single approach is too limiting.
 
-Likewise, there is no mention on how to program a computer to generate (short) solutions. If one is interested in the subject I suggest taking a look a the \href{https://www.jaapsch.net/puzzles/compcube.htm}{\emph{Computer Puzzling} page} at \url{www.jaapsch.net}.
+Likewise, there is no mention on how to program a computer to generate (short) solutions. If one is interested in the subject, I suggest taking a look a the \href{https://www.jaapsch.net/puzzles/compcube.htm}{\emph{Computer Puzzling} page} at \url{www.jaapsch.net}.
 
 \section*{Prerequisites}
 
@@ -140,10 +143,10 @@ You may notice that in writing the solution I almost never use ``rotation'' move
 
 I want to thank the whole international speedcubing community for always openly spread techniques and methods, enabling anyone to freely learn anything that has been discovered (until now). I hope this tutorial will be helpful in the same way.
 
-I also want to thank everybody who gave me suggestions for improvements, pointed out mistakes or translated this tutorial (or rather, the old version). I don't want to name any of you explicitly, because I know I will forget many.
+I also want to thank everybody who gave me suggestions for improvements, pointed out mistakes or translated this tutorial (or one of its previous versions). I don't want to name any of you explicitly, because I know I will forget many.
 
-For this second edition I made use of \href{http://cube.crider.co.uk/visualcube.php}{visualcube}\footnote{\url{http://cube.crider.co.uk/visualcube.php}%, although I have acutally used the version hosted at \url{http://stachu.cubing.net/v/}, because of problems with png images.
-} and \href{https://alg.cubing.net/}{alg.cubing.net}\footnote{\url{https://alg.cubing.net/}}, so a special thanks goes also to the creators of this two tools, respectively Conrad Rider and Lucas Garron.
+For this edition I made use of \href{http://cube.crider.co.uk/visualcube.php}{visualcube}\footnote{\url{http://cube.crider.co.uk/visualcube.php}%, although I have acutally used the version hosted at \url{http://stachu.cubing.net/v/}, because of problems with png images.
+} and \href{https://alg.cubing.net/}{alg.cubing.net}\footnote{\url{https://alg.cubing.net/}}, so a special thanks goes also to the creators of this two tools, Conrad Rider and Lucas Garron respectively.
 
 \section*{Disclaimer}
 
@@ -182,7 +185,7 @@ FMC is an official event recognized by the WCA (World Cube Association), the org
 \end{itemize}
 \item The solution:
 \begin{itemize}
-\item Has to be submitted written in the \href{https://www.worldcubeassociation.org/regulations/\#12a}{OBTM notation}\footnote{\url{https://www.worldcubeassociation.org/regulations/\#12a}}: allowed moves are rotations (\m x, \m{y2}\dots), single-layer moves (\m{R}, \m{U2}, \m {L\p}\dots) and wide moves (\m{Rw2}, \m{Fw\p}\dots) but not inner-layer moves (\m M, \m E, \m S\dots); for the final results, rotations are not counted, while each other move counts as 1;
+\item Has to be submitted written in the \href{https://www.worldcubeassociation.org/regulations/\#12a}{OBTM notation}\footnote{\url{https://www.worldcubeassociation.org/regulations/\#12a}}: allowed moves are rotations (\m x, \m{y2}\dots), single-layer moves (\m{R}, \m{U2}, \m {L\p}\dots) and wide moves (\m{Rw2}, \m{Fw\p}\dots) but not inner-layer moves (\m M, \m E, \m S\dots); For the final result, rotations are not counted, while each other move counts as 1;
 \item Has to be at most 80 moves long (including rotations);
 \item Must not be related to the scramble in any way; in addition, the competitor must be able to explain each move in his solution.
 \end{itemize}
@@ -195,7 +198,7 @@ FMC is an official event recognized by the WCA (World Cube Association), the org
 \caption{Example of official scramble sheet.}
 \end{figure}
 
-In order to enforce the last rule, since 2016 scrambles are generated so that they begin and end with the sequence \m{R\p} \m U \m F.
+In order to enforce the last rule, since 2016 scrambles are generated so that they begin and end with the sequence \m{R\ps U\ps F}.
 
 The best results ever achieved in competition are 16 moves for the single shortest solution and 22.00 moves for the average of three attempts, while the current world champions (Firstian Fushada, Indonesia and Christopher Chi, USA) got their title with an average of 25.33 moves.
 
@@ -209,7 +212,7 @@ Whatever your main method is, forcing yourself to only use that method is the wo
 
 For example, suppose you have built a 2x2x3 block; now you have many possibilities: you can place the last ``cross'' edge and finish the F2L (CFOP), you can orient edges (Petrus) or try to build more blocks freely (FreeFOP, Heise) and so on. Any of this methods may lead to a good solution, so the best thing to do is to \textbf{try to use them all} (or most of them at least).
 
-The best way to open your mind and learn how to think outside the box is, maybe a little paradoxically, to \textbf{get into many ``boxes''}, that is to learn many methods. Here I will briefly describe those that are, in my opinion, the most useful methods for FMC, without talking about their development history nor their pro/cons in speedsolving. For each of these methods I will provide a link to an online tutorial, but I suggest you look for more information about them online, for example on speedsolving.com. The
+The best way to open your mind and learn how to think outside the box is, maybe a little paradoxically, to \textbf{get into many ``boxes''}, that is, to learn many methods. Here I will briefly describe those that are, in my opinion, the most useful methods for FMC, without talking about their development history nor their pro/cons in speedsolving. For each of these methods I will provide a link to an online tutorial, but I suggest you look for more information about them online, for example on speedsolving.com. The
 \href{https://www.speedsolving.com/forum/threads/beginners-guide-to-choosing-a-speedsolving-method.43471/}{\emph{Beginner's Guide to Choosing a Speedsolving Method}}\footnote{\url{https://www.speedsolving.com/forum/threads/beginners-guide-to-choosing-a-speedsolving-method.43471/}} on the speedsolving forum, although mainly intended for speedsolving, is a good starting point for getting more information about the 4 most commonly used methods (CFOP, Roux, ZZ and Petrus).
 
 \section{Petrus}
@@ -223,9 +226,9 @@ Petrus' steps are the following:
 \item Solve the last layer (originally divided into 3 steps).
 \end{enumerate}
 
-Having a good \textbf{blockbuilding}\footnote{``Blockbuilding'' or ``block-building'' is the technique that consists of making blocks of pieces and then joining them together. It is often seen in opposition to the way of building the F2L used in CFOP (see below), but this can also be seen as a kind of blockbuilding. A more suitable contrast is given by comparing it to other techniques, such as edge orientation (Petrus, ZZ), ``Corners First'' solving, using algorithms or commutators. All of these techniques are explained in this book.} skill is mandatory if you want to get good at FMC, and practicing Petrus is the best way to acquire it. To learn how to solve steps 1 and 2 efficiently, you need to think and try to explore different ways of building blocks every time; it is also very useful to study \textbf{reconstructions of expert cubers' solves}. For the first step it is also helpful to compare your solutions with the optimal ones, given by an optimal solver\footnote{For example \href{https://www.speedsolving.com/forum/threads/harcs-jarcs-replacement-cube-solver.63241/}{HARCS}, freely available online: \url{https://www.speedsolving.com/forum/threads/harcs-jarcs-replacement-cube-solver.63241/}}, since for an expert it should be (almost) always possible to find an optimal 2x2x2 block.
+Having a good \textbf{blockbuilding}\footnote{``Blockbuilding'' or ``block-building'' is a technique that consists in making blocks of pieces and then joining them together. It is often seen in opposition to the way of building the F2L used in CFOP (see below), but this can also be seen as a kind of blockbuilding. A more suitable contrast is given by comparing it to other techniques, such as edge orientation (Petrus, ZZ), ``Corners First'' solving, using algorithms or commutators. All of these techniques are explained in this book.} skill is mandatory if you want to get good at FMC, and practicing Petrus is the best way to acquire it. To learn how to solve steps 1 and 2 efficiently, you need to think and try to explore different ways of building blocks every time; it is also very useful to study \textbf{reconstructions of expert cubers' solves}. For the first step it is also helpful to compare your solutions with the optimal ones, given by an optimal solver\footnote{For example \href{https://www.speedsolving.com/forum/threads/harcs-jarcs-replacement-cube-solver.63241/}{HARCS}, freely available online: \url{https://www.speedsolving.com/forum/threads/harcs-jarcs-replacement-cube-solver.63241/}}, since for an expert it should be (almost) always possible to find an optimal 2x2x2 block.
 
-Step 3 teaches you how to recognize an edge's orientation regardless its position in the cube. This is another important skill, since flipped edges are one of the worst thing you may come across during an FMC solve. For this step, as well as for step 4, ZZ may be a better teacher than Petrus.
+Step 3 teaches you how to recognize an edge's orientation regardless of its position in the cube. This is another important skill, since flipped edges are one of the worst thing you may come across during an FMC solve. For this step, as well as for step 4, ZZ may be a better teacher than Petrus.
 
 You don't have to learn every algorithm for solving the last layer (the same is true for other methods too). In the next chapter I will explain in detail how you should proceed. For now it is enough to be aware that the ``last layer'' step usually is not included in Fewest Moves solutions.
 
@@ -242,7 +245,7 @@ Lars Petrus Website: \url{http://lar5.com/cube/}.
 
 Petrus is an excellent method to learn blockbuilding, but forcing yourself to only use Petrus is still wrong: learning also Roux (especially the first 2 steps) will make your skill in some sense more complete. Also for this method it will be useful to study solutions of more expert cubers.
 
-For step 3 it still stands what was said about last layer algorithms, while step 4 is to be avoided like plague (at least, avoid solving it in the ``standard'' way, i.e. using only M and U moves): remember that every inner layer move, like M, is worth 2 moves in standard metric!
+For step 3 it still stands what was said about last layer algorithms, while step 4 is to be avoided like plague (at least, avoid solving it in the ``standard way'' using only M and U moves): remember that every inner layer move, like M, is worth 2 moves in standard metric!
 
 Waffle's Roux Tutorial: \url{http://wafflelikescubes.webs.com/}.
 
@@ -257,12 +260,12 @@ Kian Mansour's Roux Tutorial: \url{https://sites.google.com/view/kianroux/home}.
 
 As mentioned earlier, recognizing and solving edge orientation is a very useful skill and ZZ is surely the best way to learn it. At first sight ``orienting edges'' can be hard, because it is a more abstract concept than ``building blocks'', but don't panic, it gets way easier with practice!
 
-Step 2 is more or less the same as Petrus' step 4, but you have to build the blocks on both R and L side at the same time\footnote{For speedsolving, it may be better to solve one block at the time, since it is usually more ergonomic. But this is not the case for FMC, as efficiency (i.e. number of moves) is the only thing that matters!}. This is also going to improve your blockbuilding skills.
+Step 2 is more or less the same as Petrus' step 4, but you have to build the blocks on both R and L side at the same time\footnote{For speedsolving, it may be better to solve one block at the time, since it is usually more ergonomic. But this is not the case for FMC, as efficiency (number of moves) is the only thing that matters!}. This is also going to improve your blockbuilding skills.
 
 \section{CFOP (Fridrich) and FreeFOP}
 In classic CFOP the steps are the following:
 \begin{enumerate}
-\item Cross (4 edges on the same side).
+\item Cross (solve 4 edges on the same side).
 \item 4 corner/edge pair insertions.
 \item OLL (Orient Last Layer).
 \item PLL (Permute Last Layer).
@@ -293,23 +296,23 @@ Despite its simplicity, this method can be very useful in FMC.
 \section{Heise}
 \begin{enumerate}
 \item Build four 2x2x1 ``squares'' (all sharing one colour).
-\item Match the squares and orient edges.
-\item Solve the remaining 5 edges and 2 corners.
+\item Match the squares and orient edges, obtaining an ``F2L-1''\footnote{With ``F2L-1'' I mean an F2L minus a coner/edge pair.}.
+\item Solve the remaining 5 edges and 2 of the remaining corners.
 \item Solve the last 3 corners using a commutator.
 \end{enumerate}
 
 If you decided not to follow the experts' advice and use only one method for FMC, Heise would be a good choice. This method alone can lead to and average of fewer than 40 moves for linear\footnote{As in ``linear'' FMC, that is without trying different possibilities and/or cancelling or undoing moves.} solves. It is an extreme method, but also extremely efficient.
 
-The first two steps are a strange but efficient way of building an F2L-1\footnote{With ``F2L-1'' I mean an F2L minus a coner/edge pair.} and orient all edges. The ``don't restrict yourself'' and ``exploit different situations'' concepts is perfectly applied, allowing one to solve the blocks in whatever the best way is.
+The first two steps are a strange but efficient way of building an F2L-1 and orienting all edges. The ``don't restrict yourself'' and ``exploit different situations'' concepts is perfectly applied, allowing one to solve the blocks in whatever the best way is.
 
 The third step is complex, but it is a more efficient alternative to finishing the first two layers and then solving the last layer using algorithms. Practicing it will give you the ability to build and move around blocks when you are limited by the quantity of blocks already built (and this is the reason why this step is so difficult).
 
 For the last step you will need commutators; it allows, in an FMC solve, to use insertions (both these techniques will be explained in the next chapter).
 
-Heise method's page on Ryan Heise's website: \url{http://www.ryanheise.com/cube/heise_method.html}. There you can find not only a detailed explanation of his method, but also other useful information (see for example the \href{http://www.ryanheise.com/cube/fundamental_techniques.html}{\emph{Fundamental Techniques} page}).
+Heise method's page on Ryan Heise's website: \url{http://www.ryanheise.com/cube/heise_method.html}. There you can find not only a detailed explanation of the method, but also other useful information (see for example the \href{http://www.ryanheise.com/cube/fundamental_techniques.html}{\emph{Fundamental Techniques} page}).
 
 \section{What and how to learn}
-Obviously, getting fast with all of the methods described is not your goal. Doing some speedsolves may help seeing some things faster and is fun, but \textbf{we don't care about speed}. Since our goal is to solve the cube with the fewest moves possible, you should try to be efficient. It is also essential to be \textbf{color neutral}\footnote{Being able to solve the cube by starting with any ``colour''; for example, starting from any cross in CFOP or from any of the 8 possible 2x2x2 blocks in Petrus.} and it can be helpful trying to work with \textbf{``Non Matching Blocks''}\footnote{Sometimes also called ``Pseudo Blocks'', especially in FMC. It is a useful technique in Roux, ZZ and Heise, but it can be used in other methods as well. It consists of building blocks that are different from the ones you should build if you are following the method, but that can be placed in the same ``slots''. For example, in Roux, the second 3x2x1 block can be any of the 4 that can be built on the side opposed to the first one. This technique is very powerful if combined with premoves, that will be explained in Chapter 3.}.
+Obviously, getting fast with all of the methods described is not your goal. Doing some speedsolves may help seeing some things faster and is fun, but \textbf{we don't care about speed}. Since our goal is to solve the cube with the fewest moves possible, you should try to be efficient. It is also essential to be \textbf{color neutral}\footnote{Being able to solve the cube by starting with any ``colour''; for example, starting from any cross in CFOP or from any of the 8 possible 2x2x2 blocks in Petrus.} and it can be helpful trying to work with \textbf{``non-matching blocks''}\footnote{Sometimes also called ``Pseudo Blocks'', especially in FMC. It is a useful technique in Roux, ZZ and Heise, but it can be used in other methods as well. It consists of building blocks that are different from the ones you should build if you are following the method, but that can be placed in the same ``slots''. For example, in Roux, the second 3x2x1 block can be any of the 4 that can be built on the side opposed to the first one. This technique is very powerful if combined with premoves, that will be explained in Chapter 3.}.
 
 But the main difference between speedsolving and fewest moves solving is that in FMC you can \textbf{try different possibilities}. If in Petrus, for example, you are left with 6 ``bad'' edges after a 2x2x3, you can try to build a different block from scratch or to slightly modify the construction of the block you have found to improve your situation\footnote{Trying to influence a later step while solving the current one is a good habit, which will be discussed again later.}.
 
@@ -317,7 +320,7 @@ Here is some piece of advice for some of the methods described.
 
 \subsection{Petrus}
 \begin{itemize}
-\item After completing a 2x2x2 block, you can expand it in \textbf{3 different directions}. Make sure to consider all of them!
+\item After completing a 2x2x2 block, you can expand it in \textbf{3 different directions}. Make sure you consider all of them!
 \item Try to build a 2x2x3 directly, instead of going through the 2x2x2 step.
 \item Try using Non Matching Blocks in step 4.
 \item In step 4 again, try influencing the last layer to get an easier case (even ``Heise style'').
@@ -340,19 +343,19 @@ Here is some piece of advice for some of the methods described.
 \subsection{CFOP/FreeFOP}
 \begin{itemize}
 \item \textbf{FreeFOP is better than CFOP}, at least because CFOP is a special case of FreeFOP, by definition. Try at least to build and \textbf{XCross}\footnote{Cross and first pair, built at the same time. It can also be seen as a 2x2x2 block + 2 edges.}.
-\item Try to influence the last layer edges' orientation, avoid the ``4 edges flipped'' cases; some ZBF2L algorithms can be useful, but instead of learning them by heart try to \textbf{study them to understand how they work}.
+\item Try to influence the last layer edges' orientation, avoid the ``4 edges flipped'' cases; some ZBLS algorithms can be useful, but instead of learning them by heart try to \textbf{study them to understand how they work}.
 \item Some optimal pair insertion algorithms are not well known (for example \m{F2 U R U\ps R\ps F2}): study them, again trying to understand them rather than learning them by heart.
 \item Try \textbf{``multislotting''}, that is inserting more pairs at the same time. The easiest case is when you use a D-layer move as setup, for example \m{D R U R\ps D\p}. There are algorithms for this technique available online, but I suggest trying in a ``free'' way: for example, look at how I have inserted the second, third and fourth pair in this solve: \url{https://www.speedsolving.com/forum/threads/the-3x3x3-example-solve-thread.14345/page-238#post-1013053}.
 \end{itemize}
 
 \chapter{How to proceed during a solve}
 
-To quote Per Kristen Fredlund, the general way to proceed is the following\footnote{\url{http://www.speedsolving.com/forum/threads/fewest-moves-tips-and-techniques.1566/##post-16209}}:
+To quote Per Kristen Fredlund, the general way to proceed is the following\footnote{\url{https://www.speedsolving.com/threads/fewest-moves-tips-and-techniques.1566/\#post-16209}}:
 
 \begin{center}“\emph{Think of it more like so: solve the cube in 2 stages where stage 1 solves as many pieces as possible as efficiently as possible (i.e.: make a good skeleton\footnote{A partial solution, where only a few pieces (usually from 2 to 6) are left to be solved.}). The second step is fixing the unsolved pieces, typically by inserting algorithms into the skeleton\footnote{Technique that allows to solve a few pieces by inserting moves somewhere earlier in the solve. It will be explained soon, be patient!}''.}
 \end{center}
 
-This is the general approach, but you don't need to use it every time: sometimes you can find a very short solution by, for example, solving the F2L with blockbuilding and then finishing the last layer with an algorithm. There are also different ways to proceed, two of which will be explained in Chapter 4.
+This is the general approach, but you don't need to use it every time: sometimes you can find a very short solution by, for example, solving the F2L with blockbuilding and then finishing the last layer with an algorithm. There are also different ways to proceed.
 
 If this description seems too generic, it is because it can't be differently: there isn't a standard method that allows you to always get good results, \textbf{you should always try as many strategies as you can}, so that you don't miss any chance.
 
@@ -362,7 +365,7 @@ Here I will describe some basic techniques used in FMC solves. You have already 
 
 Blockbuilding is probably the most important technique in FMC. It is a simple concept, but it requires a lot of practice to be mastered. Practicing blockbuilding-based methods (Petrus, Roux, Heise and ZZ), in the ways described above, is the most direct way to improve at blockbuilding.
 
-Here I will list some fundamental techniques that can come in handy; the first ones are taken from Ryan Heise's website (\url{www.ryanheise.com/cube}), which is full of examples: look them up!
+Here I will list some fundamental techniques that can come in handy; the first ones are taken from Ryan Heise's website (\url{https://www.ryanheise.com/cube/}), which is full of examples: look them up!
 
 \subsection{Align then join}
 \label{align-join}
@@ -441,7 +444,7 @@ Let's ignore the last layer and pretend not to know that \m{U R U\ps R\p} obviou
 \bigskip
 \m{R\p}\comment{``Destroy''}
 
-\m{F}\comment{``Move it out of the Way''}
+\m{F}\comment{``Move it out of the way''}
 
 \m R\comment{``Restore''}
 
@@ -477,12 +480,12 @@ Scramble: \m{U\ps R\ps L F\ps B U2 R2 B2 L\ps B R D F2 D2 L2 F2 D\ps R2 F2}\\
 
 \subsection{One move, two goals}
 
-It is often possible to use only one move to build two blocks or, in general, to ``get two things done''. An example will make this clearer.\footnote{Clarification: the solution was found independently by both, not in cooperation}
+It is often possible to use only one move to build two blocks or, in general, to ``get two things done''. An example will make this clearer.
 
 \bigskip
 \begin{tabular}{|p{0.91\textwidth}|}
 \hline
-\textbf{Example (by Mirek Goljan and Guus Razoux-Schultz})\\
+\textbf{Example (by Mirek Goljan and Guus Razoux-Schultz})\footnote{Clarification: the solution was found independently by both, not in cooperation.}\\
 \hline
 Scramble: \m{D U\ps F2 U\ps R\ps F R2 B D\ps B R F B\ps U R\ps D2 L\ps R2 F2 B\ps U\ps B D B2 F2 U L F U\ps B2}\\
 \hline
@@ -491,7 +494,7 @@ Scramble: \m{D U\ps F2 U\ps R\ps F R2 B D\ps B R F B\ps U R\ps D2 L\ps R2 F2 B\p
 \m{U2 B R2 B} \comment{Pseudo F2L-1 (4/8)}\\
 \m{F\ps * U F R U2 R\p} \comment{Pseudo F2L (6/14)}\\
 \m{U2 R2} \comment{All but 3 corners (2/16)}\\
-\m{* = B\ps U F2 U\ps B U F2 U\p} \comment{Last 3 corners (3/19)}
+\m{* = B\ps U F2 U\ps B U F2 U\p} \comment{Last 3 corners (8-5/19)}
 \end{minipage}
 \begin{minipage}[c]{0.25\textwidth}
 \includesvg{img/mirek-guus}
@@ -504,13 +507,13 @@ Solution: \m{L U\ps F2 D\ps U2 B R2 F\ps U F2 U\ps B U F\ps R U2 R\ps U2 R2} (19
 \end{tabular}
 \bigskip
 
-If you don't know about insertions yet, ignore the last line. In fact the only line we are concerned with is the first one, especially the red \m{F2} move: notice how that single move builds the 2x2x1 block in DF and places the orange-green edge at the same time, which allows to build the 2x2x2 with the next move.
+If you don't know about insertions yet, ignore the last line. In fact the only line we are concerned with is the first one, especially the red \m{F2} move: notice how that single move builds the 2x2x1 block in DF and places the orange-green edge at the same time, which allows to build the 2x2x2 block with the next move.
 
 Situations like this may arise without forcing them, but it useful to learn to recognize them, in case they don't.
 
 \subsection{Influence later steps}
 
-We have already (quickly) talked about influencing the LL step while finishing the F2L\footnote{Notable examples are ZBLS (sometimes less properly called ZBF2L) and Winter Variation, but there are many more: look them up!}. This idea also applies to blockbuilding: it is often better to build a block sub-optimally\footnote{``Sub-optimal'' (or ``suboptimal'', without the -) refers to a solution (complete or partial) that uses more moves than the best possible one.}, or to add some ``unnecessary'' moves to have a better continuation, blockbuilding or else (i.e., edge orientation).
+We have already (briefly) talked about influencing the LL step while finishing the F2L\footnote{Notable examples are ZBLS (sometimes less properly called ZBF2L) and Winter Variation, but there are many more: look them up!}. This idea also applies to blockbuilding: it is often better to build a block sub-optimally\footnote{``Sub-optimal'' (or ``suboptimal'', without the -) refers to a solution (complete or partial) that uses more moves than the best possible one.}, or to add some ``unnecessary'' moves to have a better continuation, blockbuilding or else (for example edge orientation).
 
 For example, consider the following scramble.
 
@@ -533,22 +536,22 @@ Scramble: \m{L2 D2 U R2 F2 D2 B2 U\ps R2 B2 U B U F D B2 U L D\ps R\ps F}\\
 \end{tabular}
 \bigskip
 
-As you can see, the sequence \m{L2 R B} builds the red-blue-white square, but if you add just one move (the red \m{B}) the square become 2.
+As you can see, the sequence \m{L2 R B} builds the red-blue-white square, but if you add just one move (the red \m{B}) the squares become 2.
 
 \subsection{Pay attention to EO}
 \label{EO_attention}
 
 Here EO is the common shortcut for Edge Orientation.
 
-Someone may have noticed, while studying different methods, that “Edges Orientation” is a recurring step. As said before, \textbf{the more bad edges there are, the harder things will be}. Orienting edges at the end is usually not efficient. Orienting them first, as in ZZ, is convenient, but it can be limiting for the blockbuilding phase.
+Someone may have noticed, while studying different methods, that “Edge Orientation” is a recurring step. As said before, \textbf{the more bad edges there are, the harder things will be}. Orienting edges at the end is usually not efficient. Orienting them first, as in ZZ, is convenient, but it can be limiting for the blockbuilding phase.
 
-One of the best things to do is trying to solve, at least partially, edges orientation during the blockbuilding step. Experience with methods such as ZZ and Petrus can lead to being able to easily spot if an edge will be correctly oriented after some moves. If you don't have this ability yet, remember that in FMC solves you can go back and modify your solution every time you wish: if you have troubles with EO, try going back and add/change some moves to see if things get better (see also Section \ref{goback}).
+One of the best things to do is trying to solve, at least partially, edge orientation during the blockbuilding step. Experience with methods such as ZZ and Petrus can lead to being able to easily spot if an edge will be correctly oriented after some moves. If you don't have this ability yet, remember that in FMC solves you can go back and modify your solution every time you wish: if you have troubles with EO, try going back and add/change some moves to see if things get better (see also Section \ref{goback}).
 
 However, don't dismiss the ``EO first approach'' too quickly: notable cubers such as João Pedro Batista Ribeiro Costa (2015 World Champion) and Grzegorz Łuczyna (2010 European Champion) almost always start with edge orientation and other like Sébastien Auroux (2011 World Champion) and myself do it very often. For more details and examples see section \ref{eo}.
 
 \subsection{Which block should I build?}
 
-The golden rule is to exploit different situations: a 2x2x2 block, a 3x2x1, two 2x2x1 squares and many other kind of blocks can be a good start. Try out every possibility.
+The golden rule is to exploit different situations: a 2x2x2 block, a 3x2x1, two 2x2x1 squares and many other kinds of blocks can be a good start. Try out every possibility.
 
 Two possible approaches are:
 \begin{enumerate}
@@ -586,7 +589,7 @@ Another rule is: \textbf{never\footnote{But a more important rule is: never say 
 \subsection{Ready-made blocks: how to deal with them?}
 \label{ready-made}
 
-It can happen that you find some blocks already built after scrambling the cube, or that with the first moves you unintentionally build some more blocks (mostly corner/edge pairs). In this cases it is preferable to exploit those blocks rather than giving them and up and going on your own way. How? There are three ways:
+It can happen that you find some blocks already built after scrambling the cube, or that with the first moves you unintentionally build some more blocks (mostly corner/edge pairs). In these cases it is preferable to exploit those blocks rather than giving them and up and going on your own way. How? There are three ways:
 
 \begin{enumerate}
 \item Expand / match the ready-made blocks first; the obvious thing to do.
@@ -600,17 +603,17 @@ Moreover, it is very important, but terribly difficult, to \textbf{understand wh
 
 ``Getting fast'' is not to be intended as in speedsolving, but as ``finding faster a good blockbuilding start\footnote{A ``start'' can be a 2x2x2, a 3x2x1, some smaller blocks or, in some cases, a 2x2x3; in general, anything from the first 2 to the first 7 moves.}''. Being fast at finding a good start is very important, because it saves time (one hour isn't that long!) and you should try to explore, or at least to notice, every promising start.
 
-The simplest kind of block is the corner/edge pair, or 2x1x1 block. There will probably be one already made in a scramble, without making any move. If there is one (or more than one), you can deal with it in one of the ways described in the previous section \ref{ready-made}. If there isn't any, you should learn how to recognize at sight pairs that can be made with one move (see \ref{align-join} ``Align Then Join''). If you are not fast at recognizing them yet, or if you want to avoid some effort\footnote{Since you need to keep thinking for an hour, avoiding unnecessary mental effort is a good habit.}, you can use the ``Brute Force'' strategy: try all possible moves, starting with \m U, \m{U2}, \m{U\p}, then \m R, \m{R2}, \m{R\p}, and so on, checking after each move if you did build a pair.
+The simplest kind of block is the corner/edge pair, or 2x1x1 block. There will probably be one already made in a scramble, without making any move. If there is one (or more than one), you can deal with it in one of the ways described in the previous section \ref{ready-made}. If there isn't any, you should learn how to recognize at sight pairs that can be made with one move (see \ref{align-join} ``Align then join''). If you are not fast at recognizing them yet, or if you want to avoid some effort\footnote{Since you need to keep thinking for an hour, avoiding unnecessary mental effort is a good habit.}, you can use the ``Brute Force'' strategy: try all possible moves, starting with \m U, \m{U2}, \m{U\p}, then \m R, \m{R2}, \m{R\p}, and so on, checking after each move if you did build a pair.
 
 A more advanced technique, more useful but requiring more thinking, consists in checking every possible 2x2x2 (there are 8 of them). You can do it this way: \textbf{for each corner, look for its three matching edges} and try to see which way you can join them to make that 2x2x2 block. Try not to make any ``test'' moves, so that you can do the same for the other corners without re-scrambling. Usually, if I see a very bad 2x2x2 block (one that requires too many moves) I just ignore it and go on. This technique, besides enabling you to find, most of times, an optimal 2x2x2 block (which is usually a good starting point), gives you an idea of where every piece is on the cube.
 
-Another reason why I suggest trying to ``see'' every move for making the 2x2x2 without performing them is that to get faster and better at blockbuilding it is useful to be able to ``calculate''\footnote{The word ``calculate'' should be intended as in chess: a player is said to ``calculate'' 6, 7 or 8 moves if he can think of the possible moves and counter-moves for a total of 6, 7 or 8 moves.} pieces' movements without seeing them. Alexander Lau (2014 Rubik's Cube European Champion and Roux method master) is able, in the 15 seconds given to inspect the cube before a speedsolve, to plan a whole 3x2x1 block (Roux first step). His planning is so accurate that while solving this block he can look-ahead\footnote{In speedsolving, ``look-ahead'' (with or without the -) is the ability to think about later step while you are solving another one.} and (partially) plan the second block.
+Another reason why I suggest trying to ``see'' every move for making the 2x2x2 without performing them is that to get faster and better at blockbuilding it is useful to be able to ``calculate''\footnote{The word ``calculate'' should be intended as in chess: a player is said to ``calculate'' 6, 7 or 8 moves if he can think of the possible moves and counter-moves for a total of 6, 7 or 8 moves.} pieces' movements without seeing them. Alexander Lau (2014 Rubik's Cube European Champion and Roux method master) is able, in the 15 seconds given to inspect the cube before a speedsolve, to plan a whole 3x2x1 block (Roux first step). His planning is so accurate that while solving this block he can look-ahead\footnote{In speedsolving, ``look-ahead'' (with or without the -) is the ability to think about the following step while you are solving another one.} and (partially) plan the second block.
 
 You can train your planning ability with this game: ask a friend to scramble your cube with 3 moves and then try to find those 3 moves\footnote{You can choose between HTM, QTM or STM, but agree on which metric to use first!} (it should be easy). Then try with 4 moves, and so on. Depending on your level, you may find it difficult once you reach 6, 7 or 8 moves. If you get without problem to 9 or 10 moves, congratulations!
 
 \section{Find a good skeleton}
 
-Once you have reached good point (for example an F2L-1) with blockbuilding, it is hard to go on with the techniques just described. Your goal now is to find a so-called ``skeleton'', i.e. a partial solution that only leaves a few pieces unsolved. The best situation is the one with 3 corners unsolved, where the pieces form a 3-cycle\footnote{A 3-cycle is a cycle of 3 pieces. For example, the A and U perm PLL cases are 3-cycles, as well as the algorithm \m{L F R F\ps L\ps F R\ps F\p} (Niklas).}, but also 4 or 5 corners or 3 edges can be good, depending on how many moves you need to build the skeleton.
+Once you have reached good point (for example an F2L-1) with blockbuilding, it is hard to go on with the techniques just described. Your goal now is to find a so-called ``skeleton'', that is, a partial solution that only leaves a few pieces unsolved. The best situation is the one with 3 corners unsolved, where the pieces form a 3-cycle\footnote{A 3-cycle is a cycle of 3 pieces. For example, the A and U perm PLL cases are 3-cycles, as well as the algorithm \m{L F R F\ps L\ps F R\ps F\p}.}, but also 4 or 5 corners or 3 edges can be good, depending on how many moves you need to build the skeleton.
 
 What should we do then, if the blockbuilding techniques we have seen are difficult to use without destroying what we have just built? Heise is an excellent starting point. And I mean both the method and the website: step 3 is accurately described, in particular the ``Two Pairs Approach'': see \url{http://www.ryanheise.com/cube/two_pairs.html}.
 
@@ -625,7 +628,7 @@ To sum it up, the possible approaches to get a skeleton are many and the best wa
 
 Some deliberate practice can also be helpful: on qqTimer (\url{http://www.qqtimer.net/}) you can choose the scramble type 3x3x3 subsets $\rightarrow$ last slot + last layer.
 
-You obviously don't have to build an F2L-1 before completing your skeleton, but is often the easiest way. In any case, try to save small blocks (pairs or 2x2x1 squares) made by LL pieces, if some of them happen to get built.
+You obviously don't have to build an F2L-1 before completing your skeleton, but it is often the easiest way. In any case, try to save small blocks (pairs or 2x2x1 squares) made of LL pieces, if some of them happen to get built.
 
 \section{Commutators}
 
@@ -635,7 +638,7 @@ According to speedsolving's definition\footnote{\url{http://www.speedsolving.com
 \m{A B A\ps B\p}
 \end{center}
 
-where \m A and \m B are move sequences and \m{X\p} is the inverse sequence of \m X\footnote{For example, the inverse of \m{U R} is \m{R\ps U\p}, not \m{U\ps R\p} or \m{R U}!}. Such a commutator can be written in compact notation as
+where \m A and \m B are move sequences and \m{X\p} denotes the inverse sequence of \m X\footnote{For example, the inverse of \m{U R} is \m{R\ps U\p}, not \m{U\ps R\p} or \m{R U}!}. Such a commutator can be written in compact notation as
 
 \begin{center}
 \m{[A, B]}
@@ -654,9 +657,9 @@ Taking instead \m A = \m R and \m B = \m{U\ps L\ps U} gives the ``Niklas'':
 \m{[R, U\ps L\ps U]} = \m{R U\ps L\ps U R\ps U\ps L U}
 \end{center}
 
-Often, in practice, ``commutator'' is used as ``commutator that solves a 3-cycle''. So for example the ``sexy move'' is not usually regarded as a commutator, while the ``Niklas'' is. In what follows, we will use the word ``commutator'' this meaning too.
+Often, in practice, ``commutator'' is used as ``commutator that solves a 3-cycle''. So for example the ``sexy move'' is not usually regarded as a commutator, while the ``Niklas'' (\m{R U\ps L\ps U R\ps U\ps L U = [R, U\ps L\ps U]}) is. In what follows, we will use the word ``commutator'' with this meaning too.
 
-In contrast with blockbuilding, that solves a lot pieces but heavily influencing the rest of the cube, commutators solve fewer pieces leaving all the others where they were. Therefore, together with blockbuilding and insertions (which we will see in the next section), commutators are the basis for a good FMC solve.
+In contrast with blockbuilding, that solves a lot pieces but heavily influencing the rest of the cube, commutators solve fewer pieces leaving all the others where they are. Therefore, together with blockbuilding and insertions (which we will see in the next section), commutators are the basis for a good FMC solve.
 
 \subsection{Corner commutators}
 
@@ -666,14 +669,14 @@ Corner commutators are the most useful kind of commutators in FMC. We have alrea
 \m{R2 B2 R F R\ps B2 R F\ps R} = \m{R2 [B2, R F R\p] R2}
 \end{center}
 
-where we have cancelled\footnote{In a sequence of moves, we say that one or more moves \emph{cancel} if there are consecutive moves that can be merged together (as in our example \m{R\ps R2} = \m R) or that are one inverse to the other (such as \m{L L\p}). For example, if our F2L ends with \dots\m{U R2 F\p}, and we want to use the algorithm \m{F R U R\ps U\ps F\p}, 3 moves cancel:
+where we have cancelled\footnote{In a sequence of moves, we say that one or more moves \emph{cancel} if there are consecutive moves that can be merged together (as in our example \m{R\ps R2} = \m R) or that are one inverse to the other (such as \m{L L\p}). For example, if our F2L ends with \dots\m{U R2 F\p}, and we want to use the last layer algorithm \m{F R U R\ps U\ps F\p}, 3 moves cancel:
 \dots\m{U R2 F F\ps R U R\ps U\ps F\p} = \m{U R\ps U R\ps U\ps F\p}.} the sequence \m{R\ps R2} to \m R.
 
 The three corners to be permuted need not be on the same layer: \m{[L D\ps L\p, U2]} = \m{L D\ps L\ps U2 L D L\ps U2} is also corner 3-cycle!
 
 To learn all kinds of corner commutator (which I will \emph{not} explain in this tutorial) I advise looking up \href{https://www.speedsolving.com/forum/threads/bh-tutorial.12268/}{Brian Yu's tutorial} on speedsolving.com\footnote{\url{https://www.speedsolving.com/forum/threads/bh-tutorial.12268/}}, since it is very well made. It used to consist of both a written part and some videos, but the videos are unfortunately not available anymore.
 
-For FMC you only need to know ``pure'' 8 moves commutators. For example, the Niklas is a pure commutator, while the A perm is not. Take a look at A9s and other cases if you want, but, as we will see when talking about insertions, you will almost never\footnote{Even in this case there are exceptions: see for example this post by Tomoaki Okayama and the following discussion: \url{https://www.speedsolving.com/threads/the-fmc-thread.13599/page-21##post-440873}.} need them in FMC.
+For FMC you only need to know ``pure'' 8 moves commutators. For example, the Niklas is a pure commutator, while the A perm is not. Take a look at A9s and other cases if you want, but, as we will see when talking about insertions, you will almost never\footnote{Even in this case there are exceptions: see for example this post by Tomoaki Okayama and the following discussion: \url{https://www.speedsolving.com/threads/the-fmc-thread.13599/page-21\#post-440873}.} need them in FMC.
 
 On rare occasions, 10 moves ``sledge insertion'' corner commutators such as \m{[R\ps F R F\p, D2]} may be useful, because they may cancel many more moves than the standard 8 moves commutators.
 
@@ -706,8 +709,7 @@ Remember that in official competitions you can't write a inner layer moves, so t
 \end{center}
 
 Notice how the first two moves (\m{R\ps L}) can be swapped. This is true for every pair of parallel (i.e. opposite) moves.
-
-Another thing you need to notice is that the first two moves don't affect any of the 3 edges we want to cycle: \m{R\ps L F2 R L\ps U2} is therefore equivalent to \m{L F2 R L\ps U2 R\ps}, to \m{F2 R L\ps U2 R\ps L} and, since we can invert \m{R\p} and \m L, to \m{R\ps F2 R L\ps U2 L}.
+Another thing you need to notice is that the first two moves don't affect any of the 3 edges we want to cycle: \m{R\ps L F2 R L\ps U2} is therefore equivalent to \m{L F2 R L\ps U2 R\p}, to \m{F2 R L\ps U2 R\ps L} and, since we can invert \m{R\p} and \m L, to \m{R\ps F2 R L\ps U2 L}.
 
 These observations are particularly useful when you want to cancel moves, that is making the first moves of our commutator (or, in general, any sequence of moves we want to apply) correspond to the inverse of the preceding moves (or that the last moves correspond to the inverse of the following ones).
 
@@ -773,7 +775,7 @@ The idea behind insertions is not too difficult: if there are only 3 corners lef
 
 This is how to solve almost always a 3-cycle of corners with 8 moves. How can we improve on this? Among all possible inserted commutators that solve our 3-cycle, we simply choose the one that \textbf{cancels the most moves}. Usually, it is enough to just check the cases where our 3 corners can be solved with a ``pure'' commutator, and then choose the best one. It happens extremely rarely that the best insertion is given by a 9 move commutator (or longer), but situations like this are so unlikely that it is not worth to check every possible type of commutator.
 
-In order to make it easier to follow the movements of the 3 corners while going through your skeleton, I suggest marking those three corners with white stickers\footnote{You are allowed to bring with you “unlimited colored stickers” at a competition.} on which writing numbers 1, 2 and 3 (or letters A, B and C if you prefer)\footnote{The stickers need to be attached so that the 3-cycle that moves 1 to 2, 2 to 3 and 3 to 1 is the one that solves the cube.}. In the past I used to take a cheap cube with non-bright stickers and write on it with a pencil; this is another viable option.
+In order to make it easier to follow the movements of the 3 corners while going through your skeleton, I suggest marking those three corners with white stickers\footnote{You are allowed to bring with you “unlimited colored stickers” at a competition.} on you can write the numbers 1, 2 and 3 (or letters A, B and C if you prefer)\footnote{The stickers need to be attached so that the 3-cycle that moves 1 to 2, 2 to 3 and 3 to 1 is the one that solves the cube.}. In the past I used to take a cheap cube with non-bright stickers and write on it with a pencil; this is another viable option.
 
 An example solve will make everything clearer. Try the following skeleton.
 
@@ -799,7 +801,7 @@ Scramble: \m{D B2 U\ps F2 L2 D2 R2 U F2 U2 L2 R\ps D2 B L\ps U\ps R2 F2 R B F2}\
 \end{tabular}
 \bigskip
 
-Now put a white sticker on the red sticker of the blue-red-yellow corner and write a ``1'' on it. Similarly, write a ``2'' on the orange sticker of the blue-yellow-orange corner and a ``3'' on the white sticker of the orange-blue-white corner.\footnote{There are many equivalent enumerations: you can start from the corner and from the sticker you wish, you just have to be \emph{coherent}.} Solve the cube (for example with \m{L B2 L F L\ps B2 L F\ps L2}) and re-scramble it.\footnote{If you feel confident with inverting moves, you can instead just apply the skeleton moves backwards, starting with \m{L R U2 L\p}...}
+Now put a blank sticker on the red sticker of the blue-red-yellow corner and write a ``1'' on it. Similarly, write a ``2'' on the orange sticker of the blue-yellow-orange corner and a ``3'' on the white sticker of the orange-blue-white corner.\footnote{There are many equivalent enumerations: you can start from the corner and from the sticker you wish, you just have to be \emph{coherent}.} Solve the cube (for example with \m{L B2 L F L\ps B2 L F\ps L2}) and re-scramble it.\footnote{If you feel confident with inverting moves, you can instead just apply the skeleton moves backwards, starting with \m{L R U2 L\p}...}
 %At this point, grab a pencil and write ``1'' on the red sticker of the blue-red-yellow corner, ``2'' on the orange sticker of the blue-yellow-orange corner and ``3'' on the white sticker of the orange-blue-white corner.\footnote{There are many equivalent enumerations: you can start from the corner and from the sticker you wish, you just have to be \emph{coherent}.} Solve the cube (for example with \m{L B2 L F L\ps B2 L F\ps L2}) and re-scramble it.
 
 We could solve the three corners right at the beginning, but we would need 9 moves (\m{R2 F R B2 R\ps F\ps R B2 R}). So lets perform the first move of the skeleton (\m{B\p}) and see if we have a better case: no, still 9 moves. Perform the following move (\m{U\p})\footnote{Watch out: when in a skeleton there are two consecutive parallel layers moves try swapping them too see if this gives better insertions. This is not the case, but you never know.} we can now solve our three corners with an 8 moves commutator (\m{L2 F R F\ps L2 F R\ps F\p})! If we wanted to use it, the final solution to submit would be:
@@ -855,15 +857,17 @@ Without further explanation you should understand how to find insertions for a s
 
 and variations (try shifting)\footnote{You can also solve this case with a double insertion, as with corners double 2-cycles, see later sections.}. Another (more advanced) way of solving edges is using \textbf{free slices}; see Section \ref{slices}.
 
-One last tip: 180 degrees moves (such as \m{U2}) can be found at the beginning or at the end of an 8-moves corner commutator only when they are the \emph{interchange move}, i.e. when they swap two pieces on the same layer. This fact can be used to save some time: if you are aiming at cancelling two or more moves (and you should be) you can assume such a move won't cancel completely, unless it swaps two of you pieces, and only look for commutators that cancel with moves after (or before) that one.
+One last tip: 180 degrees moves (such as \m{U2}) can be found at the beginning or at the end of an 8-moves corner commutator only when they are the \emph{interchange move}, i.e. when they swap two pieces on the same layer. This fact can be used to save some time: if you are aiming at cancelling two or more moves (and you should be) you can assume such a move won't cancel completely, unless it swaps two of your pieces, and only look for commutators that cancel with moves after (or before) that one.
 
 \subsection{Multiple insertions: separated cycles (3 edges and 3 corners)}
 
 A skeleton doesn't have to always leave one 3-cycle: insertions can also be used to solve more (or longer) cycles.
 
-As we have already seen, two 3-cycles -- a corner 3-cycle and an edge 3-cycle -- can be solved with a \textbf{pair commutator} (with setup moves, if necessary). Another way is to solve the edges with a ``Sune'' (\m{R U R\ps U R U2 R\p}) or a variation of it, so that the only corners affected are the ones we need to cycle\footnote{Which still need to be solved somehow, possibly with another insertion.}. Both these ways should be kept in mind, but they are rarely easy to use. The ``standard'' solution is to insert \textbf{two commutators}.
+As we have already seen, two 3-cycles -- a corner 3-cycle and an edge 3-cycle -- can be solved with a \textbf{pair commutator} (with setup moves, if necessary). Another way is to solve the edges with a ``sexy move'', a ``Sune'' (\m{R U R\ps U R U2 R\p}) or a variation of them, so that the only corners affected are the ones we need to cycle\footnote{Which still need to be solved somehow, possibly with another insertion.}; see also Section \ref{3enc}. All these methods should be kept in mind, but they are rarely easy to use. The ``standard'' method is inserting \textbf{two commutators}.
 
-After having numbered both the corners and the edges\footnote{I prefer to use numbers for corners and letters for edges (or viceversa), so that I can't mistake one for another.}, proceed move by move as you would do with simple insertions, but at every spot you look both for a solution for corners and one for edges, besides checking for pair commutators and Sunes. Once you are done, you can write down the final solution with two insertions, but you can also \textbf{do another pass}: if you want to keep, for example, the corner commutator, but you want to look for a better edge cycle, you can write down your solution with only the corner commutator inserted. What you have now is a \textbf{new skeleton}, a few moves longer, which only leaves 3 edges. At this point you can solve them with one simple insertion. Why should we do this, when we could get anything to work with only one pass? Because a good place to insert the edge commutator can be \textbf{inside the other commutator}. You can also insert the edge cycle first and then look for a corner insertion.
+After having numbered both the corners and the edges\footnote{I prefer to use numbers for corners and letters for edges (or vice versa), so that I can't mistake one for another.}, proceed move by move as you would do with simple insertions, but at every spot you look both for a solution for corners and one for edges. Once you are done, you can write down the final solution with two insertions, but you can also \textbf{do another pass}: if you want to keep, for example, the corner commutator, but you want to look for a better edge cycle, you can write down your solution with only the corner commutator inserted. What you have now is a \textbf{new skeleton}, a few moves longer, which only leaves 3 edges. At this point you can solve them with one simple insertion.
+
+Why should we do this, when we could get anything to work with only one pass? Because a good place to insert the edge commutator can be \textbf{inside the other commutator}. You can also insert the edge cycle first and then look for a corner insertion.
 
 The following solve is a simple example.
 
@@ -895,7 +899,7 @@ Solution: \m{B\ps R\ps U B U\ps F2 U B\ps F2 R F R U2 F R B R2 B\ps F D\ps B\ps 
 
 Here I have used the notation ``(8-4/24)'', and similarly for edges, to mean that the (inserted) step is 8 moves long, but 4 of them cancel with moves around it.
 
-You can use exactly the same approach for other cases that require you to solve two or more cycles (3 cycles or double 2-cycles) that are separated (for example, when you have 6 corners left that can be solved with two commutators). In all other cases, things get a bit more complicated.
+You can use exactly the same approach for other cases that require you to solve two or more cycles (3-cycles or double 2-cycles) that are separated (for example, when you have 6 corners left that can be solved with two commutators). In all other cases, things get a bit more complicated.
 
 \subsection{Multiple insertions: 2 or 3 twisted corners}
 
@@ -913,13 +917,12 @@ If you decide to go for the two-insertions approach (recommended), pay attention
 
 \subsection{Multiple insertions: 4 corners}
 
-If you have 4 corners left, the only bad case -- requiring three inserted commutators -- is when the corner are all placed but twisted. Try to avoid it, but if you can't (or if the skeleton is really short), you can proceed as in the previous section for the first insertion, in order to reduce to a better 4 Corners case. About this situation, there is a nice discussion on speedsolving.com\footnote{\url{http://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-126\#post-1009830}}.
+If you have 4 corners left, the only bad case -- requiring three inserted commutators -- is when the corners are all placed but twisted. Try to avoid it, but if you can't (or if the skeleton is really short), you can proceed as in the previous section for the first insertion, in order to reduce to a better 4-corners case. About this situation, there is a nice discussion on speedsolving.com\footnote{\url{http://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-126\#post-1009830}}.
 
 There are three other cases:
-
 \begin{enumerate}
 \item One corner is placed but twisted, the other 3 form a ``twisted 3-cycle'', i.e. a 3-cycle if you only regard permutation, without considering orientation. A twisted cycle always depends on some other twisted piece (or cycle).
-\item Two pairs of corners that need to be swapped, correctly oriented (double swap or double 2-cycle). This case can be solved, besides using the method that will soon be described, also by transforming the corner double swap in an edge double swap: remember that an H perm (M2 U M2 U2 M2 U M2) can be transformed in a corner permutation with only one move (U2). Another way it so use algorithms such as (\m{R U R\ps U\p)*3} (``triple sexy'') or \m{(R\ps F R F\p)*3} (``triple sledge'') or even \m{F2 U\ps L2 D R2 B2 D\ps L2 U R2}, that swap two corner pairs.
+\item Two pairs of corners that need to be swapped, correctly oriented (double swap or double 2-cycle). This case can be solved, besides using the method that will soon be described, also by transforming the corner double swap in an edge double swap: remember that an H perm (M2 U M2 U2 M2 U M2) can be transformed in a corner permutation with only one move (U2). Another way is to use algorithms such as (\m{R U R\ps U\p)*3} (``triple sexy'') or \m{(R\ps F R F\p)*3} (``triple sledge'') or even \m{(R2 U\ps Rw2 U F2)*2}, that swap two corner pairs.
 \item A ``twisted double swap''.
 \end{enumerate}
 
@@ -927,14 +930,14 @@ All these cases can be solved with \textbf{two commutators}: the first one has t
 
 To do so, I mark the corners as follows, depending on the case:
 \begin{enumerate}
-\item \emph{Twisted 3-cycle + one twisted corner:} I mark the twisted corner with and X (I don't care which way it needs to be twisted), then I number the other three from 1 to 3. At this point, since the cycle is ``twisted'', 1 belongs to 2, 2 to 3 while 3 doesn't belong to 1, but to another sticker on that corner\footnote{Always keep in mind that when talking about commutators there is a difference between ``sticker'' and ``piece''.}. No problem: just mark that other sticker with a 4.
-\item \emph{Double swap:} I mark the first pair of swapped corners with two Xs and the second one with two As (on the corresponding stickers).
+\item \emph{Twisted 3-cycle + one twisted corner:} I mark the twisted corner with an X (I don't care which way it needs to be twisted), then I number the other three from 1 to 3. At this point, since the cycle is ``twisted'', 1 belongs to 2, 2 to 3 while 3 doesn't belong to 1, but to another sticker on that corner\footnote{Always keep in mind that when talking about commutators there is a difference between ``sticker'' and ``piece''.}. No problem: just mark that other sticker with a 4.
+\item \emph{Double swap:} I mark the first pair of swapped corners with two Xs and the second one with two Os (on the corresponding stickers).
 \item \emph{Twisted double swap:} as we needed 4 numbers for a twisted 3-cycle, for a twisted 2-cycle we will need 3: reasoning as in the first case, number one of the 2-cycles 1 to 3 and the other A to C.
 \end{enumerate}
 
 In the first case, for example, a possible ``first cycle'' is the one that sends X to 3, 3 to 4 and 4 to X. The cycle 1 $\to$ 2 $\to$ 3 $\to$ 1 is not good, because it leaves 2 twisted corners instead of a 3-cycle.
 
-An excellent example is the following solve, previous South American Record by Jo\~ao Pedro Batista Ribeiro Costa. I have slightly modified the explanation of the solution: the original one made use of a \emph{premove}, a technique treated in the next Chapter.
+An excellent example is the following solve, previous South American Record by Jo\~ao Pedro Batista Ribeiro Costa. I have slightly modified the explanation of the solution: the original one made use of a \emph{premove}, a technique treated in the next chapter.
 
 \bigskip
 \begin{tabular}{|p{0.91\textwidth}|}
@@ -963,24 +966,21 @@ Sol: \m{F D\ps L\ps U\ps R\ps U L U\ps R2 D\ps R\ps U\ps R F\ps L2 F2 D F2 B\ps 
 \end{tabular}
 \bigskip
 
-A further comment on the solve. Notice that the commutator inserted earlier in the solve (the one labelled with \m +) is actually the one one found for last, even if just by one move. Vice versa the second one in the solve was inserted earlier. That's perfectly fine!
-
-Moreover, the two commutator cancel some move with one another.
+Notice that the commutator inserted earlier in the solve (the one labelled with \m +) is actually the one one found for last, even if just by one move. Vice versa the second one in the solve was inserted earlier. That's perfectly fine!
+Moreover, the two commutators cancel some move with one another.
 
 \subsection{Multiple insertions: 5 corners}
 
 Among all the cases with 5 corners left, the only one that requires 2 commutators is the one where the pieces make a 5-cycle. All other cases require 3 commutators, except when you have 5 corners placed but twisted: in that case you need 4. Here I will ignore any case requiring 3 or more commutators (although in some cases you may want to go for 3 insertions) and only look at the first one.
 
-The easiest and most common way to deal with this situation is a \textbf{two-pass} way, as for 4 corners. After having numbered the corners 1 to 5, you go through the skeleton move by move and look for any commutator that solves a three-consecutive-corners cycle. These cycles are:
-
+The easiest and most common way to deal with this situation is a \textbf{two-pass} method, as for 4 corners. After having numbered the corners 1 to 5, you go through the skeleton move by move and look for any commutator that solves a three-consecutive-corners cycle. These cycles are:
 \begin{align*}
 1 \to 2 \to 3 \to 1\\
 2 \to 3 \to 4 \to 2\\
 3 \to 4 \to 5 \to 3\\
 4 \to 5 \to 1 \to 4\\
-5 \to 1 \to 2 \to 5\\
+5 \to 1 \to 2 \to 5
 \end{align*}
-
 This will obviously take longer than looking for just one corner cycle. It is still enough to just look for ``pure'' commutators. Every time you find a good commutator write it down somewhere.
 
 Once you are done with this first pass, choose the best commutator you have found (the one cancelling the most moves) and insert it. Now you have a new skeleton that only leaves a corner 3-cycle: you know what to do.
@@ -991,7 +991,7 @@ With this method \textbf{you can't be sure} you have found the optimal solution:
 
 If you don't know whether you can improve your solution, keep in mind that 10 or 11 moves total are a good goal for a corner 5-cycle.
 
-There is also a faster, but slightly more complex, way that only requires \textbf{one-pass}. It is almost identical to the first pass of the two-pass way, but besides taking note of any commutator you have found, you should also write down which corner cycle it solves. At this point, without even touching the cube anymore, you are already able to choose a pair of commutators that will solve the corner 5-cycle.
+There is also a faster, but slightly more complex, method that only requires \textbf{one-pass}. It is almost identical to the first pass of the two-pass way, but besides taking note of any commutator you have found, you should also write down which corner cycle it solves. At this point, without even touching the cube anymore, you can already choose a pair of commutators that will solve the corner 5-cycle.
 
 To understand how, we need some permutation theory; don't worry, I will cut it down to the essential.\footnote{An interesting further reading is the discussion started by \href{{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-50\#post-666185}}{this post [1]} in the FMC thread on speedsolving.com. In particular in \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-50\#post-666199}{this other post [2]} a mathematical proof of the ``rule'' for finding a 3-cycle combination to solve a 5-cycle is given. Check out also \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-50\#post-666209}{this other one [3]}, which is the same explanation I give here (it is where I have learned this technique) and \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-51\#post-666313}{this [4]}, which contains an example solve using this method.
 
@@ -1004,19 +1004,15 @@ $[3]$: \url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page
 $[4]$: \url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-51\#post-666313}}
 
 First of all, written with the usual notation, our cycle is:
-
 \begin{center}
 (1 2 3 4 5)
 \end{center}
-
 which means that the corner 1 belongs to 2, 2 to 3\dots and 5 to 1. With this notation, this cycle is equivalent to (2 3 4 5 1), (3 4 5 1 2) and so on. In writing down our 3-cycles (a b c) we will use the rule that our 3 digits must be consecutive in the string 1 2 3 4 5 1 2.
 
 What we want to do is to break this 5-cycle into two 3-cycles, for example:
-
 \begin{center}
 (1 2 3) (3 4 5)
 \end{center}
-
 But this decomposition doesn't work. If you want to know why you can read some of the posts I have linked in the footnote. Or, if you prefer a more practical approach\dots try it out! The important thing is that the correct possible decompositions are:
 
 \begin{center}
@@ -1036,13 +1032,11 @@ This method, although faster than the other one, doesn't allow you to check for 
 \subsection{Multiple insertions: 5 edges}
 \label{sec:5e}
 
-As usual, also for 5-cycles the edge case is preferably to avoid. If you decided to go that way, you can use the same method described for corners.
+As usual, also for 5-cycles the edge case is preferably to avoid. If you decide to go that way, you can use the same method described for corners.
 But there is one case that can be solved in very few moves: when you can use the 6 moves 5 cycle
-
 \begin{center}
 \m{M\ps U M U\p}
 \end{center}
-
 even with some setup move, it can be really nice. Try to learn which cases it solves and possibly also some variations, like the ``shifted'' \m{L F L\ps R U\ps R\p}. If you get a skeleton that leaves an edge 5-cycle, it is a good idea to number the stickers and quickly go through the solve to see if you can insert one of these algorithms. But don't waste to much time looking for it.
 
 Another way to solve a 5-cycle of edges is to use a combination of a 3-cycle and a double swap. For example, if you first insert a 3-cycle that only solves one of the 5 edges, you are left with a double swap. Vice versa, if you insert first a double swap that only solves 2 edges, than you are left with a 3-cycle. This technique can lead to very good results when the edges are oriented at the beginning.
@@ -1054,16 +1048,13 @@ For more advanced ways of solving edges with insertions, see Section \ref{slices
 Sometimes you may find a skeleton leaving 2 corners and 2 edges in a double swap (i.e.: a PLL such as J, T, V and so on).
 
 In these cases, it is very useful to know a few \textbf{10 moves} algorithms:
-
 \begin{center}
 \begin{tabular}{lc}
 \m{Fw2 R D R\ps Fw2 R D\ps R D R2} & (J perm)\\
 \m{Rw\ps U Rw\ps U2 R B\ps R\ps U2 Rw2 B\p} & (T-perm + corner twist)
 \end{tabular}
 \end{center}
-
 There are also many 11 moves ones; some of them are:
-
 \begin{center}
 \begin{tabular}{lc}
 \m{R U2 R\ps U\ps R U2 L\ps U R\ps U\ps L} & (J perm)\\
@@ -1072,11 +1063,9 @@ There are also many 11 moves ones; some of them are:
 \m{R\ps U R U2 L\ps R\ps U R U\ps L U2} & (J perm + corner twist)
 \end{tabular}
 \end{center}
-
 Besides these algorithms (this is not a complete list anyway), also their inverses and ``shifted'' versions solve a 2 corners - 2 edges double swap.
 
 Note that \textbf{the inverses of these algorithms solve exactly the same case}. Just by noting this you double your chances of cancellations without the need to learn more algorithms.
-
 Don't expect lots of cancellations, but the more algorithms you know, the better.
 
 As an example, see the following solve.
@@ -1113,7 +1102,7 @@ The end of the skeleton was found using NISS, so it will be a bit mysterious unt
 
 In some cases you can get short skeletons (say 13 moves) that leave a 3-cycle of edges and 4 or 5 corners (or even more). Of course you can solve this case by inserting and edge 3-cycle and whatever number of corner 3-cycles is needed.
 
-But there is another way: notice that the ``sexy move'' \m{R U R\ps U\p} solves a 3-cycle of edges and a twisted double 2-cycle of corners. By inserting this short algorithm and its variations you can solve the edge 3-cycle in a very effcient way. Of course the case of also getting the corners completely solved with one insertion is a very lucky accident, and can only happen when you have 4 corners unsolved in a twisted double swap position. Often the best you can hope for is to affect the corners in such a way that you are left with one of the ``good'' 4 or 5 corners cases. Using some setup moves (for example \m{L\ps R U R\ps U\p L}) you may be able to leave only 3-corners.
+But there is another way: notice that the ``sexy move'' \m{R U R\ps U\p} solves a 3-cycle of edges and a twisted double 2-cycle of corners. By inserting this short algorithm and its variations you can solve the edge 3-cycle in a very effcient way. Of course the case of also getting the corners completely solved with one insertion is a very lucky accident, and can only happen when you have 4 corners unsolved in a twisted double swap position. Often the best you can hope for is to affect the corners in such a way that you are left with one of the ``good'' 4 or 5 corners cases. Using some setup moves (for example \m{L\ps R U R\ps U\p L}) you may be able to leave only 3 corners.
 
 The ``sexy move'' isn't the only algorithm that can help in this cases: also block commutators are a very good tool. In \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-214\#post-1247800}{this post}\footnote{\url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-214\#post-1247800}} on speedsolving.com Cale Schoon gives 3 different examples of this kind of insertion. All of his solutions use NISS, but you can ignore the intermediate steps that produce the skeleton and just look at the insertions.
 
@@ -1153,33 +1142,27 @@ Solution: \m{U2 F B\ps L2 D2 F\ps U F2 L\ps B2 L F2 L\ps B\ps L\ps D L B\ps D L 
 \bigskip
 
 As you can see, the insertion in question doesn't actually solve both the 4 cycles and the corners are completed with ``normal'' insertions. However, as suggested by Mirek Goljan, we could have solved everything with only one insertion, as explained above. To do so, insert in the same skeleton, at *:
-
 \begin{center}
-\m{(B D R2 B R\p B2 D U2 F\p) U (F U2 D\ps B2 R B\ps R2 D\ps B\p)}
+\m{(B D R2 B R\ps B2 D U2 F\p) U (F U2 D\ps B2 R B\ps R2 D\ps B\p)}
 \end{center}
-
 This longer insertion produces the same result (30 moves).
 
 There are also some Last Layer algorithms that work in this way. One of them is:
-
 \begin{center}
 \m{(R B2 R2 U2 R) B (R\ps U2 R2 B2 R\p)}
 \end{center}
-
 and you can find some more \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-28\#post-488378}{here}\footnote{\url{http://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-28\#post-488378}}.
 
 \subsection{Move count (an estimate)}
 
 Here I will give an estimate of how many moves are usually needed for the most common types of insertions. It is a heuristic estimate, not a mathematically proved one, and keep in mind that these number also depend on:
-
 \begin{itemize}
 \item How many commutators/algorithms you know and your ability to recognize them.
 \item The skeleton's length: longer skeletons give more spots where you can insert an algorithm, and so better chance of cancellations (but you shouldn't choose a long skeleton instead of a short one because of this!).
 \end{itemize}
-
 These estimates are useful if you want to know whether it is worth or not to spend some time looking for insertions: if your goal is to achieve a solution shorter than 30 moves, if you have a skeleton leaving 3 corners in 23 moves you will probably get it, while if your skeleton is 25 moves long you will need some luck.
 
-You can also compare different kind of skeletons: a skeleton leaving 4 corner in 18 moves is probably better than one leaving 3 corners in 25.
+You can also compare different kinds of skeletons: a skeleton leaving 4 corner in 18 moves is probably better than one leaving 3 corners in 25.
 
 So here are the numbers:\footnote{Mostly taken from \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-42\#post-614593}{here}, slightly adjusted to match my personal opinion: \url{http://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-42\#post-614593}}
 
@@ -1209,8 +1192,7 @@ Corner 5-cycle & 10/11\\
 
 \subsection{Insertion Finder}
 
-\href{https://fewestmov.es/if}{Insertion Finder}\footnote{\url{https://fewestmov.es/if}}, developed by Baiqiang Dong, is a useful tool to find insertions and check if you have failed to see something in your solutions: it finds up to 4 insertions to solve a skeleton.
-
+\href{https://fewestmov.es/if}{Insertion Finder}\footnote{\url{https://fewestmov.es/if}}, developed by Baiqiang Dong, is a useful tool to find insertions and check if you have failed to see something in your solutions. %: it finds up to 4 insertions to solve a skeleton.
 It is especially useful for easy cases (3 corners or 3 edges) but in complex situation it may find solution that are not possible (or very difficult) to find for humans: use it responsibly!
 
 \section{Starting with EO}
@@ -1220,7 +1202,7 @@ Starting by orienting all edges, as you would do in a ZZ solve, is a possiblity 
 
 Remember that there are 3 possible orientation with respect to which you can orient edges: with respect to F/B (reduce to \m{<R, L, U, D>}), to R/L and to U/D. If you procede with a normal ZZ solve, for each of these you can build the F2L on 4 different sides. Even if you don't like starting with EO, I suggest practicing some (color neutral!) ZZ to improve EO recognition.
 
-From here you have at least two ways to continue.
+From here you have at continue in different ways.
 
 \subsection{EO + blockbuilding} 
 
@@ -1255,7 +1237,7 @@ Solution: \m{x y2 L2 D F\ps R L2 D\ps R\ps U\ps R D2 R\ps U\ps B2 R2 B2 L2 U\ps 
 \end{tabular}
 \bigskip
 
-Here is another example: the first solve of João Pedro Batista Ribeiro Costa at World Championship 2015, part of his 25.67 winning Mean of 3.
+Here is another example: the first solve of João Pedro Batista Ribeiro Costa at World Championship 2015, part of his 25.67 winning mean of 3.
 
 \bigskip
 \begin{tabular}{|p{0.91\textwidth}|}
@@ -1283,7 +1265,7 @@ Solution: \m{U2 R\ps U\ps R\ps D2 R U\ps R\ps D2 B F2 U2 F B2 U\ps B2 U\ps B2 U\
 \bigskip
 
 
-One last consideration: in the examples above there are two nice and \textbf{short} EO steps. But this doesn't mean you should discard a longer EO, if you can build a lot of blocks while doing it!
+One last thing: in the examples above there are two nice and \textbf{short} EO steps. But this doesn't mean you should discard a longer EO, if you can build a lot of blocks while doing it!
 
 
 \subsection{Domino Reduction}
@@ -1296,11 +1278,11 @@ Edge orientation can be considered, modulo rotations, a reduction to the \emph{s
 \item orient corners.
 \end{itemize}
 
-This reduction is also called ``Domino Reduction'', because it makes a Rubik's Cube solvable as a 3x3x2 ``cube'' (also called ``Domino Cube'').
+This reduction is also called ``domino reduction'' (often shortened to DR), because it makes a Rubik's Cube solvable as a 3x3x2 ``cube'' (also called ``Domino Cube'').
 
-Recently (2018-2019), Domino Reduction has gained a lot of popularity, and it has been shown that one can reach consistently good results with this method alone.
+Recently (2018-2019), domino reduction has gained a lot of popularity, and it has been shown that one can reach consistently good results with this method alone.
 
-A good tutorial on Domino Reduction could easily fill another long document. And in fact it does: if you are interested in the method, I suggest you read \href{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S}{this wonderful tutorial}\footnote{\url{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S}} by Alexandros Fokianos and Tommaso Raposio. I have tried to sum up the most important ideas of that document in Appendix \ref{appendixdomino}.
+A good tutorial on domino reduction could easily fill another long document. And in fact it does: if you are interested in the method, I suggest you read \href{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S}{this wonderful tutorial}\footnote{\url{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S}} by Alexandros Fokianos and Tommaso Raposio. I have tried to sum up the most important ideas of that document in Appendix \ref{appendixdomino}.
 
 Here is an old example solve by Per Kristen Fredlund.
 
@@ -1333,11 +1315,11 @@ Solution: \m{R\ps B U\ps D F L\ps F2 L D2 L2 F2 D F2 D L2 U\ps R2 D2 R2} (19)\\
 
 \subsubsection{Classic PDR}
 
-The idea of Partial Domino Reduction, shortened to PDR, was first introduced by Alexandre Campos\footnote{\url{https://www.speedsolving.com/threads/introducing-a-variation-for-fewest-moves.67299/}}. It consist in solving EO with respect to two axes, which can also be seen as a Domino Reduction with a (some) corners unsolved. Although not included in his original idea, the term PDR can also refer to a partial DR where the corners are all oriented, but a few E-layer edges are not in the E-layer.
+The idea of Partial Domino Reduction, shortened to PDR, was first introduced by Alexandre Campos\footnote{\url{https://www.speedsolving.com/threads/introducing-a-variation-for-fewest-moves.67299/}}. It consists in solving EO with respect to two axes, which can also be seen as a domino reduction with (some) misoriented corners. Although not included in his original idea, the term PDR can also refer to a partial DR where the edges and corners are all oriented, but not all E-layer edges are in the E-layer.
 
 After a normal EO, say with respect to F/B, one can procede with a second EO, say on L/R. This second EO step can also be seen as placing the E-layer edges on the E-layer, much like you would do in a DR solve, but ignoring corners. Since you want to keep the EO you did in the first step, you should not use F and B quarter turn moves during this second step.
 
-When you have EO on ttwo axes (PDR) a normal way to finish your solve is to build blocks and find a skeleton using only ``domino moves'' $\langle$\m{U,D,R2,L2,F2,B2}$\rangle$ (i.e. moves that don't break any of your EOs). However, there are some restrictions: using only domino moves you have no hope to solve the misoriented corners, so you are forced to leave them unsolved and solve them later with insertions. That's why not leaving many misoriented corners is usually a good idea.
+When you have EO on two axes (PDR) a normal way to finish your solve is to build blocks and find a skeleton using only ``domino moves'' \m{<U,D,R2,L2,F2,B2>} (i.e. moves that don't break any of your EOs). However, there are some restrictions: using only domino moves you have no hope to solve the misoriented corners, so you are forced to leave them unsolved and solve them later with insertions. That's why not leaving many misoriented corners is usually a good idea.
 
 Alexandre has collected some PDR solves in a document\footnote{\url{https://docs.google.com/document/d/1oZwr2aSllFBL5lhbLTiWKQWplfk4i0LN0wA0uskeLJs}}. Let's look at the first one as an example:
 
@@ -1369,9 +1351,9 @@ Solution: \m{D2 R\ps U2 R D R\ps U F\ps R B2 R\ps F2 R B2 R L U R D F2 D2 B2 U2 
 
 \subsubsection{EO+CO PDR}
 
-This second type of ``PDR'' approach is probably closer to being a ``mock-DR'', whereas the classical PDR described above is closer to an EO + blockbuilding approach.
+This second type of ``PDR'' approach is probably closer to being a ``mock DR'', whereas the classical PDR described above is closer to an EO + blockbuilding approach.
 
-After EO is solved, you can try solving corner orientation using the same type of triggers that one uses to get a DR. After that, one can solve corners and get an edges-only skeleton. This often turns out to be good: although not as nice as with DR, edge insertion can still be very good when EO is solved, especially when combined with the advanced techniques described in Section \ref{slices}.
+After EO is solved, you can try solving corner orientation using the same type of triggers that are used to get a DR. After that, you can solve corners and get an edges-only skeleton. This often turns out to be good: although not as nice as with DR, edge insertion can still be very good when EO is solved, especially when combined with the advanced techniques described in Section \ref{slices}.
 
 \bigskip
 \begin{tabular}{|p{0.91\textwidth}|}
@@ -1408,12 +1390,12 @@ Of course, if you find a spot where there are two ``free'' layers, you can use b
 
 \subsection{Get lucky!}
 
-Obviously, luck is not a skill to be learned, but remember that in FMC you have to \textbf{go for it}: a ``simple'' solve ending with an LL skip is not less worthy than a complex unlucky one, if they have the same length. This is one of the reasons why you need to try as many different alternatives as you can: you are more likely to get a skip if you try 100 solutions than if you try 10 or 20.
+Obviously, luck is not a skill to be learned, but remember that in FMC you have to \textbf{look for it}: a ``simple'' solve ending with an LL skip is not less worthy than a complex unlucky one, if they have the same length. This is one of the reasons why you need to try as many different alternatives as you can: you are more likely to get a skip if you try 100 solutions than if you try 10 or 20.
 
 \subsubsection{First example: insert last pair(s)}
 \label{insert_pairs}
 
-After completing an F2L-1, you can finish the F2L by inserting the last pair. This isn't usually a good way to continue, unless you get lucky. To improve your chances to get lucky, try \textbf{inserting the last pair in all the ways you can think of}.
+After completing an F2L-1, you can finish the F2L by inserting the last pair. This isn't usually a good way to continue, unless you get lucky. To improve your chances of getting lucky, try \textbf{inserting the last pair in all the ways you can think of}.
 
 For example, if your last pair is already built, you can insert it in at least 3 different ways: \m{U R U\ps R\p}, \m{U2 R U2 R\p} and \m{R\ps F R F\p}. Knowing some VHF2L or ZBF2L algs can be useful to improve your chances of skip, but rather than memorizing them you should learn how they work.
 
@@ -1613,7 +1595,7 @@ Scramble: \m{\emph{D2} F\ps L2 F2 U2 R2 B R2 F\ps R2 D2 U2 L\ps U\ps B\ps U R U 
 
 Once you have found such a solution, remember that the premove (or premoves, if there is more than one) has to be \textbf{added at the end} of the solution, to solve the original scramble. In this way we get back the final solution of the previous sub-section.
 
-You can use \textbf{more than one premove}: take for example this solve, which is my first official solve as well as former Italian National Record. Remember to perform the premoves before starting scrambling.
+You can use \textbf{more than one premove}: take for example this solve, which is my first official solve as well as former Italian National Record. Remember to perform the premoves before scrambling.
 
 \bigskip
 \begin{tabular}{|p{0.91\textwidth}|}
@@ -1661,7 +1643,7 @@ Scramble: \m{D F\ps F\ps L2 F2 U2 R2 B R2 F\ps R2 D2 U2 L\ps U\ps B\ps U R U L2 
 \emph{2$\times$2$\times$2 in DFR after \m{R2 F}, with premoves \m{D F\p}.}
 \end{center}
 
-But such premoves are not hard to find, if you know \textbf{NISS} (Normal-Inverse Scramble Switch). This technique was first introduced by Guus Razoux Schultz in 2009 and the explanation we outline here is taken from \href{https://www.speedsolving.com/threads/the-fmc-thread.13599/page-52##post-667292}{this excellent post}\footnote{\url{https://www.speedsolving.com/threads/the-fmc-thread.13599/page-52##post-667292}} by Tomoaki Okayama. The most important fact is the following:
+But such premoves are not hard to find, if you know \textbf{NISS} (Normal-Inverse Scramble Switch). This technique was first introduced by Guus Razoux Schultz in 2009 and the explanation we outline here is taken from \href{https://www.speedsolving.com/threads/the-fmc-thread.13599/page-52##post-667292}{this excellent post}\footnote{\url{https://www.speedsolving.com/threads/the-fmc-thread.13599/page-52\#post-667292}} by Tomoaki Okayama. The most important fact is the following:
 
 \begin{framed}
 \textbf{The scramble and the solution can be thought of as a single move sequence loop, that doesn't affect the cube in any way.}
@@ -1719,7 +1701,7 @@ We can therefore consider ``\m{(W)\ps F\ps R2}'' as a solution for ``(Inverse Sc
 
 Suppose now you have found a solution, call it \m{(K)}, to the inverse scramble with premoves \m{F\ps R2}. Then \m{(K)} must have the same effect as \m{(W)\p}, so you are done: your final solution would be \m{R2 F (K)\p}.
 
-You can repeat this process: suppose you have found the moves \m{F D\p} on inverse scramble with premoves (which make a 2x2x2 block), but no good continuation. At this point we can go back to normal scramble, using \m{D F\p} as premoves. In fact, the loop sequence is:
+You can repeat this process: suppose you have found the moves \m{F D\p} on inverse scramble with premoves (which make a 2x2x2 block), but no good continuation. At this point we can go back to the normal scramble, using \m{D F\p} as premoves. In fact, the loop sequence is:
 
 \begin{center}
 \m{F\ps R2} (Inverse Scramble) \m{F D\p} (Moves yet to be found)
@@ -1733,7 +1715,7 @@ Inverting it gives another identity loop:
 
 So we can consider \m{D F\p} as premoves for the original scramble and start with \m{R2 F}.
 
-An example\footnote{Taken from here: \url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-10##post-258791}.} will make everything clearer.
+An example\footnote{Taken from here: \url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-10\#post-258791}.} will make everything clearer.
 
 \begin{center}
 Scramble: \m{R B U L\ps U\ps B U2 D2 F D R L D B2 L2 D\ps F2 D2 L2 D}\\
@@ -1785,7 +1767,7 @@ To make writing such solutions shorter and easier, I have proposed the following
 For example, Guus' solve becomes:
 
 \bigskip
-\begin{tabular}{|l|}
+\begin{tabular}{|p{0.91\textwidth}|}
 \hline
 \textbf{NISS - Example}\\
 \hline
@@ -1802,7 +1784,7 @@ Inverse Scramble: \m{D\ps L2 D2 F2 D L2 B2 D\ps L\ps R\ps D\ps F\ps D2 U2 B\ps U
 \includesvg{img/guus-niss}
 \end{minipage}\\
 \hline
-Solution: \m{D\ps B\ps U B2 D\ps L F2 L\ps D R U2 R U2 B\ps R\ps U2 R U\ps R B\ps R\ps F2 U\ps L B\p} (25)\\
+Sol: \m{D\ps B\ps U B2 D\ps L F2 L\ps D R U2 R U2 B\ps R\ps U2 R U\ps R B\ps R\ps F2 U\ps L B\p} (25)\\
 \hline
 \end{tabular}
 \bigskip
@@ -1825,7 +1807,7 @@ the final solution is
 
 \section{Reverse NISS}
 \label{reverse-niss}
-It is not a widely used technique, but it can occasionally be useful: it can be considered an improvement over both ``Conjugate and Solve'' and ``Go Back and Change your Solve''.
+This technique can be considered an improvement over both ``conjugate and solve'' and ``go back and change your solve''.
 
 Suppose you have found a good skeleton solving everything but a few pieces (from 4 to 8). You would like to insert an algorithm to solve them, but if these pieces don't have at least one color in common (they don't belong to the same layer) it can be hard to recognize which algorithm to use. The trick is this: if you find a spot in the solve where all your unsolved pieces are conjugated to one layer, you can \textbf{``split'' the solve there}, using all the following moves as premoves (that is why I called it ``Reverse NISS''); at this point, you have only a ``Last Layer'' left to solve. If needed, you can use some setup moves.
 
@@ -1883,7 +1865,7 @@ Take this scramble:
 \end{center}
 Let's say you are looking for a good EO on F/B. However, there isn't aything better than 6 moves (for example \m{F B L\ps U D\ps F}). On the inverse scramble the situation is not better: still 6 moves (\m{F B R\ps B\ps D\ps B}).
 
-But let's go back to the normal scramble and pause for a second after the first two moves for that optimal EO (that is \m{F B}). Right now there are only 4 bad edges on F/B, but they are not in the nicest position. Is it possible that switching to inverse it's easier to solve EO? Let's try!
+But let's go back to the normal scramble and pause for a second after the first two moves for that optimal EO (that is \m{F B}). Right now there are only 4 bad edges on F/B, but they are not in the nicest position. Is it possible that switching to inverse EO becomes easier? Let's try!
 
 \begin{center}
 \emph{Premoves:} \m{F\ps B\p}\\
@@ -1903,15 +1885,15 @@ If you want to practice this technique, try finding another 5 moves EO on F/B, b
 
 \section{Useful algorithms}
 
-As you can see, in the last example solve I have used an OLL that is maybe not well known, that is \m{R U R2 F R F2 U F (U2)} (modulo rotations). This one in particular is very useful, because it is the shortest algorithm that affects the orientation but not the permutation of pieces.
+As you can see, in the last example solve I have used an OLL that is maybe not well known: \m{R U R2 F R F2 U F (U2)} (modulo rotations). This one in particular is very useful, because it is the shortest algorithm that affects the orientation but not the permutation of pieces.
 
-It is in general useful to know some of the shortest last layer algorithms, \textbf{up to 9 or 10 moves}. You can find a complete list (modulo rotations, symmetries and inverses) \href{https://github.com/sebastianotronto/fmctutorial/blob/master/misc/LL_algs_6-10.txt}{here}\footnote{\url{https://github.com/sebastianotronto/fmctutorial/blob/master/misc/LL_algs_6-10.txt}}.
+It is in general useful to know some of the shortest last layer algorithms, \textbf{up to 9 or 10 moves}. You can find a complete list (modulo rotations, symmetries and inverses) \href{https://github.com/sebastianotronto/fmctutorial/blob/master/misc/LL_algs_6-10.txt}{here}: \url{https://github.com/sebastianotronto/fmctutorial/blob/master/misc/LL_algs_6-10.txt}.
 
-If you decide to break the ``never build an F2L without influencing the last layer'' rule (sometimes it is worth trying!) you can hope the last layer can be solved with a short algorithm: in this case, the more you know, the better!
+If you decide to break the ``never build an F2L without influencing the last layer'' rule (sometimes it is worth trying!) you can hope the last layer can be solved with a single short algorithm: in this case, the more you know, the better!
 
 A little tip: when using a last layer algorithm, remember that you can try performing the AUF (``Adjust Upper Face'') both before and after it, hoping to cancel some moves with the ones before it of with premoves.
 
-There are two other reasons why it is worth learning some algorithms, at least the ones from 6 to 9 moves. The first one is that even if you don't know the exact algorithm for the last layer, or if you haven't completed the F2L, one of these algorithms may leave you with a good skeleton (for example, a corner 3-cycle), hopefully canceling some moves.
+There are two other reasons why it is worth learning some algorithms, at least the ones from 6 to 9 moves. The first one is that even if you don't know the exact algorithm for the last layer, or if you haven't completed the F2L, one of these algorithms may leave you with a good skeleton (for example, a corner 3-cycle), hopefully cancelling some moves.
 
 The second reason is that by studying algorithms you can learn different ways to match blocks, complete the F2L or ake a skeleton. Let's take a look at the optimal T perm:
 
@@ -1933,7 +1915,7 @@ This is a really obscure technique, based on intuition, not proven to actually g
 \item \textbf{Bad Pairs}: those corner/edge pairs that are wrongly matched, because one of the pieces is misoriented. Intuitively, such pairs are bad and you want to break most of them as soon as you can.
 \end{itemize}
 
-There isn't much documentation about this technique, especially for bad pairs. Guus Razoux Schultz did a good analysis for the first scramble\footnote{\url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-61##post-721325}} of Twente Open 2012 in \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-62##post-721942}{this post}\footnote{\url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-62##post-721942}} on speedsolving.com. 
+There isn't much documentation about this technique, especially for bad pairs. Guus Razoux Schultz did a good analysis for the first scramble of Twente Open 2012 in \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-62\#post-721942}{this post}\footnote{\url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-62##post-721942}} on speedsolving.com. 
 
 \section{Solving with skew centers}
 \label{skew_centers}
@@ -1994,20 +1976,20 @@ After I found the solution (including the insertion), I had to rewrite all the m
 
 Then I had to insert one of the three commutators to solve centers. Since centers don't move around in a sequence of moves without rotation or slices, the commutators that solved centers remained the same at every point. Knowing this, performing the moves on the cube is unnecessary: you just need to find a spot where one of the three commutators cancels the most.
 
-Finally, after inserting the slice moves that solve centers, there is the second (and last) rewriting: the moves before the insertion remain unchanged, but the moves after that have to be canged with same method used the first time. If you are disciplined in writing down your partial solutions, you can get the first version of your solution and copy the last moves, but this is not my case, as I write stuff down on my sheets in a very chaotic way.
+Finally, after inserting the slice moves that solve centers, there is the second (and last) rewriting: the moves before the insertion remain unchanged, but the moves after that have to be changed with same method used the first time. If you are disciplined in writing down your partial solutions, you can get the first version of your solution and copy the last moves, but this is not my case, as I write stuff down on my sheets in a very chaotic way.
 
 One last tip: if you are short on time, you can save one rewriting by using cube rotations right after the center insertion. But beware of missing cancellations - with slice moves it's even trickier than usual!
 
 \subsection{Skew centers and NISS}
 \label{sec:skewNISS}
 
-In the previous solve, you might notice that I used NISS. However, the last three moves of the skeleton on inverse are \m{B2 L2 B2} instead of \m{R2 D2 R2}, which are the first three moves done on normal!
+In the previous example solve I used NISS. However, the last three moves of the skeleton on inverse are \m{B2 L2 B2} instead of \m{R2 D2 R2}, which are the first three moves done on normal!
 
 What is happening here? The problem is that one of the insertions that have been left for later moves the centers around, changing all subsequent moves! Apply the inverse scramble and then the first 13 moves of the skeleton (\m{U2 L2 B2 U L B\ps L2 U2 L\ps U2 L\ps U2 L}). Now solve the centers with \m{M S\ps M\ps S} and rotate back to have white on top and green on front (or just apply the moves \m{R L\ps U D\ps B F\ps R L\p}). From here you can apply the ``correct'' premoves \m{R2 D2 R2} to get the 3c skeleton.
 
 How to solve this problem? In this case it can be easy to see what the correct moves to apply are, since there are only 3 moves done on the normal scramble. But in general it may be tricky. There are basically two ways.
 
-The first one is to use a \textbf{``translation table''} that tells you which moves you have to apply on inverse depending on which moves you have done on normal. In this case it will look like this:
+The first one is to use a \textbf{``translation table''} that tells you which moves you have to apply on inverse depending on which moves you have done on normal. In this case it will look like:
 \begin{center}
 \begin{tabular}{l|c|c|c|c|c|c}
 Normal: &  \m{B} & \m{F} & \m{L} & \m{R} & \m{U} & \m{D}\\
@@ -2017,7 +1999,7 @@ Inverse: & \m{U} & \m{D} & \m{F} & \m{B} & \m{R} & \m{L}
 \end{center}
 So the \m{R2 D2 R2} on normal become \m{B2 L2 B2} on inverse! This method works better when there are only 4 centers left to fix (like \m{M E2 M\ps E2}): in that situation, the table can easily be kept in mind without writing it down.
 
-Another way consists in \textbf{using rotations} to bring the solved pieces to their usual position, disregarding centers. For example, our example skeleton (on inverse) would be:
+Another way consists in \textbf{using rotations} to bring the solved pieces to their usual position, disregarding centers. For example, our skeleton (on inverse) would be:
 
 \vspace{0.2cm}
 \emph{Moves done on inverse:} \m{U2 L2 B2 U L B\ps L2 U2 L\ps U2 L\ps U2 L}
@@ -2034,15 +2016,15 @@ But be careful with rotations!\footnote{See also Section \ref{write_down} on how
 \section{Advanced edge insertions: free slices}
 \label{slices}
 
-If you have a skeleton that only leaves some edges unsolved, the standard way to conclude with insertions is to insert edge or commutators or maybe double swap of edges, like \m{M2 U2 M2 U2}.
+If you have a skeleton that only leaves some edges unsolved, the standard way to conclude with insertions is to insert edge commutators or maybe double swaps of edges, like \m{M2 U2 M2 U2}.
 
 There is also a more advanced technique to solve edges, of which some edge commutators like \m{[M2, U R U\p]} can be interpreted as a special case. 
 
-The main idea is the following: consider the move \m{M}. It counts only as $2$ moves in HTM, but its effect is interesting. Ignoring centers, it completes a $4$-cycle of edges: UF$\to$FD$\to$DB$\to$BU$\to$UF. Similarly, the move \m{M2} is a double 2-cycle of edges: UF$\leftrightarrow$DB and UB$\leftrightarrow$DF. Thus by inserting simple slice moves like \m{M} and \m{M2} in the skeleton one can very efficiently solve any type of edge-cycle(s)! In case it is necessary, one can combine these slice moves using setups; for example \m{[R F: M2] = R F M2 F\ps R\p} is a double 2-cycle, just like \m{M2}.
+The main idea is the following: consider the move \m{M}. It counts only as $2$ moves in HTM, but its effect is interesting. Ignoring centers, it completes a $4$-cycle of edges: UF$\to$FD$\to$DB$\to$BU$\to$UF. Similarly, the move \m{M2} is a double 2-cycle of edges: UF$\leftrightarrow$DB and UB$\leftrightarrow$DF. Thus by inserting simple slice moves like \m{M} and \m{M2} in the skeleton one can very efficiently solve any type of edge-cycle(s)! In case it is necessary, one can use setup moves; for example \m{[R F: M2] = R F M2 F\ps R\p} is a double 2-cycle, just like \m{M2}.
 
 I like to call this method \emph{free slices}, but it has other popular names like \emph{slice insertions} or \emph{slicey shenanigans}.
 
-But what about centers? They are not a big problem: one can either pay attention that their slice insertions ``cancel each other'' so that centers end up solved as well, or forget about them and solve them with an extra center insertion like \m{[M,E]} later. If you go for this second approach, the only thing to care about is avoiding parity, i.e. that the total number of slice moves inserted is even (where \m{M2} counts as $2$). But this if this is not the case then edges cannot result solved.
+But what about centers? They are not a big problem: one can either pay attention that the slice insertions ``cancel each other'' so that centers end up solved as well, or forget about them and solve them with an extra center insertion like \m{[M,E]} later. If you go for this second approach, the only thing to care about is avoiding parity: make sure that the total number of slice moves inserted is even (where \m{M2} counts as $2$). But if this is not the case then edges cannot result solved.
 
 Let's start with a (lucky) example:
 
@@ -2076,7 +2058,7 @@ Sol: \m{D2 R U\ps R\ps B2 L2 B\ps R\ps U F\ps U\ps R\ps D\ps R U2 R\ps D R2 U\ps
 
 Here the first insertion (the one marked by [1]) solves 3 edges and cancels 2 moves. This is a very lucky case. The second insertion (marked with [2]) is more standard: it solves only one more edge, leaving a 3-cycle, and solves back the centers that were set off by the first insertion.
 
-The last two insertions are standard commutators, but there is one thing certainly worth noticing: the edge commutator (insertion marked with *) is \m{[U R U\p, M2]}, and it is inserted right before an \m{M2} move, leading to a cancellation of the last slice move. In fact, one could have found the same exact solution by inserting \m{[U R U\p: M2] = [U R U\ps M2 U R\ps U\p} at [2], which is just a setup + slice! In fact, many edge commutators can be seen a combination of 2 slice insertions - one simple (without setup moves) and one with setup moves.
+The last two insertions are standard commutators, but there is one thing certainly worth noticing: the edge commutator (insertion marked with *) is \m{[U R U\p, M2]}, and it is inserted right before an \m{M2} move, leading to a cancellation of the last slice move. In fact, one could have found the same exact solution by inserting \m{[U R U\p: M2] = U R U\ps M2 U R\ps U\p} at [2], which is just a setup + slice! Many edge commutators can be seen a combination of 2 slice insertions -- one simple (without setup moves) and one with setup moves.
 
 Let's take another example:
 
@@ -2105,16 +2087,16 @@ Sol: \m{D2 R U\ps R\ps B2 L2 B\ps R\ps U F\ps U\ps R\ps D\ps R U2 R\ps D R2 U\ps
 
 Here the first insertions solve 2 of the 5 edges and unsolves a solved one, leading to 4 edges unsolved in a 4-cycle. The second insertion is a setup to a 4-cycle.
 
-It is not always easy to understand what is a good place to insert a slice move in a skeleton. I mostly go by trial-and-error, but there are some tricks to keep in mind:
+It is not always easy to understand what is a good place to insert a slice move in a skeleton. I mostly go with trial-and-error, but there are some tricks to keep in mind:
 \begin{itemize}
-\item Sometimes it is useful to insert slice moves that don't seem to accomplish much, but also don't add many moves, for example because there is no setup move, or there are even cancellations. But there is even more: by inserting, for example, and \m{M2} move next to, say, a squence like \m{R2 L} one can even \textit{save} one move. It can then happen that such a slice move solves some edges (what luck!) or at least doesn't change the number of unsolved edges.
+\item Sometimes it is useful to insert slice moves that don't seem to accomplish much, but also don't add many moves, for example because there is no setup move, or there are even cancellations. But there is even more: by inserting, for example, an \m{M2} move next to a squence like \m{R2 L} one can even \textit{save} one move. It can then happen that such a slice move solves some edges (what luck!) or at least doesn't change the number of unsolved edges.
 
 In general, I tend to first go through the skeleton with this approach in mind and hopefully simplify the situation using very few moves. Then, when there is only a 3-cycle or a double swap left, I tend to use longer insertions to finish up the solve.
 \item It easy to find out how many edges are going to be solved after a slice insertion by counting how many more end up in the correct spot (and how many solved edges become unsolved, if any). Then it often possible to deduce the exact type of cycle they form, excluding some cases by parity reasons.
 
-For example, consider the first solve above. There are $7$ unsolved edges in total, and the first insertion (the \m{M2} labelled with *) solves exactly 3 of them. No solved edge is taken out of place. It follows that after that insertion \textit{exactly} $4$ edges are left unsolved. But then, since \m{M2} does not create center-parity, there is only one possibility: those $4$ edges must for a $2$-$2$ cycle (double swap).
-\item Avoid edges flipped in place and ``twisted cycles'' like UF$\to$UR$\to$FU. If your skeleton has some of them, try to get rid of them with your first slices.
-\item Skeletons with EO - or even Domino Reduction, see Appendix \ref{appendixdomino} - solved at the beginning tend to give much nicer edge insertions, both with standard algorithms (commutators, double swaps) and with free slices!
+For example, consider the first solve above. There are $7$ unsolved edges in total, and the first insertion (the \m{M2} labelled with [1]) solves exactly 3 of them. No solved edge is taken out of place. It follows that after that insertion \textit{exactly} $4$ edges are left unsolved. But then, since \m{M2} does not create center-parity, there is only one possibility: those $4$ edges must form a $2$-$2$ cycle (double swap).
+\item Avoid edges flipped in place and ``twisted cycles'' like UF$\to$UR$\to$FU. If your skeleton has some, try to get rid of them with your first slices.
+\item Skeletons with EO -- or even Domino Reduction, see Appendix \ref{appendixdomino} -- solved at the beginning tend to give much nicer edge insertions, both with standard algorithms (commutators, double swaps) and with free slices!
 \end{itemize}
 
 \section{Corners First}
@@ -2174,16 +2156,16 @@ Explanation:
 \emph{The next step is obvious, solve more 3 edges:} \m{U D} \emph{setup moves,} \m{L\ps F\ps U2 D2 B R} \emph{3 edges algo, then a lucky E slice skip, due to the previous M move.}
 \end{framed}
 
-Since the first version of this tutorial, Attila has gradually changed his method. He still orients corners first, but rather than solving them completely and then taking care of edges, he performs a CO-first Domino Reduction. Se for example \href{https://www.speedsolving.com/forum/threads/the-3x3x3-example-solve-thread.14345/page-280##post-1234805}{this post}\footnote{\url{https://www.speedsolving.com/forum/threads/the-3x3x3-example-solve-thread.14345/page-280##post-1234805}}, or the example solves collected in Alexandros' and Tommaso's DR tutorial.
+Since the first version of this tutorial, Attila has gradually changed his method. He still orients corners first, but rather than solving them completely and then taking care of edges, he performs a CO-first Domino Reduction. Se for example \href{https://www.speedsolving.com/forum/threads/the-3x3x3-example-solve-thread.14345/page-280\#post-1234805}{this post}\footnote{\url{https://www.speedsolving.com/forum/threads/the-3x3x3-example-solve-thread.14345/page-280\#post-1234805}}, or the example solves collected in Alexandros' and Tommaso's DR tutorial.
 
-Javier Cabezuelo Sánchez solves corners in a different way: first layer corners first, then the other four. He then tries to solve edges inserting moves (or algorithms) in the solution he has found. He doesn't use techniques such as inverse scramble, premoves or NISS. Differently from Attila, he cares about centers while solving corners. See also \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-111##post-945295}{this post}\footnote{\url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-111##post-945295}}.
+Javier solves corners in a different way: first layer corners first, then the other four. He then tries to solve edges inserting moves (or algorithms) in the solution he has found. He doesn't use techniques such as inverse scramble, premoves or NISS. Differently from Attila, he cares about centers while solving corners. See also \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-111\#post-945295}{this post}\footnote{\url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-111\#post-945295}}.
 
 Both Attila and Javier only use their CF method, which breaks the ``never restrict yourself'' rule; but they still get excellent results.
 
 \section{Replace and shorten}
 \label{sec:replace}
 
-Sometimes it happens that you have a nice solution written down, but some short subsequence of this solution is actually inefficient. This might be hard to notice during the normal steps of the solves, especially when you have used a combination of NISS and insertions so that moves that are next to each other in the final solution are far apart in your thought process.
+Sometimes it happens that you have a nice solution written down, but some short subsequence of this solution is actually inefficient. This might be hard to notice during the normal steps of the solve, especially when you have used a combination of NISS and insertions so that moves that are next to each other in the final solution are actually far apart in your thought process.
 
 These inefficient subsequences can be substituted with equivalent but shorter sequences, giving a better solution. One way to do so is to go through your solve once more and look for inefficient sequences. These may look like ``F2L-1'' solutions, ``domino'' steps (see Section \ref{subsection:eoToDR} and Appendix \ref{appendixdomino}) or something else. This is not very easy in practice, unless the sequence you are looking at is a domino step. For this case you can see an example at the end of Appendix \ref{appendixdomino}, or many more in the DR tutorial by Alex and Tommaso\footnote{You can find a link link in Section \ref{subsection:eoToDR}, Appendix A or Appendix \ref{appendixdomino}.}
 
@@ -2224,7 +2206,7 @@ Always trying to simulate a competition and forcing yourself to complete your so
 
 This doesn't mean doing one hour solves is bad: it tells you what your level is and it helps you finding a good time management strategy\footnote{I will talk about time management in Section \ref{time-ma}.}. If you want to train like this I suggest taking part in online competitions such as the one hosted on \href{https://www.fewest-moves.info/}{fewest-moves.info}\footnote{\url{https://www.fewest-moves.info/}} and the \href{https://speedcube.de/forum/showthread.php?tid=5795}{German Forum competition}\footnote{\url{https://speedcube.de/forum/showthread.php?tid=5795}}.
 
-Trying for one hour as if it was a competition and then keep trying until you reach a good result is a well-balanced compromise.
+Trying for one hour as if it was a competition and then keeping trying until you reach a good result is a well-balanced compromise.
 
 \section{Use pen and paper}
 
@@ -2240,11 +2222,11 @@ Moreover, to train blockbuilding and other methods it is mandatory to study the 
 
 \section{Hard scrambles}
 
-To see what you can do in the ``worst case scenario'', I suggest trying out some scrambles that are considered by experts to be really hard. You can find a list of hard scrambles \href{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-88\#post-842681}{here}\footnote{\url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-88\#post-842681}}.
+To see what you can do in the ``worst case scenario'', I suggest trying out some scrambles that are considered by experts to be really hard. You can find a list of hard scrambles here: \url{https://www.speedsolving.com/forum/threads/the-fmc-thread.13599/page-88\#post-842681}.
 
 \section{Deliberate practice}
 
-If you think you have troubles in finding a good start, practice that: take a scramble, find a 2x2x2, 2x2x3 or something else until you are satisfied, then change scramble. You can apply this idea to F2L-1 or any other substep.
+If you think you have troubles in finding a good start, practice that: take a scramble, find a 2x2x2, a 2x2x3 or something else until you are satisfied, then change scramble. You can apply this idea to F2L-1 or any other substep.
 
 \section{Fast scrambling}
 
@@ -2252,7 +2234,7 @@ Even if it is not necessary, when using techniques like NISS, or simply if like 
 
 \section{Study!}
 
-Last but not least. Study this guide, study from other sources, study algorithms and techniques, new or known. I have read ``The FMC Thread'' on speedsolving.com twice, from top to bottom.
+Last but not least. Study this guide, study from other sources, study algorithms and techniques, new or known. I have read ``The FMC Thread'' on speedsolving.com from top to bottom \emph{twice} when I started learning FMC (notably, it was much shorter than now).
 
 Study algorithms: there are dozens of different sets, to mention some of them LLEF\footnote{\url{https://www.speedsolving.com/wiki/index.php/LLEF}} (Last Layers Edges First) or Summer Variation\footnote{\url{https://www.speedsolving.com/wiki/index.php/Summer_Variation}}. Remember that you shouldn't just \emph{memorize} them, but also try to understand \emph{how they work}.
 
@@ -2261,15 +2243,15 @@ Study algorithms: there are dozens of different sets, to mention some of them LL
 \section{How to write a solution}
 \label{write_down}
 
-Both in competition and while practicing, you should write down your solution \textbf{without rotations}\footnote{Rotations, as well as wide and slice moves, can be useful to write down certain steps (like edge insertions), but can always remove them from the final solution that you submit.}. There are many good reasons to do so:
+Both in competition and while practicing, you should write down your solution \textbf{without rotations}\footnote{Rotations, as well as wide and slice moves, can be useful to write down certain steps (like edge insertions), but can you always remove them from the final solution that you submit.}. There are many good reasons to do so:
 
 \begin{itemize}
 \item Using rotations, it is easier to make mistakes.
-\item Rotations can hide cancellations: things like \dots \m{R z\ps U\p} \dots are a terrible way to waste moves!
+\item Rotations can hide cancellations: things like \dots\m{R z\ps U\p}\dots\,are a terrible way to waste moves!
 \item While solving, if you rotate the cube, you always need to keep in mind which side is where.
 \end{itemize}
 
-How to write a solution without rotations? A PLL in B is very awkward. There is an easy way: keeping the standard orientation, with a BOY color scheme (the ``standard'' one), you just need to remember that the white-centered layer is always \m U, the green-centered one is \m F, the yellow-centered one is \m D and so on. Every time you move a layer, for example the white-centered one, you don't need to care about how you are looking at the cube at that moment: just write \m U.
+How to write a solution without rotations? A PLL on B is very awkward! There is an easy way: keeping the standard orientation, with a BOY color scheme (the ``standard'' one), you just need to remember that the white-centered layer is always \m U, the green-centered one is \m F, the yellow-centered one is \m D and so on. Every time you move a layer, for example the white-centered one, you don't need to care about how you are looking at the cube at that moment: just write \m U.
 To help memorizing the scheme (not that it is hard), remember that Blue and Red begin with the same letter as their layer. This trick actually works well in many other languages too.
 
 \section{Backup solution}
@@ -2278,19 +2260,19 @@ It is good habit, in time-limited competitions, to write a ``backup solution''. 
 For example, if you average about 35 moves, but after 20 minutes you have found and written down somewhere a 40 moves solution, you will be more relaxed for the remaining 40 minutes. You can even write it down on the official sheet: if you later want to change your solution, you can delete the backup solution and write down the new one, or simply submit it on a different sheet of paper. There are many possible approaches to finding a backup solution:
 
 \begin{itemize}
-\item Force yourself to have found and written a solution, no matter how bad, in a fixed time limit (i.e.: 35 minutes). I don't do this, but it can be useful if you often find yourself at the end of the hour without anything written down.
-\item If you come across some solution by chance (i.e.: you have found a good start and solving the cube to re-scramble it you get a PLL skip), take note of it somewhere.
-\item What I do: I don't really find backup solutions, but many backup skeletons. For example, my goal is usually sub-28; in this case, a skeleton leaving 3 corners in 24 moves is not good, but if I find one I keep it somewhere. If I have, for example, 10 minutes left and I don't have anything better, I look for an insertion in that skeleton. A single 3c insertion usually takes me about 5 minutes, so you should adjust my ``10 minutes'' to your speed.
+\item Force yourself to have found and written a solution, no matter how bad, in a fixed time limit (for example 35 minutes). I don't do this, but it can be useful if you often find yourself at the end of the hour without anything written down.
+\item If you come across some solution by chance (for example you have found a good start and solving the cube to re-scramble it you get a PLL skip), take note of it somewhere.
+\item What I do: I don't really find backup solutions, but rather backup skeletons. For example, my goal is usually sub-28; in this case, a skeleton leaving 3 corners in 24 moves is not good, but if I find one I keep it somewhere. If I have, for example, 10 minutes left and I don't have anything better, I look for an insertion in that skeleton. A single 3c insertion usually takes me about 5 minutes, so you should adjust my ``10 minutes'' to your speed.
 \end{itemize}
 
-What can a good backup solution be? Any solution! Anything is better than a DNF, especially now that the preferred format for FMC (in official competitions) is  ``Mean of 3'': a single DNF gives you a DNF mean.
+What can a good backup solution be? Any solution! Anything is better than a DNF, especially now that the preferred format for FMC (in official competitions) is  ``mean of 3'': a single DNF gives you a DNF mean.
 
 \section{Time managment}
 \label{time-ma}
 
 ``How to manage your time'' is a complex topic, and I don't want to say that my advice is absolutely good in any case: follow it carefully!
 
-In fact, until this year (2019) I considered myself pretty bad at time management. Only after a lot of ``competition simualtion'' practice I got better at it. I am afraid there is no special technique other than ``practice, practice, practice'' to build up a better time management.
+In fact, until early 2019 I considered myself pretty bad at time management. Only after a lot of ``competition simualtion'' practice I got better at it. I am afraid there is no special technique other than ``practice, practice, practice'' to build up a better time management.
 
 \subsection{Don't get stuck}
 
@@ -2329,7 +2311,7 @@ A thread dedicated to FMC, where people constantly post their results and ask fo
 
 A thread by Arnaud van Galen collecting the most useful techniques, already included in this tutorial.
 
-\item A tutorial forc orner commutators by Brian Yu: \url{https://www.speedsolving.com/forum/threads/bh-tutorial.12268/}
+\item A tutorial for corner commutators by Brian Yu: \url{https://www.speedsolving.com/forum/threads/bh-tutorial.12268/}
 \end{itemize}
 
 \section*{Other tutorials}
@@ -2358,7 +2340,7 @@ Cube solving programs can be useful to compare your solution with the optimal on
 \begin{itemize}
 \item Cube Explorer, a cube solving program by Herbert Kociemba: \url{http://kociemba.org/cube.htm}
 
-It can be used, for example, to find the optimal algorithm for a given case or the best possible ending for a partial solution (see also the last example in Section \ref{insert_pairs}). Pay attention in this last case: you may beat the optimal solution with insertions!
+It can be used, for example, to find the optimal algorithm for a given case or the best possible ending for a partial solution (see also the last example in Section \ref{insert_pairs}). Remember that in this last case you may beat the optimal solution with insertions!
 \item Insertion Finder, by Baiqiang Dong: \url{https://fewestmov.es/if}
 
 This tool is very useful to check if you have found optimal insertions for a given skeleton.
@@ -3103,14 +3085,14 @@ In the following exercises you are asked to find a skeleton. In the first set yo
 \chapter{A (way too short) introduction to Domino Reduction}
 \label{appendixdomino}
 
-The goal of this appendix is to give a brief introduction to the Domino Reduction method. The explanations are taken from \href{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S?usp=sharing}{Alexandros Fokianos' and Tommaso Raposio's tutorial}\footnote{\url{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S?usp=sharing}}. If you want a more detailed resource, you can skip this last few pages and learn everything you need from there.
+The goal of this appendix is to give a brief introduction to the domino reduction method. The explanations are taken from \href{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S?usp=sharing}{Alexandros Fokianos' and Tommaso Raposio's tutorial}\footnote{\url{https://drive.google.com/drive/folders/1mppifILqu9Bu2phr8zhXGcXasBsSkv_S?usp=sharing}}. If you want a more detailed resource, you can skip this last few pages and learn everything you need from there.
 
 \section{Step 1: reduce to domino}
 
 The first step of the method is reducing to the cube to the \m{<U,D,R2,L2,F2,B2>} moveset (see section \ref{subsection:eoToDR}). In order to do so, you need to:
 \begin{enumerate}
 \item[(a)] Orient all edges (with respect to \m{F}/\m{B} or \m{R}/\m{L});
-\item[(b)] Place the E-layer edges on the E-layer (non necessarily each in their respective spot);
+\item[(b)] Place the E-layer edges on the E-layer (non necessarily in their respective spot);
 \item[(c)] Orient corners (with respect to \m{U}/\m{D}).
 \end{enumerate}
 
@@ -3124,7 +3106,7 @@ There are different ways to solve this first step, but the easiest to get a gras
 \item Apply the ``trigger''.
 \end{enumerate}
 
-The first substep is the same as that explained in Section \ref{eo}. For the last 3 cases, the first thing you need to know is what \emph{triggers} are. They are four basic cases from which it is easy to reduce to the DR state, that resemble an F2L pair insertion in CFOP\footnote{Except for the first one, which is just one move}. Here they are:
+The first substep is the same as that explained in Section \ref{eo}. For the last 3 cases, the first thing you need to know is what \emph{triggers} are. They are four basic cases from which it is easy to reduce to the DR state; some\footnote{All except the first one, which is just one move} resemble an F2L pair insertion of CFOP. Here they are:
 
 \begin{tabular}{cccc}
 \includesvg{img/DR_trigger_R} & \includesvg{img/DR_trigger_RUpRp}
@@ -3135,9 +3117,9 @@ The first substep is the same as that explained in Section \ref{eo}. For the las
 
 In each case the notation ``4c1e'', ``3c1e'' and so on means \emph{4 misoriented corners, 1 misplaced E-layer edge}, and so on. Remember than in each of these cases you can replace the last move by its inverse and still get a DR!
 
-The goal of the second substep is thus to reduce to 3 or 4 bad corners and do one or 2 misplaced edges. After that, in substep 3 you can use moves from the DR moveset \m{<U,D,R2,L2,F2,B2>} to setup those 3-5 pieces to one of these triggers; don't use non-DR moves in this third substep, or you'll change the number of bad corners/misplaced edges. Lastly, in substep 4 you apply the correct trigger and get a DR.
+The goal of the second substep is thus to reduce to 3 or 4 bad corners and to one or 2 misplaced edges. After that, in substep 3 you can use moves from the DR moveset \m{<U,D,R2,L2,F2,B2>} to setup those 3-5 pieces to one of these triggers; don't use non-DR moves in this third substep, or you'll change the number of bad corners/misplaced edges. Lastly, in substep 4 you apply the correct trigger and get a DR.
 
-Ideally, one should try to find an EO that has already a ``decent'' number of bad corners, so that the simplification step is quit short (1 to 3 moves). Setting up the pieces to a trigger configuration can be tricky, especially in the 4c2e case; it gets easier in the 4c1e and even easier in the 3c1e cases, because you have fewer pieces to take care of. Of course if you have 3 bad corners and 1 misplaced edge you can try setting up to any of the two 3c1e triggers.
+Ideally, one should try to find an EO such that the simplification step is quite short (1 to 3 moves). Setting up the pieces to a trigger configuration can be tricky, especially in the 4c2e case; it gets easier in the 4c1e and even easier in the 3c1e cases, because you have fewer pieces to take care of. Of course if you have 3 bad corners and 1 misplaced edge you can try setting up to any of the two 3c1e triggers.
 
 Let's see an example:
 
@@ -3170,11 +3152,11 @@ Getting a DR can be tricky at first; don't expect to be able to use this method 
 
 \section{Step 2: all the rest!}
 
-Once you have a DR, there are different ways to complete you solution. Since this is just an introduction to the method, I have decided to describe here just two of them.
+Once you have a DR, there are different ways to complete your solution. Since this is just an introduction to the method, I have decided to describe here just two of them.
 
 \subsection{Blockbuilding}
 
-The first, simple thing one may try after a DR is to build blocks and get a skeleton as in a ``normal'' solve, but using only moves from the domino moveset. As with EO-start solves, since pieces are already oriente they tend to match easily, and skips are not rare! However, as a drowback, a DR takes many more moves to achieve than a simple EO.
+The first, simple thing one may try after a DR is to build blocks and get a skeleton as in a ``normal'' solve, but using only moves from the domino moveset. As with EO-start solves, since pieces are already oriented, they tend to match easily, and skips are not rare! However, as a drowback, a DR takes many more moves to achieve than a simple EO.
 
 For example, let's continue the solve we started at the beginning of this section:
 
@@ -3213,7 +3195,7 @@ One last tip for DR + blockbuilding: the most important blocks are those consist
 
 An approach to domino solves that is usually very efficient is solving the corners, together with some edges, and then finish the remaining edges with insertions. There reason is that many short edges cycles ($6$ or $8$ moves) are for cases where DR is already solved. For example:
 \begin{center}
-\m{M\ps U2 M U2}, \quad\m{(R2 Fw2 Rw U)*2},\quad\m{(R2 Fw2 Rw Uw)*2}, \quad \m{(R2 F2 R2 U2)*2} \qquad \emph{(3 edges)}\\
+\m{M\ps U2 M U2}, \quad\m{(R2 Fw2 R2 U)*2},\quad\m{(R2 Fw2 R2 Uw)*2}, \quad \m{(R2 F2 R2 U2)*2} \qquad \emph{(3 edges)}\\
 \m{(R2 U2)*3}, \quad \m{(M2 U2)*2}, \quad \m{R2 F2 R2 U2 F2 R2 F2 U2}, \quad \m{(R2 F2 Rw2 U)*2},\qquad \emph{(2e2e)}
 \end{center}
 
@@ -3246,11 +3228,11 @@ Sol: \m{R\ps F\ps B L\ps D2 F D\ps B2 D\ps B\ps D L2 B2 U\ps L2 D F2 R2 B2 D\ps 
 \end{tabular}
 \bigskip
 
-You might think that cancelling 4 moves with an 8 moves edge 3-cycle is very lucky, but it is actually quite common with DR. With this method, edge insertions are often more efficient than corners insertion.
+You might think that cancelling 4 moves with an 8 moves edge 3-cycle is very lucky, but it is actually quite common with DR. With this method, edge insertions are often more efficient than corner insertions.
 
 \section{World record solve}
 
-The current world record single (16 moves) that I got at FMC 2019 is a DR solves. I have used many of the techniques explained so far: inverse scramble, multiple edge insertions (also free slices), center insertions, ``replace and shorten'... 
+The current world record single (16 moves) that I got at FMC 2019 is a DR solve. I have used many of the techniques explained so far: inverse scramble, multiple edge insertions (also free slices), center insertions, ``replace and shorten''... 
 
 The final solution ended up being quite lucky, but it is a nice representative of what FMC is like: the more you know, the higher your chances of getting lucky are.
 
@@ -3274,7 +3256,7 @@ Inv: \m{F\ps U R U2 L\ps U2 B\ps D2 B\ps R L B2 D B2 L\ps D2 B\ps R2 U2 R2 F\ps 
 
 \emph{First solution:}\\
 \m{D2 F\ps D2 U2 F\ps L2 R2 {[U\ps D B2 D B2 U]} B2 F L2 R\ps F\ps D U\p}\\
-\emph{Replace the moves in square brackets with \m{R2 D R2 D}, which cancels 2 with the preceding \m{R2}}\\
+\emph{Replace the moves in square brackets with \m{R2 D R2 D}, which cancels 2 with the preceding \m{R2}}.\\
 
 \emph{Final solution:}\\
 \m{D2 F\ps D2 U2 F\ps L2 D R2 D B2 F L2 R\ps F\ps D U\p} (16)\\
@@ -3284,7 +3266,7 @@ Inv: \m{F\ps U R U2 L\ps U2 B\ps D2 B\ps R L B2 D B2 L\ps D2 B\ps R2 U2 R2 F\ps 
 \end{center}}
 \end{minipage}\\
 \hline
-\emph{See on }\href{https://alg.cubing.net/?alg=R-_F-_B_L-_\%2F\%2FEO_(4\%2F4)\%0AD2_F_\%2F\%2FSimplify_(2\%2F6)\%0AD-_B2_D-_B-_\%2F\%2FDR_(4\%2F10)\%0AD_L2_B2_\%2F\%2FCorner_bars_(3\%2F13)\%0AU-_L2_U_D_F2_D-_U_\%2F\%2F3e_(7\%2F20)&setup=R-_U-_F__U2_B2_L__D2_B2_L-_D2_F2_R-_F2_L__U-_R__B__F2_L-_R2_U-_R__U__B__R-_U-_F}{alg.cubing.net}\\
+\emph{See on }\href{https://alg.cubing.net/?alg=U_D-_F_R_\%2F\%2FEO_(4\%2F4)\%0AL2_F-_B2_\%2F\%2FSetup_to_trigger_(3\%2F7)\%0AU-_B2_U-_\%2F\%2FDR_(3\%2F10)\%0AR2_B_F_D2_\%2F\%2F5e_(4\%2F14)&setup=F-_U_R_U2_L-_U2_B-_D2_B-_R_L_B2_D_B2_L-_D2_B-_R2_U2_R2_F-_L2_D2_F-_U_R_\%2F\%2FInverse_scramble}{alg.cubing.net}\\
 \hline
 \end{tabular}
 \bigskip
@@ -3296,7 +3278,7 @@ This very complicated solve actually could have been found in a much easier way,
 \m{(U D\ps F R)} & \comment{EO (4/4)}\\
 \m{(L2 F\ps B2)} & \comment{Setup to trigger (3/7)}\\
 \m{(D\ps R2 D\p)} & \comment{DR (3/10)}\\
-\m{(L F U2 D2 F D2)} & \comment{Finish (6/16)}\\
+\m{(L2 F U2 D2 F D2)} & \comment{Finish (6/16)}\\
 \end{tabular}
 \end{center}
 
