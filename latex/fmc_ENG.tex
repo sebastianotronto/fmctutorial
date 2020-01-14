@@ -547,7 +547,7 @@ Someone may have noticed, while studying different methods, that “Edge Orienta
 
 One of the best things to do is trying to solve, at least partially, edge orientation during the blockbuilding step. Experience with methods such as ZZ and Petrus can lead to being able to easily spot if an edge will be correctly oriented after some moves. If you don't have this ability yet, remember that in FMC solves you can go back and modify your solution every time you wish: if you have troubles with EO, try going back and add/change some moves to see if things get better (see also Section \ref{goback}).
 
-However, don't dismiss the ``EO first approach'' too quickly: notable cubers such as João Pedro Batista Ribeiro Costa (2015 World Champion) and Grzegorz Łuczyna (2010 European Champion) almost always start with edge orientation and other like Sébastien Auroux (2011 World Champion) and myself do it very often. For more details and examples see section \ref{eo}.
+%However, don't dismiss the ``EO first approach'' too quickly: notable cubers such as João Pedro Batista Ribeiro Costa (2015 World Champion) and Grzegorz Łuczyna (2010 European Champion) almost always start with edge orientation and other like Sébastien Auroux (2011 World Champion) and myself do it very often. For more details and examples see section \ref{eo}.
 
 \subsection{Which block should I build?}
 
@@ -1173,7 +1173,7 @@ So here are the numbers:\footnote{Mostly taken from \href{https://www.speedsolvi
 \hline
 Corner 3-cycle & 5/6\\
 \hline
-Edge 3-cycle\footnote{Warning: this varies a lot! If edges are oriented early in the solve, you have better chances of finding a good insertion (6 or 8 movers).} & 7\\
+Edge 3-cycle\footnote{Warning: this varies a lot! If edges are oriented early in the solve, you have better chances of finding a good insertion (6 or 8 movers). If you do a domino reduction solve (see Section \ref{subsection:eoToDR} and Appendix \ref{appendixdomino}), edge insertions become much more efficient!} & 7\\
 \hline
 2 Twisted Corners (2 comms) & 8\\
 \hline
@@ -2085,7 +2085,7 @@ Sol: \m{D2 R U\ps R\ps B2 L2 B\ps R\ps U F\ps U\ps R\ps D\ps R U2 R\ps D R2 U\ps
 \end{tabular}
 \bigskip
 
-Here the first insertions solve 2 of the 5 edges and unsolves a solved one, leading to 4 edges unsolved in a 4-cycle. The second insertion is a setup to a 4-cycle.
+Here the first insertion solves 2 of the 5 edges and unsolves a solved one, leading to 4 edges unsolved in a 4-cycle. The second insertion is a setup to a 4-cycle.
 
 It is not always easy to understand what is a good place to insert a slice move in a skeleton. I mostly go with trial-and-error, but there are some tricks to keep in mind:
 \begin{itemize}
@@ -2167,7 +2167,7 @@ Both Attila and Javier only use their CF method, which breaks the ``never restri
 
 Sometimes it happens that you have a nice solution written down, but some short subsequence of this solution is actually inefficient. This might be hard to notice during the normal steps of the solve, especially when you have used a combination of NISS and insertions so that moves that are next to each other in the final solution are actually far apart in your thought process.
 
-These inefficient subsequences can be substituted with equivalent but shorter sequences, giving a better solution. One way to do so is to go through your solve once more and look for inefficient sequences. These may look like ``F2L-1'' solutions, ``domino'' steps (see Section \ref{subsection:eoToDR} and Appendix \ref{appendixdomino}) or something else. This is not very easy in practice, unless the sequence you are looking at is a domino step. For this case you can see an example at the end of Appendix \ref{appendixdomino}, or many more in the DR tutorial by Alex and Tommaso\footnote{You can find a link link in Section \ref{subsection:eoToDR}, Appendix A or Appendix \ref{appendixdomino}.}
+These inefficient subsequences can be substituted with equivalent but shorter sequences, giving a better solution. One way to do so is to go through your solve once more and look for inefficient sequences. These may look like ``F2L-1'' solutions, ``domino'' steps (see Section \ref{subsection:eoToDR} and Appendix \ref{appendixdomino}) or something else. This is not very easy in practice, unless the sequence you are looking at is a domino step. For this case you can see an example at the end of Appendix \ref{appendixdomino} (WR solve), or many more in the DR tutorial by Alex and Tommaso\footnote{You can find a link link in Section \ref{subsection:eoToDR}, Appendix A or Appendix \ref{appendixdomino}.}
 
 Once you have found a ``suspicious'' sequence, apply it\footnote{Or its inverse.} to a solved cube as a scramble, and try to find a shorter solution. If you do, you can replace the original sequence with the shorter one, and save a few moves! If you find an alternative solution of the same length as the original one, you can try and see if it cancels something with the moves around it.
 
@@ -2186,13 +2186,6 @@ And solve it with \m{B R\ps D R D\ps B\p}:
 \end{center}
 
 
-%
-%\chapter{Some other methods}
-%
-%The ``standard'' method is building a skeleton with blockbuilding and then solving the last few pieces with insertions. But there are some other approaches worth mentioning.
-%
-%
-%
 
 
 
@@ -3114,6 +3107,8 @@ The first substep is the same as that explained in Section \ref{eo}. For the las
 \textbf{Case:} 4c2e & \textbf{Case:} 3c1e & \textbf{Case:} 3c1e & \textbf{Case:} 4c1e\\
 \textbf{Solve:} \m{R} & \textbf{Solve:} \m{R U\ps R\p} & \textbf{Solve:} \m{R U R\p} & \textbf{Solve:} \m{R U2 R\p} \\ & & & or \m{L F2 L\p}
 \end{tabular}
+
+(In the pictures above, only the U/D stickers and the E-layer pieces are colored. I have used the same color for stickers of opposite layers: both the U and D stickers are white, the F/B stickers are green and the L/R stickers are red. This is because, for this step, we don't care about the ``side'' colors of the U/D pieces and we don't need to distinguish between opposite colors.)
 
 In each case the notation ``4c1e'', ``3c1e'' and so on means \emph{4 misoriented corners, 1 misplaced E-layer edge}, and so on. Remember than in each of these cases you can replace the last move by its inverse and still get a DR!
 
