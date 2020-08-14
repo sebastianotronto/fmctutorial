@@ -1,94 +1,94 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Think outside the box}{11}{chapter.1}
-\contentsline {section}{\numberline {1.1}Petrus}{11}{section.1.1}
-\contentsline {section}{\numberline {1.2}Roux}{12}{section.1.2}
-\contentsline {section}{\numberline {1.3}ZZ}{12}{section.1.3}
-\contentsline {section}{\numberline {1.4}CFOP (Fridrich) and FreeFOP}{12}{section.1.4}
-\contentsline {section}{\numberline {1.5}Keyhole F2L}{13}{section.1.5}
-\contentsline {section}{\numberline {1.6}Heise}{13}{section.1.6}
-\contentsline {section}{\numberline {1.7}What and how to learn}{14}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Petrus}{14}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}Roux}{14}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}ZZ}{14}{subsection.1.7.3}
-\contentsline {subsection}{\numberline {1.7.4}CFOP/FreeFOP}{15}{subsection.1.7.4}
-\contentsline {chapter}{\numberline {2}How to proceed during a solve}{17}{chapter.2}
-\contentsline {section}{\numberline {2.1}Blockbuilding}{17}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Align then join}{17}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Move it out of the way}{18}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Destroy and restore}{18}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Keyhole}{19}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}One move, two goals}{19}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Influence later steps}{20}{subsection.2.1.6}
-\contentsline {subsection}{\numberline {2.1.7}Pay attention to EO}{20}{subsection.2.1.7}
-\contentsline {subsection}{\numberline {2.1.8}Which block should I build?}{20}{subsection.2.1.8}
-\contentsline {subsection}{\numberline {2.1.9}Ready-made blocks: how to deal with them?}{21}{subsection.2.1.9}
-\contentsline {subsection}{\numberline {2.1.10}Tricks to get fast and advanced techniques}{21}{subsection.2.1.10}
-\contentsline {section}{\numberline {2.2}Find a good skeleton}{22}{section.2.2}
-\contentsline {section}{\numberline {2.3}Commutators}{23}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Corner commutators}{23}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Edge commutators}{24}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Other edge 3-cycles}{24}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Block commutators}{25}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Insertions}{25}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Simple insertions}{25}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Multiple insertions: separated cycles (3 edges and 3 corners)}{27}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Multiple insertions: 2 or 3 twisted corners}{28}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Multiple insertions: 4 corners}{28}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Multiple insertions: 5 corners}{30}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Multiple insertions: 5 edges}{31}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Other insertions: 2 corners and 2 edges}{31}{subsection.2.4.7}
-\contentsline {subsection}{\numberline {2.4.8}Other insertions: 3 edges and some corners}{32}{subsection.2.4.8}
-\contentsline {subsection}{\numberline {2.4.9}Other insertions: conjugate and solve}{32}{subsection.2.4.9}
-\contentsline {subsection}{\numberline {2.4.10}Move count (an estimate)}{33}{subsection.2.4.10}
-\contentsline {subsection}{\numberline {2.4.11}Insertion Finder}{34}{subsection.2.4.11}
-\contentsline {section}{\numberline {2.5}Starting with EO}{34}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}EO + blockbuilding}{34}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Domino Reduction}{35}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Partial Domino Reduction}{36}{subsection.2.5.3}
-\contentsline {subsubsection}{Classic PDR}{36}{section*.15}
-\contentsline {subsubsection}{EO+CO PDR}{36}{section*.16}
-\contentsline {section}{\numberline {2.6}Other simple strategies}{37}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Go back and change your solve}{37}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Get lucky!}{37}{subsection.2.6.2}
-\contentsline {subsubsection}{First example: insert last pair(s)}{37}{section*.17}
-\contentsline {subsubsection}{Second example: how to use algorithms}{38}{section*.18}
-\contentsline {chapter}{\numberline {3}Advanced tools}{39}{chapter.3}
-\contentsline {section}{\numberline {3.1}Inverse scramble}{39}{section.3.1}
-\contentsline {section}{\numberline {3.2}Pseudo blocks, premoves and NISS}{40}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Pseudo blocks}{40}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Premoves}{41}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}NISS}{42}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Reverse NISS}{45}{section.3.3}
-\contentsline {section}{\numberline {3.4}Using NISS during EO}{46}{section.3.4}
-\contentsline {section}{\numberline {3.5}Useful algorithms}{47}{section.3.5}
-\contentsline {section}{\numberline {3.6}Pair analysis}{47}{section.3.6}
-\contentsline {section}{\numberline {3.7}Solving with skew centers}{48}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Skew centers and NISS}{49}{subsection.3.7.1}
-\contentsline {section}{\numberline {3.8}Advanced edge insertions: free slices}{49}{section.3.8}
-\contentsline {section}{\numberline {3.9}Corners First}{51}{section.3.9}
-\contentsline {section}{\numberline {3.10}Replace and shorten}{53}{section.3.10}
-\contentsline {chapter}{\numberline {4}How to practice}{55}{chapter.4}
-\contentsline {section}{\numberline {4.1}No time limit and competition simulation}{55}{section.4.1}
-\contentsline {section}{\numberline {4.2}Use pen and paper}{55}{section.4.2}
-\contentsline {section}{\numberline {4.3}Compare yourself to the masters (and study their solves)}{55}{section.4.3}
-\contentsline {section}{\numberline {4.4}Hard scrambles}{56}{section.4.4}
-\contentsline {section}{\numberline {4.5}Deliberate practice}{56}{section.4.5}
-\contentsline {section}{\numberline {4.6}Fast scrambling}{56}{section.4.6}
-\contentsline {section}{\numberline {4.7}Study!}{56}{section.4.7}
-\contentsline {chapter}{\numberline {5}In competition}{57}{chapter.5}
-\contentsline {section}{\numberline {5.1}How to write a solution}{57}{section.5.1}
-\contentsline {section}{\numberline {5.2}Backup solution}{57}{section.5.2}
-\contentsline {section}{\numberline {5.3}Time managment}{58}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Don't get stuck}{58}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}(Don't) explore every possibility}{58}{subsection.5.3.2}
-\contentsline {chapter}{\numberline {A}Other resources}{59}{appendix.A}
-\contentsline {chapter}{\numberline {B}Notation}{61}{appendix.B}
-\contentsline {chapter}{\numberline {C}Some exercises by Reto Bubendorf}{63}{appendix.C}
-\contentsline {section}{\numberline {C.1}Direct solve}{63}{section.C.1}
-\contentsline {section}{\numberline {C.2}Find the skeleton}{66}{section.C.2}
-\contentsline {chapter}{\numberline {D}A (way too short) introduction to Domino Reduction}{69}{appendix.D}
-\contentsline {section}{\numberline {D.1}Step 1: reduce to domino}{69}{section.D.1}
-\contentsline {section}{\numberline {D.2}Step 2: all the rest!}{70}{section.D.2}
-\contentsline {subsection}{\numberline {D.2.1}Blockbuilding}{70}{subsection.D.2.1}
-\contentsline {subsection}{\numberline {D.2.2}Solving corners first}{71}{subsection.D.2.2}
-\contentsline {section}{\numberline {D.3}World record solve}{71}{section.D.3}
+\contentsline {chapter}{\numberline {1}Think outside the box}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Petrus}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Roux}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.3}ZZ}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}CFOP (Fridrich) and FreeFOP}{12}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Keyhole F2L}{13}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Heise}{13}{section.1.6}%
+\contentsline {section}{\numberline {1.7}What and how to learn}{14}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Petrus}{14}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Roux}{14}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}ZZ}{14}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}CFOP/FreeFOP}{15}{subsection.1.7.4}%
+\contentsline {chapter}{\numberline {2}How to proceed during a solve}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Blockbuilding}{17}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Align then join}{17}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Move it out of the way}{18}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Destroy and restore}{18}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Keyhole}{19}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}One move, two goals}{19}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Influence later steps}{20}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Pay attention to EO}{20}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Which block should I build?}{20}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}Ready-made blocks: how to deal with them?}{21}{subsection.2.1.9}%
+\contentsline {subsection}{\numberline {2.1.10}Tricks to get fast and advanced techniques}{21}{subsection.2.1.10}%
+\contentsline {section}{\numberline {2.2}Find a good skeleton}{22}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Commutators}{23}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Corner commutators}{23}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Edge commutators}{24}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Other edge 3-cycles}{24}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Block commutators}{25}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Insertions}{25}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Simple insertions}{25}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Multiple insertions: separated cycles (3 edges and 3 corners)}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Multiple insertions: 2 or 3 twisted corners}{28}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Multiple insertions: 4 corners}{28}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Multiple insertions: 5 corners}{30}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Multiple insertions: 5 edges}{31}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Other insertions: 2 corners and 2 edges}{31}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.4.8}Other insertions: 3 edges and some corners}{32}{subsection.2.4.8}%
+\contentsline {subsection}{\numberline {2.4.9}Other insertions: conjugate and solve}{32}{subsection.2.4.9}%
+\contentsline {subsection}{\numberline {2.4.10}Move count (an estimate)}{33}{subsection.2.4.10}%
+\contentsline {subsection}{\numberline {2.4.11}Insertion Finder}{34}{subsection.2.4.11}%
+\contentsline {section}{\numberline {2.5}Starting with EO}{34}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}EO + blockbuilding}{34}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Domino Reduction}{35}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Partial Domino Reduction}{36}{subsection.2.5.3}%
+\contentsline {subsubsection}{Classic PDR}{36}{section*.15}%
+\contentsline {subsubsection}{EO+CO PDR}{36}{section*.16}%
+\contentsline {section}{\numberline {2.6}Other simple strategies}{37}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Go back and change your solve}{37}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Get lucky!}{37}{subsection.2.6.2}%
+\contentsline {subsubsection}{First example: insert last pair(s)}{37}{section*.17}%
+\contentsline {subsubsection}{Second example: how to use algorithms}{38}{section*.18}%
+\contentsline {chapter}{\numberline {3}Advanced tools}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Inverse scramble}{39}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Pseudo blocks, premoves and NISS}{40}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Pseudo blocks}{40}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Premoves}{41}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}NISS}{42}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Reverse NISS}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Using NISS during EO}{46}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Useful algorithms}{47}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Pair analysis}{47}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Solving with skew centers}{48}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Skew centers and NISS}{49}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Advanced edge insertions: free slices}{49}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Corners First}{51}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Replace and shorten}{53}{section.3.10}%
+\contentsline {chapter}{\numberline {4}How to practice}{55}{chapter.4}%
+\contentsline {section}{\numberline {4.1}No time limit and competition simulation}{55}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Use pen and paper}{55}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Compare yourself to the masters (and study their solves)}{55}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Hard scrambles}{56}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Deliberate practice}{56}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Fast scrambling}{56}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Study!}{56}{section.4.7}%
+\contentsline {chapter}{\numberline {5}In competition}{57}{chapter.5}%
+\contentsline {section}{\numberline {5.1}How to write a solution}{57}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Backup solution}{57}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Time managment}{58}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Don't get stuck}{58}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}(Don't) explore every possibility}{58}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {A}Other resources}{59}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Notation}{61}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Some exercises by Reto Bubendorf}{63}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Direct solve}{63}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Find the skeleton}{66}{section.C.2}%
+\contentsline {chapter}{\numberline {D}A (way too short) introduction to Domino Reduction}{69}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Step 1: reduce to domino}{69}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Step 2: all the rest!}{70}{section.D.2}%
+\contentsline {subsection}{\numberline {D.2.1}Blockbuilding}{70}{subsection.D.2.1}%
+\contentsline {subsection}{\numberline {D.2.2}Solving corners first}{71}{subsection.D.2.2}%
+\contentsline {section}{\numberline {D.3}World record solve}{71}{section.D.3}%
