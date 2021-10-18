@@ -1,0 +1,32 @@
+html,
+body {
+  display: grid;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 245, 235);
+  place-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  background-color: white;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.25);
+  min-width: 40em;
+  padding: 1em 2em 2em;
+  display: grid;
+}
+
+.icon {
+  height: 2em;
+  vertical-align: middle;
+}
