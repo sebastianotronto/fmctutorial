@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/VoidLinux) (preloaded format=pdflatex 2022.1.19)  2 FEB 2022 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/VoidLinux) (preloaded format=pdflatex 2022.1.19)  2 FEB 2022 10:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2756,19 +2756,13 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 (LaTeX3)     3282.
 
  (./fmc_ENG.aux)
-
-Package rerunfilecheck Warning: File `fmc_ENG.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `fmc_ENG.out':
-(rerunfilecheck)             Before: F4FD2838E18C4272C1F0AEB6537C6A52;6194
-(rerunfilecheck)             After:  791DA0827E4CB2FB27C17F7A7459E2C8;14736.
+Package rerunfilecheck Info: File `fmc_ENG.out' has not changed.
+(rerunfilecheck)             Checksum: 791DA0827E4CB2FB27C17F7A7459E2C8;14736.
  ) 
 Here is how much of TeX's memory you used:
  15153 strings out of 478994
  256741 string characters out of 5864719
- 577807 words of memory out of 5000000
+ 577808 words of memory out of 5000000
  31480 multiletter control sequences out of 15000+600000
  475489 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2787,7 +2781,7 @@ t/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/
 lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/
 public/lm/lmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on fmc_ENG.pdf (72 pages, 798638 bytes).
+Output written on fmc_ENG.pdf (72 pages, 799209 bytes).
 PDF statistics:
  1815 PDF objects out of 2073 (max. 8388607)
  1471 compressed objects within 15 object streams
