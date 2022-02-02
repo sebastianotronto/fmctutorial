@@ -1,89 +1,89 @@
-\BOOKMARK [0][-]{chapter.1}{Think outside the box}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Petrus}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Roux}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{ZZ}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{CFOP \(Fridrich\) and FreeFOP}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.5}{Keyhole F2L}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.6}{Heise}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.7}{What and how to learn}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.7.1}{Petrus}{section.1.7}% 9
-\BOOKMARK [2][-]{subsection.1.7.2}{Roux}{section.1.7}% 10
-\BOOKMARK [2][-]{subsection.1.7.3}{ZZ}{section.1.7}% 11
-\BOOKMARK [2][-]{subsection.1.7.4}{CFOP/FreeFOP}{section.1.7}% 12
-\BOOKMARK [0][-]{chapter.2}{How to proceed during a solve}{}% 13
-\BOOKMARK [1][-]{section.2.1}{Blockbuilding}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.1.1}{Align then join}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.2}{Move it out of the way}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.3}{Destroy and restore}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.4}{Keyhole}{section.2.1}% 18
-\BOOKMARK [2][-]{subsection.2.1.5}{One move, two goals}{section.2.1}% 19
-\BOOKMARK [2][-]{subsection.2.1.6}{Influence later steps}{section.2.1}% 20
-\BOOKMARK [2][-]{subsection.2.1.7}{Pay attention to EO}{section.2.1}% 21
-\BOOKMARK [2][-]{subsection.2.1.8}{Which block should I build?}{section.2.1}% 22
-\BOOKMARK [2][-]{subsection.2.1.9}{Ready-made blocks: how to deal with them?}{section.2.1}% 23
-\BOOKMARK [2][-]{subsection.2.1.10}{Tricks to get fast and advanced techniques}{section.2.1}% 24
-\BOOKMARK [1][-]{section.2.2}{Find a good skeleton}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.3}{Commutators}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.3.1}{Corner commutators}{section.2.3}% 27
-\BOOKMARK [2][-]{subsection.2.3.2}{Edge commutators}{section.2.3}% 28
-\BOOKMARK [2][-]{subsection.2.3.3}{Other edge 3-cycles}{section.2.3}% 29
-\BOOKMARK [2][-]{subsection.2.3.4}{Block commutators}{section.2.3}% 30
-\BOOKMARK [1][-]{section.2.4}{Insertions}{chapter.2}% 31
-\BOOKMARK [2][-]{subsection.2.4.1}{Simple insertions}{section.2.4}% 32
-\BOOKMARK [2][-]{subsection.2.4.2}{Multiple insertions: separated cycles \(3 edges and 3 corners\)}{section.2.4}% 33
-\BOOKMARK [2][-]{subsection.2.4.3}{Multiple insertions: 2 or 3 twisted corners}{section.2.4}% 34
-\BOOKMARK [2][-]{subsection.2.4.4}{Multiple insertions: 4 corners}{section.2.4}% 35
-\BOOKMARK [2][-]{subsection.2.4.5}{Multiple insertions: 5 corners}{section.2.4}% 36
-\BOOKMARK [2][-]{subsection.2.4.6}{Multiple insertions: 5 edges}{section.2.4}% 37
-\BOOKMARK [2][-]{subsection.2.4.7}{Other insertions: 2 corners and 2 edges}{section.2.4}% 38
-\BOOKMARK [2][-]{subsection.2.4.8}{Other insertions: 3 edges and some corners}{section.2.4}% 39
-\BOOKMARK [2][-]{subsection.2.4.9}{Other insertions: conjugate and solve}{section.2.4}% 40
-\BOOKMARK [2][-]{subsection.2.4.10}{Move count \(an estimate\)}{section.2.4}% 41
-\BOOKMARK [2][-]{subsection.2.4.11}{Insertion Finder}{section.2.4}% 42
-\BOOKMARK [1][-]{section.2.5}{Starting with EO}{chapter.2}% 43
-\BOOKMARK [2][-]{subsection.2.5.1}{EO + blockbuilding}{section.2.5}% 44
-\BOOKMARK [2][-]{subsection.2.5.2}{Domino Reduction}{section.2.5}% 45
-\BOOKMARK [2][-]{subsection.2.5.3}{Partial Domino Reduction}{section.2.5}% 46
-\BOOKMARK [1][-]{section.2.6}{Other simple strategies}{chapter.2}% 47
-\BOOKMARK [2][-]{subsection.2.6.1}{Go back and change your solve}{section.2.6}% 48
-\BOOKMARK [2][-]{subsection.2.6.2}{Get lucky!}{section.2.6}% 49
-\BOOKMARK [0][-]{chapter.3}{Advanced tools}{}% 50
-\BOOKMARK [1][-]{section.3.1}{Inverse scramble}{chapter.3}% 51
-\BOOKMARK [1][-]{section.3.2}{Pseudo blocks, premoves and NISS}{chapter.3}% 52
-\BOOKMARK [2][-]{subsection.3.2.1}{Pseudo blocks}{section.3.2}% 53
-\BOOKMARK [2][-]{subsection.3.2.2}{Premoves}{section.3.2}% 54
-\BOOKMARK [2][-]{subsection.3.2.3}{NISS}{section.3.2}% 55
-\BOOKMARK [1][-]{section.3.3}{Reverse NISS}{chapter.3}% 56
-\BOOKMARK [1][-]{section.3.4}{Using NISS during EO}{chapter.3}% 57
-\BOOKMARK [1][-]{section.3.5}{Useful algorithms}{chapter.3}% 58
-\BOOKMARK [1][-]{section.3.6}{Pair analysis}{chapter.3}% 59
-\BOOKMARK [1][-]{section.3.7}{Solving with skew centers}{chapter.3}% 60
-\BOOKMARK [2][-]{subsection.3.7.1}{Skew centers and NISS}{section.3.7}% 61
-\BOOKMARK [1][-]{section.3.8}{Advanced edge insertions: free slices}{chapter.3}% 62
-\BOOKMARK [1][-]{section.3.9}{Corners First}{chapter.3}% 63
-\BOOKMARK [1][-]{section.3.10}{Replace and shorten}{chapter.3}% 64
-\BOOKMARK [0][-]{chapter.4}{How to practice}{}% 65
-\BOOKMARK [1][-]{section.4.1}{No time limit and competition simulation}{chapter.4}% 66
-\BOOKMARK [1][-]{section.4.2}{Use pen and paper}{chapter.4}% 67
-\BOOKMARK [1][-]{section.4.3}{Compare yourself to the masters \(and study their solves\)}{chapter.4}% 68
-\BOOKMARK [1][-]{section.4.4}{Hard scrambles}{chapter.4}% 69
-\BOOKMARK [1][-]{section.4.5}{Deliberate practice}{chapter.4}% 70
-\BOOKMARK [1][-]{section.4.6}{Fast scrambling}{chapter.4}% 71
-\BOOKMARK [1][-]{section.4.7}{Study!}{chapter.4}% 72
-\BOOKMARK [0][-]{chapter.5}{In competition}{}% 73
-\BOOKMARK [1][-]{section.5.1}{How to write a solution}{chapter.5}% 74
-\BOOKMARK [1][-]{section.5.2}{Backup solution}{chapter.5}% 75
-\BOOKMARK [1][-]{section.5.3}{Time managment}{chapter.5}% 76
-\BOOKMARK [2][-]{subsection.5.3.1}{Don't get stuck}{section.5.3}% 77
-\BOOKMARK [2][-]{subsection.5.3.2}{\(Don't\) explore every possibility}{section.5.3}% 78
-\BOOKMARK [0][-]{appendix.A}{Other resources}{}% 79
-\BOOKMARK [0][-]{appendix.B}{Notation}{}% 80
-\BOOKMARK [0][-]{appendix.C}{Some exercises by Reto Bubendorf}{}% 81
-\BOOKMARK [1][-]{section.C.1}{Direct solve}{appendix.C}% 82
-\BOOKMARK [1][-]{section.C.2}{Find the skeleton}{appendix.C}% 83
-\BOOKMARK [0][-]{appendix.D}{A \(way too short\) introduction to Domino Reduction}{}% 84
-\BOOKMARK [1][-]{section.D.1}{Step 1: reduce to domino}{appendix.D}% 85
-\BOOKMARK [1][-]{section.D.2}{Step 2: all the rest!}{appendix.D}% 86
-\BOOKMARK [2][-]{subsection.D.2.1}{Blockbuilding}{section.D.2}% 87
-\BOOKMARK [2][-]{subsection.D.2.2}{Solving corners first}{section.D.2}% 88
-\BOOKMARK [1][-]{section.D.3}{World record solve}{appendix.D}% 89
+\BOOKMARK [0][-]{chapter.1}{\376\377\000T\000h\000i\000n\000k\000\040\000o\000u\000t\000s\000i\000d\000e\000\040\000t\000h\000e\000\040\000b\000o\000x}{}% 1
+\BOOKMARK [1][-]{section.1.1}{\376\377\000P\000e\000t\000r\000u\000s}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{\376\377\000R\000o\000u\000x}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{\376\377\000Z\000Z}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{\376\377\000C\000F\000O\000P\000\040\000\050\000F\000r\000i\000d\000r\000i\000c\000h\000\051\000\040\000a\000n\000d\000\040\000F\000r\000e\000e\000F\000O\000P}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{\376\377\000K\000e\000y\000h\000o\000l\000e\000\040\000F\0002\000L}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{\376\377\000H\000e\000i\000s\000e}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{\376\377\000W\000h\000a\000t\000\040\000a\000n\000d\000\040\000h\000o\000w\000\040\000t\000o\000\040\000l\000e\000a\000r\000n}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.7.1}{\376\377\000P\000e\000t\000r\000u\000s}{section.1.7}% 9
+\BOOKMARK [2][-]{subsection.1.7.2}{\376\377\000R\000o\000u\000x}{section.1.7}% 10
+\BOOKMARK [2][-]{subsection.1.7.3}{\376\377\000Z\000Z}{section.1.7}% 11
+\BOOKMARK [2][-]{subsection.1.7.4}{\376\377\000C\000F\000O\000P\000/\000F\000r\000e\000e\000F\000O\000P}{section.1.7}% 12
+\BOOKMARK [0][-]{chapter.2}{\376\377\000H\000o\000w\000\040\000t\000o\000\040\000p\000r\000o\000c\000e\000e\000d\000\040\000d\000u\000r\000i\000n\000g\000\040\000a\000\040\000s\000o\000l\000v\000e}{}% 13
+\BOOKMARK [1][-]{section.2.1}{\376\377\000B\000l\000o\000c\000k\000b\000u\000i\000l\000d\000i\000n\000g}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.1.1}{\376\377\000A\000l\000i\000g\000n\000\040\000t\000h\000e\000n\000\040\000j\000o\000i\000n}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.2}{\376\377\000M\000o\000v\000e\000\040\000i\000t\000\040\000o\000u\000t\000\040\000o\000f\000\040\000t\000h\000e\000\040\000w\000a\000y}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.3}{\376\377\000D\000e\000s\000t\000r\000o\000y\000\040\000a\000n\000d\000\040\000r\000e\000s\000t\000o\000r\000e}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.4}{\376\377\000K\000e\000y\000h\000o\000l\000e}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.5}{\376\377\000O\000n\000e\000\040\000m\000o\000v\000e\000,\000\040\000t\000w\000o\000\040\000g\000o\000a\000l\000s}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.6}{\376\377\000I\000n\000f\000l\000u\000e\000n\000c\000e\000\040\000l\000a\000t\000e\000r\000\040\000s\000t\000e\000p\000s}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.7}{\376\377\000P\000a\000y\000\040\000a\000t\000t\000e\000n\000t\000i\000o\000n\000\040\000t\000o\000\040\000E\000O}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.8}{\376\377\000W\000h\000i\000c\000h\000\040\000b\000l\000o\000c\000k\000\040\000s\000h\000o\000u\000l\000d\000\040\000I\000\040\000b\000u\000i\000l\000d\000?}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.9}{\376\377\000R\000e\000a\000d\000y\000-\000m\000a\000d\000e\000\040\000b\000l\000o\000c\000k\000s\000:\000\040\000h\000o\000w\000\040\000t\000o\000\040\000d\000e\000a\000l\000\040\000w\000i\000t\000h\000\040\000t\000h\000e\000m\000?}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.10}{\376\377\000T\000r\000i\000c\000k\000s\000\040\000t\000o\000\040\000g\000e\000t\000\040\000f\000a\000s\000t\000\040\000a\000n\000d\000\040\000a\000d\000v\000a\000n\000c\000e\000d\000\040\000t\000e\000c\000h\000n\000i\000q\000u\000e\000s}{section.2.1}% 24
+\BOOKMARK [1][-]{section.2.2}{\376\377\000F\000i\000n\000d\000\040\000a\000\040\000g\000o\000o\000d\000\040\000s\000k\000e\000l\000e\000t\000o\000n}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.3}{\376\377\000C\000o\000m\000m\000u\000t\000a\000t\000o\000r\000s}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.3.1}{\376\377\000C\000o\000r\000n\000e\000r\000\040\000c\000o\000m\000m\000u\000t\000a\000t\000o\000r\000s}{section.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.3.2}{\376\377\000E\000d\000g\000e\000\040\000c\000o\000m\000m\000u\000t\000a\000t\000o\000r\000s}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.3}{\376\377\000O\000t\000h\000e\000r\000\040\000e\000d\000g\000e\000\040\0003\000-\000c\000y\000c\000l\000e\000s}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.4}{\376\377\000B\000l\000o\000c\000k\000\040\000c\000o\000m\000m\000u\000t\000a\000t\000o\000r\000s}{section.2.3}% 30
+\BOOKMARK [1][-]{section.2.4}{\376\377\000I\000n\000s\000e\000r\000t\000i\000o\000n\000s}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.4.1}{\376\377\000S\000i\000m\000p\000l\000e\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s}{section.2.4}% 32
+\BOOKMARK [2][-]{subsection.2.4.2}{\376\377\000M\000u\000l\000t\000i\000p\000l\000e\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\000s\000e\000p\000a\000r\000a\000t\000e\000d\000\040\000c\000y\000c\000l\000e\000s\000\040\000\050\0003\000\040\000e\000d\000g\000e\000s\000\040\000a\000n\000d\000\040\0003\000\040\000c\000o\000r\000n\000e\000r\000s\000\051}{section.2.4}% 33
+\BOOKMARK [2][-]{subsection.2.4.3}{\376\377\000M\000u\000l\000t\000i\000p\000l\000e\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\0002\000\040\000o\000r\000\040\0003\000\040\000t\000w\000i\000s\000t\000e\000d\000\040\000c\000o\000r\000n\000e\000r\000s}{section.2.4}% 34
+\BOOKMARK [2][-]{subsection.2.4.4}{\376\377\000M\000u\000l\000t\000i\000p\000l\000e\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\0004\000\040\000c\000o\000r\000n\000e\000r\000s}{section.2.4}% 35
+\BOOKMARK [2][-]{subsection.2.4.5}{\376\377\000M\000u\000l\000t\000i\000p\000l\000e\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\0005\000\040\000c\000o\000r\000n\000e\000r\000s}{section.2.4}% 36
+\BOOKMARK [2][-]{subsection.2.4.6}{\376\377\000M\000u\000l\000t\000i\000p\000l\000e\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\0005\000\040\000e\000d\000g\000e\000s}{section.2.4}% 37
+\BOOKMARK [2][-]{subsection.2.4.7}{\376\377\000O\000t\000h\000e\000r\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\0002\000\040\000c\000o\000r\000n\000e\000r\000s\000\040\000a\000n\000d\000\040\0002\000\040\000e\000d\000g\000e\000s}{section.2.4}% 38
+\BOOKMARK [2][-]{subsection.2.4.8}{\376\377\000O\000t\000h\000e\000r\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\0003\000\040\000e\000d\000g\000e\000s\000\040\000a\000n\000d\000\040\000s\000o\000m\000e\000\040\000c\000o\000r\000n\000e\000r\000s}{section.2.4}% 39
+\BOOKMARK [2][-]{subsection.2.4.9}{\376\377\000O\000t\000h\000e\000r\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\000c\000o\000n\000j\000u\000g\000a\000t\000e\000\040\000a\000n\000d\000\040\000s\000o\000l\000v\000e}{section.2.4}% 40
+\BOOKMARK [2][-]{subsection.2.4.10}{\376\377\000M\000o\000v\000e\000\040\000c\000o\000u\000n\000t\000\040\000\050\000a\000n\000\040\000e\000s\000t\000i\000m\000a\000t\000e\000\051}{section.2.4}% 41
+\BOOKMARK [2][-]{subsection.2.4.11}{\376\377\000I\000n\000s\000e\000r\000t\000i\000o\000n\000\040\000F\000i\000n\000d\000e\000r}{section.2.4}% 42
+\BOOKMARK [1][-]{section.2.5}{\376\377\000S\000t\000a\000r\000t\000i\000n\000g\000\040\000w\000i\000t\000h\000\040\000E\000O}{chapter.2}% 43
+\BOOKMARK [2][-]{subsection.2.5.1}{\376\377\000E\000O\000\040\000+\000\040\000b\000l\000o\000c\000k\000b\000u\000i\000l\000d\000i\000n\000g}{section.2.5}% 44
+\BOOKMARK [2][-]{subsection.2.5.2}{\376\377\000D\000o\000m\000i\000n\000o\000\040\000R\000e\000d\000u\000c\000t\000i\000o\000n}{section.2.5}% 45
+\BOOKMARK [2][-]{subsection.2.5.3}{\376\377\000P\000a\000r\000t\000i\000a\000l\000\040\000D\000o\000m\000i\000n\000o\000\040\000R\000e\000d\000u\000c\000t\000i\000o\000n}{section.2.5}% 46
+\BOOKMARK [1][-]{section.2.6}{\376\377\000O\000t\000h\000e\000r\000\040\000s\000i\000m\000p\000l\000e\000\040\000s\000t\000r\000a\000t\000e\000g\000i\000e\000s}{chapter.2}% 47
+\BOOKMARK [2][-]{subsection.2.6.1}{\376\377\000G\000o\000\040\000b\000a\000c\000k\000\040\000a\000n\000d\000\040\000c\000h\000a\000n\000g\000e\000\040\000y\000o\000u\000r\000\040\000s\000o\000l\000v\000e}{section.2.6}% 48
+\BOOKMARK [2][-]{subsection.2.6.2}{\376\377\000G\000e\000t\000\040\000l\000u\000c\000k\000y\000!}{section.2.6}% 49
+\BOOKMARK [0][-]{chapter.3}{\376\377\000A\000d\000v\000a\000n\000c\000e\000d\000\040\000t\000o\000o\000l\000s}{}% 50
+\BOOKMARK [1][-]{section.3.1}{\376\377\000I\000n\000v\000e\000r\000s\000e\000\040\000s\000c\000r\000a\000m\000b\000l\000e}{chapter.3}% 51
+\BOOKMARK [1][-]{section.3.2}{\376\377\000P\000s\000e\000u\000d\000o\000\040\000b\000l\000o\000c\000k\000s\000,\000\040\000p\000r\000e\000m\000o\000v\000e\000s\000\040\000a\000n\000d\000\040\000N\000I\000S\000S}{chapter.3}% 52
+\BOOKMARK [2][-]{subsection.3.2.1}{\376\377\000P\000s\000e\000u\000d\000o\000\040\000b\000l\000o\000c\000k\000s}{section.3.2}% 53
+\BOOKMARK [2][-]{subsection.3.2.2}{\376\377\000P\000r\000e\000m\000o\000v\000e\000s}{section.3.2}% 54
+\BOOKMARK [2][-]{subsection.3.2.3}{\376\377\000N\000I\000S\000S}{section.3.2}% 55
+\BOOKMARK [1][-]{section.3.3}{\376\377\000R\000e\000v\000e\000r\000s\000e\000\040\000N\000I\000S\000S}{chapter.3}% 56
+\BOOKMARK [1][-]{section.3.4}{\376\377\000U\000s\000i\000n\000g\000\040\000N\000I\000S\000S\000\040\000d\000u\000r\000i\000n\000g\000\040\000E\000O}{chapter.3}% 57
+\BOOKMARK [1][-]{section.3.5}{\376\377\000U\000s\000e\000f\000u\000l\000\040\000a\000l\000g\000o\000r\000i\000t\000h\000m\000s}{chapter.3}% 58
+\BOOKMARK [1][-]{section.3.6}{\376\377\000P\000a\000i\000r\000\040\000a\000n\000a\000l\000y\000s\000i\000s}{chapter.3}% 59
+\BOOKMARK [1][-]{section.3.7}{\376\377\000S\000o\000l\000v\000i\000n\000g\000\040\000w\000i\000t\000h\000\040\000s\000k\000e\000w\000\040\000c\000e\000n\000t\000e\000r\000s}{chapter.3}% 60
+\BOOKMARK [2][-]{subsection.3.7.1}{\376\377\000S\000k\000e\000w\000\040\000c\000e\000n\000t\000e\000r\000s\000\040\000a\000n\000d\000\040\000N\000I\000S\000S}{section.3.7}% 61
+\BOOKMARK [1][-]{section.3.8}{\376\377\000A\000d\000v\000a\000n\000c\000e\000d\000\040\000e\000d\000g\000e\000\040\000i\000n\000s\000e\000r\000t\000i\000o\000n\000s\000:\000\040\000f\000r\000e\000e\000\040\000s\000l\000i\000c\000e\000s}{chapter.3}% 62
+\BOOKMARK [1][-]{section.3.9}{\376\377\000C\000o\000r\000n\000e\000r\000s\000\040\000F\000i\000r\000s\000t}{chapter.3}% 63
+\BOOKMARK [1][-]{section.3.10}{\376\377\000R\000e\000p\000l\000a\000c\000e\000\040\000a\000n\000d\000\040\000s\000h\000o\000r\000t\000e\000n}{chapter.3}% 64
+\BOOKMARK [0][-]{chapter.4}{\376\377\000H\000o\000w\000\040\000t\000o\000\040\000p\000r\000a\000c\000t\000i\000c\000e}{}% 65
+\BOOKMARK [1][-]{section.4.1}{\376\377\000N\000o\000\040\000t\000i\000m\000e\000\040\000l\000i\000m\000i\000t\000\040\000a\000n\000d\000\040\000c\000o\000m\000p\000e\000t\000i\000t\000i\000o\000n\000\040\000s\000i\000m\000u\000l\000a\000t\000i\000o\000n}{chapter.4}% 66
+\BOOKMARK [1][-]{section.4.2}{\376\377\000U\000s\000e\000\040\000p\000e\000n\000\040\000a\000n\000d\000\040\000p\000a\000p\000e\000r}{chapter.4}% 67
+\BOOKMARK [1][-]{section.4.3}{\376\377\000C\000o\000m\000p\000a\000r\000e\000\040\000y\000o\000u\000r\000s\000e\000l\000f\000\040\000t\000o\000\040\000t\000h\000e\000\040\000m\000a\000s\000t\000e\000r\000s\000\040\000\050\000a\000n\000d\000\040\000s\000t\000u\000d\000y\000\040\000t\000h\000e\000i\000r\000\040\000s\000o\000l\000v\000e\000s\000\051}{chapter.4}% 68
+\BOOKMARK [1][-]{section.4.4}{\376\377\000H\000a\000r\000d\000\040\000s\000c\000r\000a\000m\000b\000l\000e\000s}{chapter.4}% 69
+\BOOKMARK [1][-]{section.4.5}{\376\377\000D\000e\000l\000i\000b\000e\000r\000a\000t\000e\000\040\000p\000r\000a\000c\000t\000i\000c\000e}{chapter.4}% 70
+\BOOKMARK [1][-]{section.4.6}{\376\377\000F\000a\000s\000t\000\040\000s\000c\000r\000a\000m\000b\000l\000i\000n\000g}{chapter.4}% 71
+\BOOKMARK [1][-]{section.4.7}{\376\377\000S\000t\000u\000d\000y\000!}{chapter.4}% 72
+\BOOKMARK [0][-]{chapter.5}{\376\377\000I\000n\000\040\000c\000o\000m\000p\000e\000t\000i\000t\000i\000o\000n}{}% 73
+\BOOKMARK [1][-]{section.5.1}{\376\377\000H\000o\000w\000\040\000t\000o\000\040\000w\000r\000i\000t\000e\000\040\000a\000\040\000s\000o\000l\000u\000t\000i\000o\000n}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.2}{\376\377\000B\000a\000c\000k\000u\000p\000\040\000s\000o\000l\000u\000t\000i\000o\000n}{chapter.5}% 75
+\BOOKMARK [1][-]{section.5.3}{\376\377\000T\000i\000m\000e\000\040\000m\000a\000n\000a\000g\000m\000e\000n\000t}{chapter.5}% 76
+\BOOKMARK [2][-]{subsection.5.3.1}{\376\377\000D\000o\000n\000'\000t\000\040\000g\000e\000t\000\040\000s\000t\000u\000c\000k}{section.5.3}% 77
+\BOOKMARK [2][-]{subsection.5.3.2}{\376\377\000\050\000D\000o\000n\000'\000t\000\051\000\040\000e\000x\000p\000l\000o\000r\000e\000\040\000e\000v\000e\000r\000y\000\040\000p\000o\000s\000s\000i\000b\000i\000l\000i\000t\000y}{section.5.3}% 78
+\BOOKMARK [0][-]{appendix.A}{\376\377\000O\000t\000h\000e\000r\000\040\000r\000e\000s\000o\000u\000r\000c\000e\000s}{}% 79
+\BOOKMARK [0][-]{appendix.B}{\376\377\000N\000o\000t\000a\000t\000i\000o\000n}{}% 80
+\BOOKMARK [0][-]{appendix.C}{\376\377\000S\000o\000m\000e\000\040\000e\000x\000e\000r\000c\000i\000s\000e\000s\000\040\000b\000y\000\040\000R\000e\000t\000o\000\040\000B\000u\000b\000e\000n\000d\000o\000r\000f}{}% 81
+\BOOKMARK [1][-]{section.C.1}{\376\377\000D\000i\000r\000e\000c\000t\000\040\000s\000o\000l\000v\000e}{appendix.C}% 82
+\BOOKMARK [1][-]{section.C.2}{\376\377\000F\000i\000n\000d\000\040\000t\000h\000e\000\040\000s\000k\000e\000l\000e\000t\000o\000n}{appendix.C}% 83
+\BOOKMARK [0][-]{appendix.D}{\376\377\000A\000\040\000\050\000w\000a\000y\000\040\000t\000o\000o\000\040\000s\000h\000o\000r\000t\000\051\000\040\000i\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n\000\040\000t\000o\000\040\000D\000o\000m\000i\000n\000o\000\040\000R\000e\000d\000u\000c\000t\000i\000o\000n}{}% 84
+\BOOKMARK [1][-]{section.D.1}{\376\377\000S\000t\000e\000p\000\040\0001\000:\000\040\000r\000e\000d\000u\000c\000e\000\040\000t\000o\000\040\000d\000o\000m\000i\000n\000o}{appendix.D}% 85
+\BOOKMARK [1][-]{section.D.2}{\376\377\000S\000t\000e\000p\000\040\0002\000:\000\040\000a\000l\000l\000\040\000t\000h\000e\000\040\000r\000e\000s\000t\000!}{appendix.D}% 86
+\BOOKMARK [2][-]{subsection.D.2.1}{\376\377\000B\000l\000o\000c\000k\000b\000u\000i\000l\000d\000i\000n\000g}{section.D.2}% 87
+\BOOKMARK [2][-]{subsection.D.2.2}{\376\377\000S\000o\000l\000v\000i\000n\000g\000\040\000c\000o\000r\000n\000e\000r\000s\000\040\000f\000i\000r\000s\000t}{section.D.2}% 88
+\BOOKMARK [1][-]{section.D.3}{\376\377\000W\000o\000r\000l\000d\000\040\000r\000e\000c\000o\000r\000d\000\040\000s\000o\000l\000v\000e}{appendix.D}% 89
