@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/VoidLinux) (preloaded format=pdflatex 2022.1.19)  2 FEB 2022 10:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/VoidLinux) (preloaded format=pdflatex 2023.7.26)  19 AUG 2023 16:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -596,7 +596,7 @@ Package: ulem 2019/11/18
 \ULdepth=\dimen183
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-2.
+3.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -608,24 +608,24 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (./fmc_ENG.aux)
 \openout1 = `fmc_ENG.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -661,7 +661,7 @@ LaTeX Font Info:    ... okay on input line 32.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 33.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -673,9 +673,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count294
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
 (./fmc_ENG.out) (./fmc_ENG.out)
 \@outlinefile=\write4
@@ -705,36 +705,36 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-5.
+6.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-35.
+36.
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-35.
+36.
 
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 35.
+(Font)              <12> on input line 36.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 36.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+(Font)              <6> on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -742,31 +742,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/home/sebastiano/.texlive2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-4.
- (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+5.
+
+(/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 91.
+(Font)              <10.95> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 91.
+(Font)              <9> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 91.
+(Font)              <5> on input line 92.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-91.
- (/usr/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
+92.
+
+(/usr/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-120.
+121.
 
 (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package svg Info: Last page of `./svg-inkscape/2c2e-ex_svg-tex.pdf' is 1 on inp
-ut line 130.
+ut line 131.
 
 (./svg-inkscape/2c2e-ex_svg-tex.pdf_tex
 <./svg-inkscape/2c2e-ex_svg-tex.pdf, id=409, page=1, 96.36pt x 96.36pt>
@@ -785,20 +787,20 @@ ut line 56.
 <img/example.pdf, id=558, 614.295pt x 794.97pt>
 File: img/example.pdf Graphic file (type pdf)
 <use img/example.pdf>
-Package pdftex.def Info: img/example.pdf  used on input line 196.
+Package pdftex.def Info: img/example.pdf  used on input line 197.
 (pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
  [9
 
 ] [10 <./img/example.pdf>]
 Chapter 1.
 
-Overfull \hbox (3.8299pt too wide) in paragraph at lines 216--216
+Overfull \hbox (3.8299pt too wide) in paragraph at lines 217--217
 [][][][]$\OT1/lmtt/m/n/9 https : / / www . speedsolving . com / forum / threads
  / beginners-[]guide-[]to-[]choosing-[]a-[]speedsolving-[]method .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
 [][][]\OT1/lmr/m/n/9 For ex-am-ple []HARCS[], freely avail-able on-line: []$\OT
 1/lmtt/m/n/9 https : / / www . speedsolving . com / forum / threads /
  []
@@ -806,7 +808,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 [11
 
 ] [12] [13] [14]
-Overfull \hbox (17.28343pt too wide) in paragraph at lines 348--349
+Overfull \hbox (17.28343pt too wide) in paragraph at lines 349--350
 \OT1/lmtt/m/n/10.95 speedsolving . com / forum / threads / the-[]3x3x3-[]exampl
 e-[]solve-[]thread . 14345 / page-[]238 #
  []
@@ -816,7 +818,7 @@ e-[]solve-[]thread . 14345 / page-[]238 #
 ]
 Chapter 2.
 Package svg Info: Last page of `./svg-inkscape/align-join_svg-tex.pdf' is 1 on 
-input line 392.
+input line 393.
 (./svg-inkscape/align-join_svg-tex.pdf_tex
 <./svg-inkscape/align-join_svg-tex.pdf, id=676, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/align-join_svg-tex.pdf Graphic file (type pdf)
@@ -826,7 +828,7 @@ input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [17]
 Package svg Info: Last page of `./svg-inkscape/move-way_svg-tex.pdf' is 1 on in
-put line 420.
+put line 421.
 
 (./svg-inkscape/move-way_svg-tex.pdf_tex
 <./svg-inkscape/move-way_svg-tex.pdf, id=687, page=1, 96.36pt x 96.36pt>
@@ -837,7 +839,7 @@ put line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/sexy_svg-tex.pdf' is 1 on input 
-line 439.
+line 440.
  (./svg-inkscape/sexy_svg-tex.pdf_tex
 <./svg-inkscape/sexy_svg-tex.pdf, id=691, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/sexy_svg-tex.pdf Graphic file (type pdf)
@@ -856,7 +858,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/sexy_svg-tex.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/keyhole-example_svg-tex.pdf' is 
-1 on input line 473.
+1 on input line 474.
  (./svg-inkscape/keyhole-example_svg-tex.pdf_tex
 <./svg-inkscape/keyhole-example_svg-tex.pdf, id=701, page=1, 96.36pt x 96.36pt>
 
@@ -867,7 +869,7 @@ d on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/mirek-guus_svg-tex.pdf' is 1 on 
-input line 500.
+input line 501.
 
 (./svg-inkscape/mirek-guus_svg-tex.pdf_tex
 <./svg-inkscape/mirek-guus_svg-tex.pdf, id=705, page=1, 96.36pt x 96.36pt>
@@ -883,7 +885,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/mirek-guus_svg-tex.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/influence-steps_svg-tex.pdf' is 
-1 on input line 531.
+1 on input line 532.
  (./svg-inkscape/influence-steps_svg-tex.pdf_tex
 <./svg-inkscape/influence-steps_svg-tex.pdf, id=719, page=1, 96.36pt x 96.36pt>
 
@@ -894,7 +896,7 @@ d on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [20 <./svg-inkscape/influence-steps_svg-tex.pdf>] [21] [22] [23] [24]
 Package svg Info: Last page of `./svg-inkscape/insertion-1_svg-tex.pdf' is 1 on
- input line 796.
+ input line 797.
 
 (./svg-inkscape/insertion-1_svg-tex.pdf_tex
 <./svg-inkscape/insertion-1_svg-tex.pdf, id=805, page=1, 96.36pt x 96.36pt>
@@ -905,7 +907,7 @@ Package pdftex.def Info: ./svg-inkscape/insertion-1_svg-tex.pdf , page1 used on
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [25] [26 <./svg-inkscape/insertion-1_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/separated-cycles_svg-tex.pdf' is
- 1 on input line 890.
+ 1 on input line 891.
  (./svg-inkscape/separated-cycles_svg-tex.pdf_tex
 <./svg-inkscape/separated-cycles_svg-tex.pdf, id=839, page=1, 96.36pt x 96.36pt
 >
@@ -920,7 +922,7 @@ Underfull \vbox (badness 3965) has occurred while \output is active []
  [27]
 [28 <./svg-inkscape/separated-cycles_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/joao-sar_svg-tex.pdf' is 1 on in
-put line 959.
+put line 960.
 
 (./svg-inkscape/joao-sar_svg-tex.pdf_tex
 <./svg-inkscape/joao-sar_svg-tex.pdf, id=860, page=1, 96.36pt x 96.36pt>
@@ -931,7 +933,7 @@ put line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [29 <./svg-inkscape/joao-sar_svg-tex.pdf>] [30] [31]
 Package svg Info: Last page of `./svg-inkscape/2c2e-ex_svg-tex.pdf' is 1 on inp
-ut line 1088.
+ut line 1089.
  (./svg-inkscape/2c2e-ex_svg-tex.pdf_tex
 File: ./svg-inkscape/2c2e-ex_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/2c2e-ex_svg-tex.pdf, page 1>
@@ -940,7 +942,7 @@ ut line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/conjugate-solve_svg-tex.pdf' is 
-1 on input line 1134.
+1 on input line 1135.
 
 (./svg-inkscape/conjugate-solve_svg-tex.pdf_tex
 <./svg-inkscape/conjugate-solve_svg-tex.pdf, id=902, page=1, 96.36pt x 96.36pt>
@@ -951,7 +953,7 @@ Package pdftex.def Info: ./svg-inkscape/conjugate-solve_svg-tex.pdf , page1 use
 d on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
-Underfull \hbox (badness 2302) in paragraph at lines 1137--1138
+Underfull \hbox (badness 2302) in paragraph at lines 1138--1139
 []\OT1/lmr/m/n/10.95 Solution: \OT1/lmtt/m/n/10.95 U2 F B\TS1/lmtt/m/n/10.95 '\
 OT1/lmtt/m/n/10.95 L2 D2 F\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 U F2 L\TS1/l
 mtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 B2 L F2 L\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/
@@ -962,7 +964,7 @@ mtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 B2 L F2 L\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/
 
 [32] [33 <./svg-inkscape/conjugate-solve_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/grzegorz-2010_svg-tex.pdf' is 1 
-on input line 1230.
+on input line 1231.
 
 (./svg-inkscape/grzegorz-2010_svg-tex.pdf_tex
 <./svg-inkscape/grzegorz-2010_svg-tex.pdf, id=934, page=1, 96.36pt x 96.36pt>
@@ -976,7 +978,7 @@ Underfull \vbox (badness 1629) has occurred while \output is active []
 
  [34]
 Package svg Info: Last page of `./svg-inkscape/joao-2015_svg-tex.pdf' is 1 on i
-nput line 1257.
+nput line 1258.
 
 (./svg-inkscape/joao-2015_svg-tex.pdf_tex
 <./svg-inkscape/joao-2015_svg-tex.pdf, id=945, page=1, 96.36pt x 96.36pt>
@@ -987,7 +989,7 @@ nput line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/per-domino_svg-tex.pdf' is 1 on 
-input line 1302.
+input line 1303.
 
 (./svg-inkscape/per-domino_svg-tex.pdf_tex
 <./svg-inkscape/per-domino_svg-tex.pdf, id=952, page=1, 96.36pt x 96.36pt>
@@ -1003,7 +1005,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/joao-2015_svg-tex.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/pdrcampos_svg-tex.pdf' is 1 on i
-nput line 1342.
+nput line 1343.
  (./svg-inkscape/pdrcampos_svg-tex.pdf_tex
 <./svg-inkscape/pdrcampos_svg-tex.pdf, id=967, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/pdrcampos_svg-tex.pdf Graphic file (type pdf)
@@ -1012,7 +1014,7 @@ Package pdftex.def Info: ./svg-inkscape/pdrcampos_svg-tex.pdf , page1 used on i
 nput line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
-Underfull \hbox (badness 3838) in paragraph at lines 1345--1346
+Underfull \hbox (badness 3838) in paragraph at lines 1346--1347
 []\OT1/lmr/m/n/10.95 Solution: \OT1/lmtt/m/n/10.95 D2 R\TS1/lmtt/m/n/10.95 '\OT
 1/lmtt/m/n/10.95 U2 R D R\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 U F\TS1/lmtt/
 m/n/10.95 '\OT1/lmtt/m/n/10.95 R B2 R\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 F
@@ -1026,7 +1028,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/pdrcampos_svg-tex.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/pdrseb_svg-tex.pdf' is 1 on inpu
-t line 1373.
+t line 1374.
  (./svg-inkscape/pdrseb_svg-tex.pdf_tex
 <./svg-inkscape/pdrseb_svg-tex.pdf, id=982, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/pdrseb_svg-tex.pdf Graphic file (type pdf)
@@ -1035,7 +1037,7 @@ Package pdftex.def Info: ./svg-inkscape/pdrseb_svg-tex.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
-Underfull \hbox (badness 5908) in paragraph at lines 1376--1377
+Underfull \hbox (badness 5908) in paragraph at lines 1377--1378
 []\OT1/lmr/m/n/10.95 Solution: \OT1/lmtt/m/n/10.95 F D R2 U\TS1/lmtt/m/n/10.95 
 '\OT1/lmtt/m/n/10.95 F\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 R\TS1/lmtt/m/n/1
 0.95 '\OT1/lmtt/m/n/10.95 F2 B2 U2 R2 U\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95
@@ -1045,7 +1047,7 @@ m/n/10.95 '\OT1/lmtt/m/n/10.95 U
  []
 
 Package svg Info: Last page of `./svg-inkscape/insert-pairs_svg-tex.pdf' is 1 o
-n input line 1421.
+n input line 1422.
 (./svg-inkscape/insert-pairs_svg-tex.pdf_tex
 <./svg-inkscape/insert-pairs_svg-tex.pdf, id=985, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/insert-pairs_svg-tex.pdf Graphic file (type pdf)
@@ -1055,7 +1057,7 @@ n input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [37 <./svg-inkscape/pdrseb_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/insert-pairs_svg-tex.pdf' is 1 o
-n input line 1449.
+n input line 1450.
  (./svg-inkscape/insert-pairs_svg-tex.pdf_tex
 File: ./svg-inkscape/insert-pairs_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/insert-pairs_svg-tex.pdf, page 1>
@@ -1065,7 +1067,7 @@ n input line 56.
 ) [38 <./svg-inkscape/insert-pairs_svg-tex.pdf>]
 Chapter 3.
 Package svg Info: Last page of `./svg-inkscape/inverse-scramble_svg-tex.pdf' is
- 1 on input line 1495.
+ 1 on input line 1496.
 (./svg-inkscape/inverse-scramble_svg-tex.pdf_tex
 <./svg-inkscape/inverse-scramble_svg-tex.pdf, id=1006, page=1, 96.36pt x 96.36p
 t>
@@ -1078,7 +1080,7 @@ ed on input line 56.
 
  <./svg-inkscape/inverse-scramble_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/niss-1_svg-tex.pdf' is 1 on inpu
-t line 1536.
+t line 1537.
  (./svg-inkscape/niss-1_svg-tex.pdf_tex
 <./svg-inkscape/niss-1_svg-tex.pdf, id=1018, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/niss-1_svg-tex.pdf Graphic file (type pdf)
@@ -1088,7 +1090,7 @@ t line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/niss-2_svg-tex.pdf' is 1 on inpu
-t line 1542.
+t line 1543.
 
 (./svg-inkscape/niss-2_svg-tex.pdf_tex
 <./svg-inkscape/niss-2_svg-tex.pdf, id=1020, page=1, 96.36pt x 96.36pt>
@@ -1103,7 +1105,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/niss-2_svg-tex.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/premoves-modified_svg-tex.pdf' i
-s 1 on input line 1588.
+s 1 on input line 1589.
  (./svg-inkscape/premoves-modified_svg-tex.pdf_tex
 <./svg-inkscape/premoves-modified_svg-tex.pdf, id=1030, page=1, 96.36pt x 96.36
 pt>
@@ -1114,7 +1116,7 @@ sed on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/mul-pre_svg-tex.pdf' is 1 on inp
-ut line 1616.
+ut line 1617.
 
 (./svg-inkscape/mul-pre_svg-tex.pdf_tex
 <./svg-inkscape/mul-pre_svg-tex.pdf, id=1033, page=1, 96.36pt x 96.36pt>
@@ -1124,7 +1126,7 @@ Package pdftex.def Info: ./svg-inkscape/mul-pre_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1620
+Underfull \hbox (badness 10000) in paragraph at lines 1620--1621
 []\OT1/lmr/m/n/10.95 Solution: \OT1/lmtt/m/n/10.95 R2 B\TS1/lmtt/m/n/10.95 '\OT
 1/lmtt/m/n/10.95 R2 B D L2 F D F2 L\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 D F
 \TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 D2 F D\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m
@@ -1139,7 +1141,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/mul-pre_svg-tex.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/niss-3_svg-tex.pdf' is 1 on inpu
-t line 1641.
+t line 1642.
  (./svg-inkscape/niss-3_svg-tex.pdf_tex
 <./svg-inkscape/niss-3_svg-tex.pdf, id=1043, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/niss-3_svg-tex.pdf Graphic file (type pdf)
@@ -1148,13 +1150,13 @@ Package pdftex.def Info: ./svg-inkscape/niss-3_svg-tex.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [42 <./svg-inkscape/niss-3_svg-tex.pdf>]
-Underfull \hbox (badness 5787) in paragraph at lines 1718--1718
+Underfull \hbox (badness 5787) in paragraph at lines 1719--1719
 [][][]\OT1/lmr/m/n/9 Taken from here: []$\OT1/lmtt/m/n/9 https : / / www . spee
 dsolving . com / forum / threads / the-[]fmc-[]thread . 13599 / page-[]10 #
  []
 
 Package svg Info: Last page of `./svg-inkscape/guus-niss_svg-tex.pdf' is 1 on i
-nput line 1724.
+nput line 1725.
 (./svg-inkscape/guus-niss_svg-tex.pdf_tex
 <./svg-inkscape/guus-niss_svg-tex.pdf, id=1060, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/guus-niss_svg-tex.pdf Graphic file (type pdf)
@@ -1164,7 +1166,7 @@ nput line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/guus-niss-inverse_svg-tex.pdf' i
-s 1 on input line 1724.
+s 1 on input line 1725.
 
 (./svg-inkscape/guus-niss-inverse_svg-tex.pdf_tex
 <./svg-inkscape/guus-niss-inverse_svg-tex.pdf, id=1062, page=1, 96.36pt x 96.36
@@ -1176,7 +1178,7 @@ sed on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/niss-step1_svg-tex.pdf' is 1 on 
-input line 1735.
+input line 1736.
 
 (./svg-inkscape/niss-step1_svg-tex.pdf_tex
 <./svg-inkscape/niss-step1_svg-tex.pdf, id=1064, page=1, 96.36pt x 96.36pt>
@@ -1187,7 +1189,7 @@ input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/niss-step2_svg-tex.pdf' is 1 on 
-input line 1741.
+input line 1742.
 
 (./svg-inkscape/niss-step2_svg-tex.pdf_tex
 <./svg-inkscape/niss-step2_svg-tex.pdf, id=1066, page=1, 96.36pt x 96.36pt>
@@ -1198,7 +1200,7 @@ input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/niss-step3_svg-tex.pdf' is 1 on 
-input line 1747.
+input line 1748.
 
 (./svg-inkscape/niss-step3_svg-tex.pdf_tex
 <./svg-inkscape/niss-step3_svg-tex.pdf, id=1068, page=1, 96.36pt x 96.36pt>
@@ -1209,7 +1211,7 @@ input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/niss-step4_svg-tex.pdf' is 1 on 
-input line 1755.
+input line 1756.
 
 (./svg-inkscape/niss-step4_svg-tex.pdf_tex
 <./svg-inkscape/niss-step4_svg-tex.pdf, id=1070, page=1, 96.36pt x 96.36pt>
@@ -1228,12 +1230,12 @@ DF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./svg-inkscape/niss-step1_svg-tex.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 1778--1782
+Underfull \hbox (badness 10000) in paragraph at lines 1779--1783
 
  []
 
 Package svg Info: Last page of `./svg-inkscape/guus-niss_svg-tex.pdf' is 1 on i
-nput line 1784.
+nput line 1785.
 (./svg-inkscape/guus-niss_svg-tex.pdf_tex
 File: ./svg-inkscape/guus-niss_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/guus-niss_svg-tex.pdf, page 1>
@@ -1254,7 +1256,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/niss-step4_svg-tex.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/reverse-niss_svg-tex.pdf' is 1 o
-n input line 1831.
+n input line 1832.
  (./svg-inkscape/reverse-niss_svg-tex.pdf_tex
 <./svg-inkscape/reverse-niss_svg-tex.pdf, id=1093, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reverse-niss_svg-tex.pdf Graphic file (type pdf)
@@ -1264,7 +1266,7 @@ n input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [45 <./svg-inkscape/reverse-niss_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/nisseo1_svg-tex.pdf' is 1 on inp
-ut line 1864.
+ut line 1865.
  (./svg-inkscape/nisseo1_svg-tex.pdf_tex
 <./svg-inkscape/nisseo1_svg-tex.pdf, id=1102, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/nisseo1_svg-tex.pdf Graphic file (type pdf)
@@ -1274,7 +1276,7 @@ ut line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/nisseo2_svg-tex.pdf' is 1 on inp
-ut line 1873.
+ut line 1874.
 
 (./svg-inkscape/nisseo2_svg-tex.pdf_tex
 <./svg-inkscape/nisseo2_svg-tex.pdf, id=1104, page=1, 96.36pt x 96.36pt>
@@ -1288,7 +1290,7 @@ ut line 56.
 pdfTeX warning: pdflatex (file ./svg-inkscape/nisseo2_svg-tex.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >] [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1952--1953
+Underfull \hbox (badness 10000) in paragraph at lines 1953--1954
 []\OT1/lmr/m/n/10.95 Scramble: \OT1/lmtt/m/n/10.95 R\TS1/lmtt/m/n/10.95 '\OT1/l
 mtt/m/n/10.95 U\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 F U R2 B2 D\TS1/lmtt/m/
 n/10.95 '\OT1/lmtt/m/n/10.95 L2 F2 D U\TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 
@@ -1298,19 +1300,19 @@ lmtt/m/n/10.95 L R D F2 U
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1955--1963
+Underfull \hbox (badness 10000) in paragraph at lines 1956--1964
 
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 1955--1963
+Underfull \hbox (badness 6477) in paragraph at lines 1956--1964
 \OT1/lmr/m/n/10.95 Skeleton (on in-verse):\OT1/lmtt/m/n/10.95 U2 L2 B2 U L + B\
 TS1/lmtt/m/n/10.95 '\OT1/lmtt/m/n/10.95 L2 * U2 L\TS1/lmtt/m/n/10.95 '\OT1/lmtt
 /m/n/10.95 U2
  []
 
 Package svg Info: Last page of `./svg-inkscape/wc-3_svg-tex.pdf' is 1 on input 
-line 1965.
+line 1966.
 (./svg-inkscape/wc-3_svg-tex.pdf_tex
 <./svg-inkscape/wc-3_svg-tex.pdf, id=1131, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/wc-3_svg-tex.pdf Graphic file (type pdf)
@@ -1320,12 +1322,12 @@ line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 ) [48 <./svg-inkscape/wc-3_svg-tex.pdf>]
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 2039--2047
+Underfull \hbox (badness 10000) in paragraph at lines 2040--2048
 
  []
 
 Package svg Info: Last page of `./svg-inkscape/wc19-2_svg-tex.pdf' is 1 on inpu
-t line 2049.
+t line 2050.
 (./svg-inkscape/wc19-2_svg-tex.pdf_tex
 <./svg-inkscape/wc19-2_svg-tex.pdf, id=1150, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/wc19-2_svg-tex.pdf Graphic file (type pdf)
@@ -1335,7 +1337,7 @@ t line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/german2_svg-tex.pdf' is 1 on inp
-ut line 2078.
+ut line 2079.
  (./svg-inkscape/german2_svg-tex.pdf_tex
 <./svg-inkscape/german2_svg-tex.pdf, id=1153, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/german2_svg-tex.pdf Graphic file (type pdf)
@@ -1349,7 +1351,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/german2_svg-tex.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >] [51]
 Package svg Info: Last page of `./svg-inkscape/attila-solve_svg-tex.pdf' is 1 o
-n input line 2120.
+n input line 2121.
  (./svg-inkscape/attila-solve_svg-tex.pdf_tex
 <./svg-inkscape/attila-solve_svg-tex.pdf, id=1176, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/attila-solve_svg-tex.pdf Graphic file (type pdf)
@@ -1358,14 +1360,14 @@ Package pdftex.def Info: ./svg-inkscape/attila-solve_svg-tex.pdf , page1 used o
 n input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2159--2159
+Underfull \hbox (badness 10000) in paragraph at lines 2160--2160
 [][][][]$\OT1/lmtt/m/n/9 https : / / www . speedsolving . com / forum / threads
  / the-[]3x3x3-[]example-[]solve-[]thread . 14345 / page-[]280 #
  []
 
 [52 <./svg-inkscape/attila-solve_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/replace_shorten_svg-tex.pdf' is 
-1 on input line 2181.
+1 on input line 2182.
 
 (./svg-inkscape/replace_shorten_svg-tex.pdf_tex
 <./svg-inkscape/replace_shorten_svg-tex.pdf, id=1201, page=1, 96.36pt x 96.36pt
@@ -1386,7 +1388,7 @@ Chapter 5.
 ] [58]
 Appendix A.
 
-Overfull \hbox (2.4339pt too wide) in paragraph at lines 2313--2314
+Overfull \hbox (2.4339pt too wide) in paragraph at lines 2314--2315
 []\OT1/lmr/m/n/10.95 A re-cent (2019) and com-plete video tu-to-rial by Speed-C
 u-beRe-view: []$\OT1/lmtt/m/n/10.95 https : / / www . youtube .
  []
@@ -1394,13 +1396,13 @@ u-beRe-view: []$\OT1/lmtt/m/n/10.95 https : / / www . youtube .
 [59
 
 ]
-Overfull \hbox (28.2809pt too wide) in paragraph at lines 2340--2341
+Overfull \hbox (28.2809pt too wide) in paragraph at lines 2341--2342
 []$\OT1/lmtt/m/n/10.95 https : / / www . speedsolving . com / forum / threads /
  harcs-[]jarcs-[]replacement-[]cube-[]solver .
  []
 
 
-Overfull \hbox (5.1613pt too wide) in paragraph at lines 2350--2351
+Overfull \hbox (5.1613pt too wide) in paragraph at lines 2351--2352
 []\OT1/lmr/m/n/10.95 In par-tic-u-lar, the \OT1/lmr/m/it/10.95 Fun-da-men-tal T
 ech-niqes \OT1/lmr/m/n/10.95 sec-tion: []$\OT1/lmtt/m/n/10.95 http : / / www . 
 ryanheise . com / cube /
@@ -1409,7 +1411,7 @@ ryanheise . com / cube /
 [60]
 Appendix B.
 Package svg Info: Last page of `./svg-inkscape/r_svg-tex.pdf' is 1 on input lin
-e 2370.
+e 2371.
 (./svg-inkscape/r_svg-tex.pdf_tex
 <./svg-inkscape/r_svg-tex.pdf, id=1298, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/r_svg-tex.pdf Graphic file (type pdf)
@@ -1419,7 +1421,7 @@ e 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/r2_svg-tex.pdf' is 1 on input li
-ne 2370.
+ne 2371.
  (./svg-inkscape/r2_svg-tex.pdf_tex
 <./svg-inkscape/r2_svg-tex.pdf, id=1300, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/r2_svg-tex.pdf Graphic file (type pdf)
@@ -1429,7 +1431,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/r3_svg-tex.pdf' is 1 on input li
-ne 2370.
+ne 2371.
 
 (./svg-inkscape/r3_svg-tex.pdf_tex
 <./svg-inkscape/r3_svg-tex.pdf, id=1302, page=1, 96.36pt x 96.36pt>
@@ -1440,7 +1442,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/l_svg-tex.pdf' is 1 on input lin
-e 2370.
+e 2371.
  (./svg-inkscape/l_svg-tex.pdf_tex
 <./svg-inkscape/l_svg-tex.pdf, id=1304, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/l_svg-tex.pdf Graphic file (type pdf)
@@ -1450,7 +1452,7 @@ e 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/l2_svg-tex.pdf' is 1 on input li
-ne 2370.
+ne 2371.
 
 (./svg-inkscape/l2_svg-tex.pdf_tex
 <./svg-inkscape/l2_svg-tex.pdf, id=1306, page=1, 96.36pt x 96.36pt>
@@ -1461,7 +1463,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/l3_svg-tex.pdf' is 1 on input li
-ne 2370.
+ne 2371.
  (./svg-inkscape/l3_svg-tex.pdf_tex
 <./svg-inkscape/l3_svg-tex.pdf, id=1308, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/l3_svg-tex.pdf Graphic file (type pdf)
@@ -1471,7 +1473,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/u_svg-tex.pdf' is 1 on input lin
-e 2373.
+e 2374.
 
 (./svg-inkscape/u_svg-tex.pdf_tex
 <./svg-inkscape/u_svg-tex.pdf, id=1310, page=1, 96.36pt x 96.36pt>
@@ -1482,7 +1484,7 @@ e 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/u2_svg-tex.pdf' is 1 on input li
-ne 2373.
+ne 2374.
  (./svg-inkscape/u2_svg-tex.pdf_tex
 <./svg-inkscape/u2_svg-tex.pdf, id=1312, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/u2_svg-tex.pdf Graphic file (type pdf)
@@ -1492,7 +1494,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/u3_svg-tex.pdf' is 1 on input li
-ne 2373.
+ne 2374.
 
 (./svg-inkscape/u3_svg-tex.pdf_tex
 <./svg-inkscape/u3_svg-tex.pdf, id=1314, page=1, 96.36pt x 96.36pt>
@@ -1503,7 +1505,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/d_svg-tex.pdf' is 1 on input lin
-e 2373.
+e 2374.
  (./svg-inkscape/d_svg-tex.pdf_tex
 <./svg-inkscape/d_svg-tex.pdf, id=1316, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/d_svg-tex.pdf Graphic file (type pdf)
@@ -1513,7 +1515,7 @@ e 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/d2_svg-tex.pdf' is 1 on input li
-ne 2373.
+ne 2374.
 
 (./svg-inkscape/d2_svg-tex.pdf_tex
 <./svg-inkscape/d2_svg-tex.pdf, id=1318, page=1, 96.36pt x 96.36pt>
@@ -1524,7 +1526,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/d3_svg-tex.pdf' is 1 on input li
-ne 2373.
+ne 2374.
  (./svg-inkscape/d3_svg-tex.pdf_tex
 <./svg-inkscape/d3_svg-tex.pdf, id=1320, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/d3_svg-tex.pdf Graphic file (type pdf)
@@ -1534,7 +1536,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/f_svg-tex.pdf' is 1 on input lin
-e 2376.
+e 2377.
 
 (./svg-inkscape/f_svg-tex.pdf_tex
 <./svg-inkscape/f_svg-tex.pdf, id=1322, page=1, 96.36pt x 96.36pt>
@@ -1545,7 +1547,7 @@ e 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/f2_svg-tex.pdf' is 1 on input li
-ne 2376.
+ne 2377.
  (./svg-inkscape/f2_svg-tex.pdf_tex
 <./svg-inkscape/f2_svg-tex.pdf, id=1324, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/f2_svg-tex.pdf Graphic file (type pdf)
@@ -1555,7 +1557,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/f3_svg-tex.pdf' is 1 on input li
-ne 2376.
+ne 2377.
 
 (./svg-inkscape/f3_svg-tex.pdf_tex
 <./svg-inkscape/f3_svg-tex.pdf, id=1326, page=1, 96.36pt x 96.36pt>
@@ -1566,7 +1568,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/b_svg-tex.pdf' is 1 on input lin
-e 2376.
+e 2377.
  (./svg-inkscape/b_svg-tex.pdf_tex
 <./svg-inkscape/b_svg-tex.pdf, id=1328, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/b_svg-tex.pdf Graphic file (type pdf)
@@ -1576,7 +1578,7 @@ e 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/b2_svg-tex.pdf' is 1 on input li
-ne 2376.
+ne 2377.
 
 (./svg-inkscape/b2_svg-tex.pdf_tex
 <./svg-inkscape/b2_svg-tex.pdf, id=1330, page=1, 96.36pt x 96.36pt>
@@ -1587,7 +1589,7 @@ ne 56.
 (pdftex.def)             Requested size: 62.63339pt x 62.63324pt.
 )
 Package svg Info: Last page of `./svg-inkscape/b3_svg-tex.pdf' is 1 on input li
-ne 2376.
+ne 2377.
  (./svg-inkscape/b3_svg-tex.pdf_tex
 <./svg-inkscape/b3_svg-tex.pdf, id=1332, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/b3_svg-tex.pdf Graphic file (type pdf)
@@ -1668,7 +1670,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/b3_svg-tex.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/rw_svg-tex.pdf' is 1 on input li
-ne 2393.
+ne 2394.
  (./svg-inkscape/rw_svg-tex.pdf_tex
 <./svg-inkscape/rw_svg-tex.pdf, id=1358, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/rw_svg-tex.pdf Graphic file (type pdf)
@@ -1678,7 +1680,7 @@ ne 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/m_svg-tex.pdf' is 1 on input lin
-e 2403.
+e 2404.
  (./svg-inkscape/m_svg-tex.pdf_tex
 <./svg-inkscape/m_svg-tex.pdf, id=1360, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/m_svg-tex.pdf Graphic file (type pdf)
@@ -1688,7 +1690,7 @@ e 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/e_svg-tex.pdf' is 1 on input lin
-e 2403.
+e 2404.
 
 (./svg-inkscape/e_svg-tex.pdf_tex
 <./svg-inkscape/e_svg-tex.pdf, id=1362, page=1, 96.36pt x 96.36pt>
@@ -1699,7 +1701,7 @@ e 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/s_svg-tex.pdf' is 1 on input lin
-e 2403.
+e 2404.
  (./svg-inkscape/s_svg-tex.pdf_tex
 <./svg-inkscape/s_svg-tex.pdf, id=1364, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/s_svg-tex.pdf Graphic file (type pdf)
@@ -1722,7 +1724,7 @@ ltiple pdfs with page group included in a single page
 >]
 Appendix C.
 Package svg Info: Last page of `./svg-inkscape/reto15a_svg-tex.pdf' is 1 on inp
-ut line 2530.
+ut line 2531.
 (./svg-inkscape/reto15a_svg-tex.pdf_tex
 <./svg-inkscape/reto15a_svg-tex.pdf, id=1376, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto15a_svg-tex.pdf Graphic file (type pdf)
@@ -1731,12 +1733,12 @@ Package pdftex.def Info: ./svg-inkscape/reto15a_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2523--2533
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2524--2534
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto15b_svg-tex.pdf' is 1 on inp
-ut line 2540.
+ut line 2541.
 (./svg-inkscape/reto15b_svg-tex.pdf_tex
 <./svg-inkscape/reto15b_svg-tex.pdf, id=1378, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto15b_svg-tex.pdf Graphic file (type pdf)
@@ -1745,12 +1747,12 @@ Package pdftex.def Info: ./svg-inkscape/reto15b_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2533--2543
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2534--2544
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto16a_svg-tex.pdf' is 1 on inp
-ut line 2554.
+ut line 2555.
 (./svg-inkscape/reto16a_svg-tex.pdf_tex
 <./svg-inkscape/reto16a_svg-tex.pdf, id=1380, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto16a_svg-tex.pdf Graphic file (type pdf)
@@ -1759,12 +1761,12 @@ Package pdftex.def Info: ./svg-inkscape/reto16a_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2547--2557
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2548--2558
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto16b_svg-tex.pdf' is 1 on inp
-ut line 2564.
+ut line 2565.
 (./svg-inkscape/reto16b_svg-tex.pdf_tex
 <./svg-inkscape/reto16b_svg-tex.pdf, id=1382, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto16b_svg-tex.pdf Graphic file (type pdf)
@@ -1773,12 +1775,12 @@ Package pdftex.def Info: ./svg-inkscape/reto16b_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2557--2567
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2558--2568
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto16c_svg-tex.pdf' is 1 on inp
-ut line 2574.
+ut line 2575.
 (./svg-inkscape/reto16c_svg-tex.pdf_tex
 <./svg-inkscape/reto16c_svg-tex.pdf, id=1384, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto16c_svg-tex.pdf Graphic file (type pdf)
@@ -1787,12 +1789,12 @@ Package pdftex.def Info: ./svg-inkscape/reto16c_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2567--2577
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2568--2578
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto17a_svg-tex.pdf' is 1 on inp
-ut line 2588.
+ut line 2589.
 (./svg-inkscape/reto17a_svg-tex.pdf_tex
 <./svg-inkscape/reto17a_svg-tex.pdf, id=1386, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto17a_svg-tex.pdf Graphic file (type pdf)
@@ -1801,12 +1803,12 @@ Package pdftex.def Info: ./svg-inkscape/reto17a_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2581--2591
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2582--2592
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto17b_svg-tex.pdf' is 1 on inp
-ut line 2598.
+ut line 2599.
 (./svg-inkscape/reto17b_svg-tex.pdf_tex
 <./svg-inkscape/reto17b_svg-tex.pdf, id=1388, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto17b_svg-tex.pdf Graphic file (type pdf)
@@ -1815,7 +1817,7 @@ Package pdftex.def Info: ./svg-inkscape/reto17b_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2591--2601
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2592--2602
 [][] 
  []
 
@@ -1843,7 +1845,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/reto17a_svg-tex.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/reto17c_svg-tex.pdf' is 1 on inp
-ut line 2608.
+ut line 2609.
  (./svg-inkscape/reto17c_svg-tex.pdf_tex
 <./svg-inkscape/reto17c_svg-tex.pdf, id=1410, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto17c_svg-tex.pdf Graphic file (type pdf)
@@ -1852,12 +1854,12 @@ Package pdftex.def Info: ./svg-inkscape/reto17c_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2601--2611
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2602--2612
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto17d_svg-tex.pdf' is 1 on inp
-ut line 2618.
+ut line 2619.
 (./svg-inkscape/reto17d_svg-tex.pdf_tex
 <./svg-inkscape/reto17d_svg-tex.pdf, id=1412, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto17d_svg-tex.pdf Graphic file (type pdf)
@@ -1866,12 +1868,12 @@ Package pdftex.def Info: ./svg-inkscape/reto17d_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2611--2621
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2612--2622
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto17e_svg-tex.pdf' is 1 on inp
-ut line 2628.
+ut line 2629.
 (./svg-inkscape/reto17e_svg-tex.pdf_tex
 <./svg-inkscape/reto17e_svg-tex.pdf, id=1414, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto17e_svg-tex.pdf Graphic file (type pdf)
@@ -1880,12 +1882,12 @@ Package pdftex.def Info: ./svg-inkscape/reto17e_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2621--2631
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2622--2632
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto17f_svg-tex.pdf' is 1 on inp
-ut line 2638.
+ut line 2639.
 (./svg-inkscape/reto17f_svg-tex.pdf_tex
 <./svg-inkscape/reto17f_svg-tex.pdf, id=1416, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto17f_svg-tex.pdf Graphic file (type pdf)
@@ -1894,12 +1896,12 @@ Package pdftex.def Info: ./svg-inkscape/reto17f_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2631--2641
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2632--2642
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto18a_svg-tex.pdf' is 1 on inp
-ut line 2652.
+ut line 2653.
 (./svg-inkscape/reto18a_svg-tex.pdf_tex
 <./svg-inkscape/reto18a_svg-tex.pdf, id=1418, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto18a_svg-tex.pdf Graphic file (type pdf)
@@ -1908,12 +1910,12 @@ Package pdftex.def Info: ./svg-inkscape/reto18a_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2645--2655
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2646--2656
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto18b_svg-tex.pdf' is 1 on inp
-ut line 2662.
+ut line 2663.
 (./svg-inkscape/reto18b_svg-tex.pdf_tex
 <./svg-inkscape/reto18b_svg-tex.pdf, id=1420, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto18b_svg-tex.pdf Graphic file (type pdf)
@@ -1922,12 +1924,12 @@ Package pdftex.def Info: ./svg-inkscape/reto18b_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2655--2665
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2656--2666
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto18c_svg-tex.pdf' is 1 on inp
-ut line 2672.
+ut line 2673.
 (./svg-inkscape/reto18c_svg-tex.pdf_tex
 <./svg-inkscape/reto18c_svg-tex.pdf, id=1422, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto18c_svg-tex.pdf Graphic file (type pdf)
@@ -1936,12 +1938,12 @@ Package pdftex.def Info: ./svg-inkscape/reto18c_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2665--2675
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2666--2676
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto18d_svg-tex.pdf' is 1 on inp
-ut line 2682.
+ut line 2683.
 (./svg-inkscape/reto18d_svg-tex.pdf_tex
 <./svg-inkscape/reto18d_svg-tex.pdf, id=1424, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto18d_svg-tex.pdf Graphic file (type pdf)
@@ -1950,12 +1952,12 @@ Package pdftex.def Info: ./svg-inkscape/reto18d_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2675--2685
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2676--2686
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto18e_svg-tex.pdf' is 1 on inp
-ut line 2692.
+ut line 2693.
 (./svg-inkscape/reto18e_svg-tex.pdf_tex
 <./svg-inkscape/reto18e_svg-tex.pdf, id=1426, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto18e_svg-tex.pdf Graphic file (type pdf)
@@ -1964,12 +1966,12 @@ Package pdftex.def Info: ./svg-inkscape/reto18e_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2685--2695
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2686--2696
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto18f_svg-tex.pdf' is 1 on inp
-ut line 2702.
+ut line 2703.
 (./svg-inkscape/reto18f_svg-tex.pdf_tex
 <./svg-inkscape/reto18f_svg-tex.pdf, id=1428, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto18f_svg-tex.pdf Graphic file (type pdf)
@@ -1978,12 +1980,12 @@ Package pdftex.def Info: ./svg-inkscape/reto18f_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2695--2705
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2696--2706
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto18g_svg-tex.pdf' is 1 on inp
-ut line 2712.
+ut line 2713.
 (./svg-inkscape/reto18g_svg-tex.pdf_tex
 <./svg-inkscape/reto18g_svg-tex.pdf, id=1430, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto18g_svg-tex.pdf Graphic file (type pdf)
@@ -1992,12 +1994,12 @@ Package pdftex.def Info: ./svg-inkscape/reto18g_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2705--2715
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2706--2716
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto19a_svg-tex.pdf' is 1 on inp
-ut line 2726.
+ut line 2727.
 (./svg-inkscape/reto19a_svg-tex.pdf_tex
 <./svg-inkscape/reto19a_svg-tex.pdf, id=1432, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto19a_svg-tex.pdf Graphic file (type pdf)
@@ -2006,7 +2008,7 @@ Package pdftex.def Info: ./svg-inkscape/reto19a_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2719--2729
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2720--2730
 [][] 
  []
 
@@ -2056,7 +2058,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/reto18g_svg-tex.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/reto19b_svg-tex.pdf' is 1 on inp
-ut line 2736.
+ut line 2737.
  (./svg-inkscape/reto19b_svg-tex.pdf_tex
 <./svg-inkscape/reto19b_svg-tex.pdf, id=1464, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto19b_svg-tex.pdf Graphic file (type pdf)
@@ -2065,12 +2067,12 @@ Package pdftex.def Info: ./svg-inkscape/reto19b_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2729--2739
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2730--2740
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto19c_svg-tex.pdf' is 1 on inp
-ut line 2746.
+ut line 2747.
 (./svg-inkscape/reto19c_svg-tex.pdf_tex
 <./svg-inkscape/reto19c_svg-tex.pdf, id=1466, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto19c_svg-tex.pdf Graphic file (type pdf)
@@ -2079,12 +2081,12 @@ Package pdftex.def Info: ./svg-inkscape/reto19c_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2739--2749
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2740--2750
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto110a_svg-tex.pdf' is 1 on in
-put line 2761.
+put line 2762.
 (./svg-inkscape/reto110a_svg-tex.pdf_tex
 <./svg-inkscape/reto110a_svg-tex.pdf, id=1468, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto110a_svg-tex.pdf Graphic file (type pdf)
@@ -2093,12 +2095,12 @@ Package pdftex.def Info: ./svg-inkscape/reto110a_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2754--2764
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2755--2765
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto110b_svg-tex.pdf' is 1 on in
-put line 2771.
+put line 2772.
 (./svg-inkscape/reto110b_svg-tex.pdf_tex
 <./svg-inkscape/reto110b_svg-tex.pdf, id=1470, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto110b_svg-tex.pdf Graphic file (type pdf)
@@ -2107,12 +2109,12 @@ Package pdftex.def Info: ./svg-inkscape/reto110b_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2764--2774
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2765--2775
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto110c_svg-tex.pdf' is 1 on in
-put line 2781.
+put line 2782.
 (./svg-inkscape/reto110c_svg-tex.pdf_tex
 <./svg-inkscape/reto110c_svg-tex.pdf, id=1472, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto110c_svg-tex.pdf Graphic file (type pdf)
@@ -2121,12 +2123,12 @@ Package pdftex.def Info: ./svg-inkscape/reto110c_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2774--2784
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2775--2785
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto110d_svg-tex.pdf' is 1 on in
-put line 2791.
+put line 2792.
 (./svg-inkscape/reto110d_svg-tex.pdf_tex
 <./svg-inkscape/reto110d_svg-tex.pdf, id=1474, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto110d_svg-tex.pdf Graphic file (type pdf)
@@ -2135,12 +2137,12 @@ Package pdftex.def Info: ./svg-inkscape/reto110d_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2784--2794
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2785--2795
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto110e_svg-tex.pdf' is 1 on in
-put line 2801.
+put line 2802.
 (./svg-inkscape/reto110e_svg-tex.pdf_tex
 <./svg-inkscape/reto110e_svg-tex.pdf, id=1476, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto110e_svg-tex.pdf Graphic file (type pdf)
@@ -2149,12 +2151,12 @@ Package pdftex.def Info: ./svg-inkscape/reto110e_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2794--2804
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2795--2805
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto110f_svg-tex.pdf' is 1 on in
-put line 2811.
+put line 2812.
 (./svg-inkscape/reto110f_svg-tex.pdf_tex
 <./svg-inkscape/reto110f_svg-tex.pdf, id=1478, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto110f_svg-tex.pdf Graphic file (type pdf)
@@ -2163,12 +2165,12 @@ Package pdftex.def Info: ./svg-inkscape/reto110f_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2804--2814
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2805--2815
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto110g_svg-tex.pdf' is 1 on in
-put line 2821.
+put line 2822.
 (./svg-inkscape/reto110g_svg-tex.pdf_tex
 <./svg-inkscape/reto110g_svg-tex.pdf, id=1480, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto110g_svg-tex.pdf Graphic file (type pdf)
@@ -2177,12 +2179,12 @@ Package pdftex.def Info: ./svg-inkscape/reto110g_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2814--2824
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2815--2825
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto111a_svg-tex.pdf' is 1 on in
-put line 2836.
+put line 2837.
 (./svg-inkscape/reto111a_svg-tex.pdf_tex
 <./svg-inkscape/reto111a_svg-tex.pdf, id=1482, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto111a_svg-tex.pdf Graphic file (type pdf)
@@ -2191,12 +2193,12 @@ Package pdftex.def Info: ./svg-inkscape/reto111a_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2829--2839
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2830--2840
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto111a_svg-tex.pdf' is 1 on in
-put line 2846.
+put line 2847.
 (./svg-inkscape/reto111a_svg-tex.pdf_tex
 File: ./svg-inkscape/reto111a_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/reto111a_svg-tex.pdf, page 1>
@@ -2204,12 +2206,12 @@ Package pdftex.def Info: ./svg-inkscape/reto111a_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2839--2849
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2840--2850
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto112a_svg-tex.pdf' is 1 on in
-put line 2860.
+put line 2861.
 (./svg-inkscape/reto112a_svg-tex.pdf_tex
 <./svg-inkscape/reto112a_svg-tex.pdf, id=1485, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto112a_svg-tex.pdf Graphic file (type pdf)
@@ -2218,7 +2220,7 @@ Package pdftex.def Info: ./svg-inkscape/reto112a_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2853--2863
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2854--2864
 [][] 
  []
 
@@ -2264,7 +2266,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/reto111a_svg-tex.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/reto3c1_svg-tex.pdf' is 1 on inp
-ut line 2878.
+ut line 2879.
  (./svg-inkscape/reto3c1_svg-tex.pdf_tex
 <./svg-inkscape/reto3c1_svg-tex.pdf, id=1519, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c1_svg-tex.pdf Graphic file (type pdf)
@@ -2273,12 +2275,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c1_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2871--2881
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2872--2882
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c2_svg-tex.pdf' is 1 on inp
-ut line 2888.
+ut line 2889.
 (./svg-inkscape/reto3c2_svg-tex.pdf_tex
 <./svg-inkscape/reto3c2_svg-tex.pdf, id=1521, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c2_svg-tex.pdf Graphic file (type pdf)
@@ -2287,12 +2289,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c2_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2881--2891
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2882--2892
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c3_svg-tex.pdf' is 1 on inp
-ut line 2898.
+ut line 2899.
 (./svg-inkscape/reto3c3_svg-tex.pdf_tex
 <./svg-inkscape/reto3c3_svg-tex.pdf, id=1523, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c3_svg-tex.pdf Graphic file (type pdf)
@@ -2301,12 +2303,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c3_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2891--2901
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2892--2902
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c4_svg-tex.pdf' is 1 on inp
-ut line 2908.
+ut line 2909.
 (./svg-inkscape/reto3c4_svg-tex.pdf_tex
 <./svg-inkscape/reto3c4_svg-tex.pdf, id=1525, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c4_svg-tex.pdf Graphic file (type pdf)
@@ -2315,12 +2317,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c4_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2901--2911
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2902--2912
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c5_svg-tex.pdf' is 1 on inp
-ut line 2918.
+ut line 2919.
 (./svg-inkscape/reto3c5_svg-tex.pdf_tex
 <./svg-inkscape/reto3c5_svg-tex.pdf, id=1527, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c5_svg-tex.pdf Graphic file (type pdf)
@@ -2329,12 +2331,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c5_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2911--2921
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2912--2922
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c6_svg-tex.pdf' is 1 on inp
-ut line 2928.
+ut line 2929.
 (./svg-inkscape/reto3c6_svg-tex.pdf_tex
 <./svg-inkscape/reto3c6_svg-tex.pdf, id=1529, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c6_svg-tex.pdf Graphic file (type pdf)
@@ -2343,12 +2345,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c6_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2921--2931
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2922--2932
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c7_svg-tex.pdf' is 1 on inp
-ut line 2938.
+ut line 2939.
 (./svg-inkscape/reto3c7_svg-tex.pdf_tex
 <./svg-inkscape/reto3c7_svg-tex.pdf, id=1531, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c7_svg-tex.pdf Graphic file (type pdf)
@@ -2357,12 +2359,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c7_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2931--2941
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2932--2942
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c8_svg-tex.pdf' is 1 on inp
-ut line 2948.
+ut line 2949.
 (./svg-inkscape/reto3c8_svg-tex.pdf_tex
 <./svg-inkscape/reto3c8_svg-tex.pdf, id=1533, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c8_svg-tex.pdf Graphic file (type pdf)
@@ -2371,12 +2373,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c8_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2941--2951
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2942--2952
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c9_svg-tex.pdf' is 1 on inp
-ut line 2958.
+ut line 2959.
 (./svg-inkscape/reto3c9_svg-tex.pdf_tex
 <./svg-inkscape/reto3c9_svg-tex.pdf, id=1535, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c9_svg-tex.pdf Graphic file (type pdf)
@@ -2385,12 +2387,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c9_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2951--2961
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2952--2962
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c10_svg-tex.pdf' is 1 on in
-put line 2968.
+put line 2969.
 (./svg-inkscape/reto3c10_svg-tex.pdf_tex
 <./svg-inkscape/reto3c10_svg-tex.pdf, id=1537, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c10_svg-tex.pdf Graphic file (type pdf)
@@ -2399,12 +2401,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c10_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2961--2971
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2962--2972
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c11_svg-tex.pdf' is 1 on in
-put line 2978.
+put line 2979.
 (./svg-inkscape/reto3c11_svg-tex.pdf_tex
 <./svg-inkscape/reto3c11_svg-tex.pdf, id=1539, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c11_svg-tex.pdf Graphic file (type pdf)
@@ -2413,7 +2415,7 @@ Package pdftex.def Info: ./svg-inkscape/reto3c11_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2971--2981
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2972--2982
 [][] 
  []
 
@@ -2455,7 +2457,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/reto3c9_svg-tex.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/reto3c12_svg-tex.pdf' is 1 on in
-put line 2988.
+put line 2989.
  (./svg-inkscape/reto3c12_svg-tex.pdf_tex
 <./svg-inkscape/reto3c12_svg-tex.pdf, id=1568, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c12_svg-tex.pdf Graphic file (type pdf)
@@ -2464,12 +2466,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c12_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2981--2991
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2982--2992
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3c13_svg-tex.pdf' is 1 on in
-put line 2998.
+put line 2999.
 (./svg-inkscape/reto3c13_svg-tex.pdf_tex
 <./svg-inkscape/reto3c13_svg-tex.pdf, id=1570, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3c13_svg-tex.pdf Graphic file (type pdf)
@@ -2478,12 +2480,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3c13_svg-tex.pdf , page1 used on in
 put line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 2991--3001
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 2992--3002
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3e1_svg-tex.pdf' is 1 on inp
-ut line 3013.
+ut line 3014.
 (./svg-inkscape/reto3e1_svg-tex.pdf_tex
 <./svg-inkscape/reto3e1_svg-tex.pdf, id=1572, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3e1_svg-tex.pdf Graphic file (type pdf)
@@ -2492,12 +2494,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3e1_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 3006--3016
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 3007--3017
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3e2_svg-tex.pdf' is 1 on inp
-ut line 3023.
+ut line 3024.
 (./svg-inkscape/reto3e2_svg-tex.pdf_tex
 <./svg-inkscape/reto3e2_svg-tex.pdf, id=1574, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3e2_svg-tex.pdf Graphic file (type pdf)
@@ -2506,12 +2508,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3e2_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 3016--3026
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 3017--3027
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3e3_svg-tex.pdf' is 1 on inp
-ut line 3033.
+ut line 3034.
 (./svg-inkscape/reto3e3_svg-tex.pdf_tex
 <./svg-inkscape/reto3e3_svg-tex.pdf, id=1576, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3e3_svg-tex.pdf Graphic file (type pdf)
@@ -2520,12 +2522,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3e3_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 3026--3036
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 3027--3037
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3e4_svg-tex.pdf' is 1 on inp
-ut line 3043.
+ut line 3044.
 (./svg-inkscape/reto3e4_svg-tex.pdf_tex
 <./svg-inkscape/reto3e4_svg-tex.pdf, id=1578, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3e4_svg-tex.pdf Graphic file (type pdf)
@@ -2534,12 +2536,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3e4_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 3036--3046
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 3037--3047
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3e5_svg-tex.pdf' is 1 on inp
-ut line 3053.
+ut line 3054.
 (./svg-inkscape/reto3e5_svg-tex.pdf_tex
 <./svg-inkscape/reto3e5_svg-tex.pdf, id=1580, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3e5_svg-tex.pdf Graphic file (type pdf)
@@ -2548,12 +2550,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3e5_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 3046--3056
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 3047--3057
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3e6_svg-tex.pdf' is 1 on inp
-ut line 3063.
+ut line 3064.
 (./svg-inkscape/reto3e6_svg-tex.pdf_tex
 <./svg-inkscape/reto3e6_svg-tex.pdf, id=1582, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3e6_svg-tex.pdf Graphic file (type pdf)
@@ -2562,12 +2564,12 @@ Package pdftex.def Info: ./svg-inkscape/reto3e6_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 3056--3066
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 3057--3067
 [][] 
  []
 
 Package svg Info: Last page of `./svg-inkscape/reto3e7_svg-tex.pdf' is 1 on inp
-ut line 3073.
+ut line 3074.
 (./svg-inkscape/reto3e7_svg-tex.pdf_tex
 <./svg-inkscape/reto3e7_svg-tex.pdf, id=1584, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/reto3e7_svg-tex.pdf Graphic file (type pdf)
@@ -2576,7 +2578,7 @@ Package pdftex.def Info: ./svg-inkscape/reto3e7_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 48.18pt x 48.17987pt.
 )
-Overfull \hbox (5.84789pt too wide) in paragraph at lines 3066--3076
+Overfull \hbox (5.84789pt too wide) in paragraph at lines 3067--3077
 [][] 
  []
 
@@ -2625,7 +2627,7 @@ on: multiple pdfs with page group included in a single page
 ]
 Appendix D.
 Package svg Info: Last page of `./svg-inkscape/DR_trigger_R_svg-tex.pdf' is 1 o
-n input line 3105.
+n input line 3106.
 (./svg-inkscape/DR_trigger_R_svg-tex.pdf_tex
 <./svg-inkscape/DR_trigger_R_svg-tex.pdf, id=1625, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/DR_trigger_R_svg-tex.pdf Graphic file (type pdf)
@@ -2635,7 +2637,7 @@ n input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/DR_trigger_RUpRp_svg-tex.pdf' is
- 1 on input line 3105.
+ 1 on input line 3106.
 
 (./svg-inkscape/DR_trigger_RUpRp_svg-tex.pdf_tex
 <./svg-inkscape/DR_trigger_RUpRp_svg-tex.pdf, id=1627, page=1, 96.36pt x 96.36p
@@ -2647,7 +2649,7 @@ ed on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/DR_trigger_RURp_svg-tex.pdf' is 
-1 on input line 3106.
+1 on input line 3107.
 
 (./svg-inkscape/DR_trigger_RURp_svg-tex.pdf_tex
 <./svg-inkscape/DR_trigger_RURp_svg-tex.pdf, id=1629, page=1, 96.36pt x 96.36pt
@@ -2659,7 +2661,7 @@ d on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/DR_trigger_RU2Rp_svg-tex.pdf' is
- 1 on input line 3106.
+ 1 on input line 3107.
 
 (./svg-inkscape/DR_trigger_RU2Rp_svg-tex.pdf_tex
 <./svg-inkscape/DR_trigger_RU2Rp_svg-tex.pdf, id=1631, page=1, 96.36pt x 96.36p
@@ -2684,7 +2686,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/DR_trigger_RU2Rp_svg-tex.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf
-' is 1 on input line 3135.
+' is 1 on input line 3136.
  (./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf_tex
 <./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf, id=1649, page=1, 96.36pt x 96
 .36pt>
@@ -2695,7 +2697,7 @@ Package pdftex.def Info: ./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf , page
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
 Package svg Info: Last page of `./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf
-' is 1 on input line 3176.
+' is 1 on input line 3177.
 
 (./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf_tex
 File: ./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf Graphic file (type pdf)
@@ -2708,7 +2710,7 @@ Underfull \vbox (badness 2951) has occurred while \output is active []
 
  [70 <./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf
-' is 1 on input line 3216.
+' is 1 on input line 3217.
 
 (./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf_tex
 File: ./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf Graphic file (type pdf)
@@ -2717,27 +2719,27 @@ Package pdftex.def Info: ./svg-inkscape/DR_solve_FMC_Germany_svg-tex.pdf , page
 1 used on input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 3243--3247
+Underfull \hbox (badness 10000) in paragraph at lines 3244--3248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3248--3251
+Underfull \hbox (badness 10000) in paragraph at lines 3249--3252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3252--3255
+Underfull \hbox (badness 10000) in paragraph at lines 3253--3256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3256--3258
+Underfull \hbox (badness 10000) in paragraph at lines 3257--3259
 
  []
 
 Package svg Info: Last page of `./svg-inkscape/wrsolveinv_svg-tex.pdf' is 1 on 
-input line 3260.
+input line 3261.
 (./svg-inkscape/wrsolveinv_svg-tex.pdf_tex
 <./svg-inkscape/wrsolveinv_svg-tex.pdf, id=1661, page=1, 96.36pt x 96.36pt>
 File: ./svg-inkscape/wrsolveinv_svg-tex.pdf Graphic file (type pdf)
@@ -2746,14 +2748,14 @@ Package pdftex.def Info: ./svg-inkscape/wrsolveinv_svg-tex.pdf , page1 used on
 input line 56.
 (pdftex.def)             Requested size: 96.35999pt x 96.35974pt.
 )
-Overfull \hbox (5.31256pt too wide) in paragraph at lines 3260--3260
+Overfull \hbox (5.31256pt too wide) in paragraph at lines 3261--3261
  [] 
  []
 
 [71] [72 <./svg-inkscape/wrsolveinv_svg-tex.pdf>]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     3282.
+(LaTeX3)     3283.
 
  (./fmc_ENG.aux)
 Package rerunfilecheck Info: File `fmc_ENG.out' has not changed.
@@ -2761,10 +2763,10 @@ Package rerunfilecheck Info: File `fmc_ENG.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  15153 strings out of 478994
- 256741 string characters out of 5864719
- 577808 words of memory out of 5000000
+ 256739 string characters out of 5864719
+ 577815 words of memory out of 5000000
  31480 multiletter control sequences out of 15000+600000
- 475489 words of font info for 81 fonts, out of 8000000 for 9000
+ 472546 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,17n,102p,1344b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fo
@@ -2781,7 +2783,7 @@ t/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/
 lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/
 public/lm/lmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on fmc_ENG.pdf (72 pages, 799209 bytes).
+Output written on fmc_ENG.pdf (72 pages, 800339 bytes).
 PDF statistics:
  1815 PDF objects out of 2073 (max. 8388607)
  1471 compressed objects within 15 object streams
